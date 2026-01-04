@@ -1,5 +1,5 @@
-import { LoginForm } from "@/components/auth/login-form"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { LoginForm } from "@/Shamba-Connect-Website/components/auth/login-form"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/Shamba-Connect-Website/components/ui/card"
 import Link from "next/link"
 
 export const metadata = {

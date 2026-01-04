@@ -1,6 +1,6 @@
 "use client"
 
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent } from "@/Shamba-Connect-Website/components/ui/card"
 import { Star } from "lucide-react"
 
 export function TestimonialsEnhanced() {

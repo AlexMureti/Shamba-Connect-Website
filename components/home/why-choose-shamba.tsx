@@ -1,4 +1,4 @@
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent } from "@/Shamba-Connect-Website/components/ui/card"
 import { CheckCircle2, Award, Users, Leaf, TrendingUp, Heart } from "lucide-react"
 
 export function WhyChooseShamba() {

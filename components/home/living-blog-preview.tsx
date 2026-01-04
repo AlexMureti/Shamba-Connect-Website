@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { useBlogStore } from "@/lib/blog-store"
 import { Calendar, Tag, ArrowRight } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Button } from "@/Shamba-Connect-Website/components/ui/button"
 
 export function LivingBlogPreview() {
   const posts = useBlogStore((state) => state.posts)

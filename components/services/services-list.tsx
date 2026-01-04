@@ -1,5 +1,5 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/Shamba-Connect-Website/components/ui/card"
+import { Button } from "@/Shamba-Connect-Website/components/ui/button"
 import { Sprout, Palette, Leaf, Rabbit, GraduationCap, ShoppingBag, ArrowRight, CheckCircle2 } from "lucide-react"
 
 export function ServicesList() {

@@ -1,6 +1,6 @@
 import Link from "next/link"
-import { Card } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
+import { Card } from "@/Shamba-Connect-Website/components/ui/card"
+import { Button } from "@/Shamba-Connect-Website/components/ui/button"
 import { Rabbit, Beef, ShoppingBag, Shirt, ArrowRight } from "lucide-react"
 
 export function RabbitValueChain() {

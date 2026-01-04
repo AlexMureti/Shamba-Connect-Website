@@ -1,9 +1,9 @@
-import { FounderStory } from "@/components/about/founder-story"
-import { VisionMission } from "@/components/about/vision-mission"
-import { CoreValues } from "@/components/about/core-values"
-import { GrowthRoadmap } from "@/components/about/growth-roadmap"
-import { MediaMentions } from "@/components/about/media-mentions"
-import { TeamStructure } from "@/components/about/team-structure"
+import { FounderStory } from "@/Shamba-Connect-Website/components/about/founder-story"
+import { VisionMission } from "@/Shamba-Connect-Website/components/about/vision-mission"
+import { CoreValues } from "@/Shamba-Connect-Website/components/about/core-values"
+import { GrowthRoadmap } from "@/Shamba-Connect-Website/components/about/growth-roadmap"
+import { MediaMentions } from "@/Shamba-Connect-Website/components/about/media-mentions"
+import { TeamStructure } from "@/Shamba-Connect-Website/components/about/team-structure"
 
 export const metadata = {
   title: "About Us - Shamba Connect",

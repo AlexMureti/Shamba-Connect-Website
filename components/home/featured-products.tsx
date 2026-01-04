@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
+import { Button } from "@/Shamba-Connect-Website/components/ui/button"
 import { ShoppingCart, ArrowRight } from "lucide-react"
 
 const featuredProducts = [

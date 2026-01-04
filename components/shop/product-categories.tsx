@@ -1,6 +1,6 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
+import { Button } from "@/Shamba-Connect-Website/components/ui/button"
 import { useState } from "react"
 
 export function ProductCategories() {

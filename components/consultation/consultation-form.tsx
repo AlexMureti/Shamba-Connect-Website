@@ -2,12 +2,12 @@
 
 import type React from "react"
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { Button } from "@/Shamba-Connect-Website/components/ui/button"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/Shamba-Connect-Website/components/ui/card"
+import { Input } from "@/Shamba-Connect-Website/components/ui/input"
+import { Label } from "@/Shamba-Connect-Website/components/ui/label"
+import { Textarea } from "@/Shamba-Connect-Website/components/ui/textarea"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/Shamba-Connect-Website/components/ui/select"
 import { useState } from "react"
 import { CheckCircle } from "lucide-react"
 

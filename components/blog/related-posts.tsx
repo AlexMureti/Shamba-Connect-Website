@@ -1,8 +1,8 @@
 "use client"
 
 import { useEffect, useState, useMemo } from "react"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardHeader, CardTitle } from "@/Shamba-Connect-Website/components/ui/card"
+import { Button } from "@/Shamba-Connect-Website/components/ui/button"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { useBlogStore } from "@/lib/blog-store"

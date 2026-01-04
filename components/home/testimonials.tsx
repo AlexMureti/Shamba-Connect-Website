@@ -1,4 +1,4 @@
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent } from "@/Shamba-Connect-Website/components/ui/card"
 import { Quote } from "lucide-react"
 
 export function Testimonials() {

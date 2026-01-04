@@ -1,7 +1,7 @@
 "use client"
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/Shamba-Connect-Website/components/ui/card"
+import { Button } from "@/Shamba-Connect-Website/components/ui/button"
 import { Plus, Trash2, Eye } from "lucide-react"
 import Link from "next/link"
 import { useBlogStore } from "@/lib/blog-store"
@@ -58,9 +58,8 @@ export default function AdminBlogPage() {
                         </span>
                         <span>{post.date}</span>
                         <span
-                          className={`px-2 py-1 rounded-full text-xs ${
-                            post.published ? "bg-green-500/10 text-green-600" : "bg-yellow-500/10 text-yellow-600"
-                          }`}
+                          className={`px-2 py-1 rounded-full text-xs ${post.published ? "bg-green-500/10 text-green-600" : "bg-yellow-500/10 text-yellow-600"
+                            }`}
                         >
                           {post.published ? "published" : "draft"}
                         </span>

@@ -1,8 +1,8 @@
 "use client"
 
 import Link from "next/link"
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/Shamba-Connect-Website/components/ui/card"
+import { Button } from "@/Shamba-Connect-Website/components/ui/button"
 import { ArrowRight, Clock } from "lucide-react"
 import { useBlogStore } from "@/lib/blog-store"
 

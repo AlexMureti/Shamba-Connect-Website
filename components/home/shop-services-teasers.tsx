@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
+import { Button } from "@/Shamba-Connect-Website/components/ui/button"
 import { ShoppingCart, Calendar } from "lucide-react"
 
 export function ShopServicesTeasers() {

@@ -1,4 +1,4 @@
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent } from "@/Shamba-Connect-Website/components/ui/card"
 import { CheckCircle2, Circle, Target } from "lucide-react"
 
 export function GrowthRoadmap() {
@@ -59,17 +59,15 @@ export function GrowthRoadmap() {
             {milestones.map((milestone, index) => (
               <div
                 key={index}
-                className={`flex flex-col lg:flex-row gap-8 items-center ${
-                  index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
-                }`}
+                className={`flex flex-col lg:flex-row gap-8 items-center ${index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
+                  }`}
               >
                 <div className={`flex-1 ${index % 2 === 0 ? "lg:text-right" : "lg:text-left"}`}>
                   <Card
-                    className={`${
-                      milestone.status === "current"
+                    className={`${milestone.status === "current"
                         ? "bg-primary text-primary-foreground shadow-2xl"
                         : "bg-card shadow-lg hover:shadow-xl transition-shadow"
-                    }`}
+                      }`}
                   >
                     <CardContent className="pt-6">
                       <div className="flex items-center gap-3 mb-3">
@@ -77,24 +75,21 @@ export function GrowthRoadmap() {
                         {milestone.status === "current" && <Target className="w-6 h-6" />}
                         {milestone.status === "future" && <Circle className="text-muted-foreground w-6 h-6" />}
                         <p
-                          className={`text-2xl font-bold ${
-                            milestone.status === "current" ? "text-primary-foreground" : "text-primary"
-                          }`}
+                          className={`text-2xl font-bold ${milestone.status === "current" ? "text-primary-foreground" : "text-primary"
+                            }`}
                         >
                           {milestone.year}
                         </p>
                       </div>
                       <h3
-                        className={`text-xl font-semibold mb-2 ${
-                          milestone.status === "current" ? "text-primary-foreground" : "text-foreground"
-                        }`}
+                        className={`text-xl font-semibold mb-2 ${milestone.status === "current" ? "text-primary-foreground" : "text-foreground"
+                          }`}
                       >
                         {milestone.title}
                       </h3>
                       <p
-                        className={`leading-relaxed ${
-                          milestone.status === "current" ? "text-primary-foreground/90" : "text-muted-foreground"
-                        }`}
+                        className={`leading-relaxed ${milestone.status === "current" ? "text-primary-foreground/90" : "text-muted-foreground"
+                          }`}
                       >
                         {milestone.description}
                       </p>

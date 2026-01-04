@@ -2,9 +2,9 @@
 
 import type React from "react"
 
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
+import { Button } from "@/Shamba-Connect-Website/components/ui/button"
+import { Input } from "@/Shamba-Connect-Website/components/ui/input"
+import { Label } from "@/Shamba-Connect-Website/components/ui/label"
 import { useState } from "react"
 import { Eye, EyeOff } from "lucide-react"
 import Link from "next/link"

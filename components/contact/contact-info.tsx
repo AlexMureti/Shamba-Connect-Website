@@ -1,6 +1,6 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle } from "@/Shamba-Connect-Website/components/ui/card"
 import { Mail, Phone, MapPin, Clock, Facebook, Twitter, Instagram, Linkedin, MessageCircle } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Button } from "@/Shamba-Connect-Website/components/ui/button"
 
 export function ContactInfo() {
   return (

@@ -1,10 +1,10 @@
 "use client"
 
 import { useState } from "react"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Label } from "@/components/ui/label"
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
+import { Card, CardContent, CardHeader, CardTitle } from "@/Shamba-Connect-Website/components/ui/card"
+import { Button } from "@/Shamba-Connect-Website/components/ui/button"
+import { Label } from "@/Shamba-Connect-Website/components/ui/label"
+import { RadioGroup, RadioGroupItem } from "@/Shamba-Connect-Website/components/ui/radio-group"
 import { Calculator, CheckCircle2 } from "lucide-react"
 
 export function InteractiveGardenCalculator() {

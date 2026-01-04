@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Card } from "@/components/ui/card"
+import { Card } from "@/Shamba-Connect-Website/components/ui/card"
 import { Sprout, Trees, Rabbit, Users, ShoppingBag, Leaf } from "lucide-react"
 
 export function ServiceCardsGrid() {

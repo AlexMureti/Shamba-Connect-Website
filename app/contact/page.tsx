@@ -1,7 +1,7 @@
-import { ContactHero } from "@/components/contact/contact-hero"
-import { ContactForm } from "@/components/contact/contact-form"
-import { ContactInfo } from "@/components/contact/contact-info"
-import { LocationMap } from "@/components/contact/location-map"
+import { ContactHero } from "@/Shamba-Connect-Website/components/contact/contact-hero"
+import { ContactForm } from "@/Shamba-Connect-Website/components/contact/contact-form"
+import { ContactInfo } from "@/Shamba-Connect-Website/components/contact/contact-info"
+import { LocationMap } from "@/Shamba-Connect-Website/components/contact/location-map"
 
 export const metadata = {
   title: "Contact Us - Shamba Connect",

@@ -1,7 +1,7 @@
-import { ShopHero } from "@/components/shop/shop-hero"
-import { ProductCategories } from "@/components/shop/product-categories"
-import { ProductGrid } from "@/components/shop/product-grid"
-import { ShoppingCart } from "@/components/shop/shopping-cart"
+import { ShopHero } from "@/Shamba-Connect-Website/components/shop/shop-hero"
+import { ProductCategories } from "@/Shamba-Connect-Website/components/shop/product-categories"
+import { ProductGrid } from "@/Shamba-Connect-Website/components/shop/product-grid"
+import { ShoppingCart } from "@/Shamba-Connect-Website/components/shop/shopping-cart"
 
 export const metadata = {
   title: "Shop - Shamba Connect",
