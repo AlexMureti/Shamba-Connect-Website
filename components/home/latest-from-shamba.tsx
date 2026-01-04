@@ -3,7 +3,7 @@
 import { useEffect, useState, useMemo } from "react"
 import Link from "next/link"
 import { ArrowRight, Clock } from "lucide-react"
-import { useBlogStore } from "@/lib/blog-store"
+import { useBlogStore } from "@/Shamba-Connect-Website/lib/blog-store"
 
 export function LatestFromShamba() {
   const allPosts = useBlogStore((state) => state.posts)

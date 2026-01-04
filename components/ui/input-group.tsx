@@ -2,7 +2,7 @@
 
 import { cva, type VariantProps } from 'class-variance-authority'
 
-import { cn } from '@/lib/utils'
+import { cn } from '@/Shamba-Connect-Website/lib/utils'
 import { Button } from '@/Shamba-Connect-Website/components/ui/button'
 import { Input } from '@/Shamba-Connect-Website/components/ui/input'
 import { Textarea } from '@/Shamba-Connect-Website/components/ui/textarea'

@@ -2,9 +2,9 @@
 
 import { Calendar, User, Share2, Eye } from "lucide-react"
 import { Button } from "@/Shamba-Connect-Website/components/ui/button"
-import type { BlogPost as BlogPostType } from "@/lib/blog-store"
+import type { BlogPost as BlogPostType } from "@/Shamba-Connect-Website/lib/blog-store"
 import { useEffect } from "react"
-import { updateBlogPost } from "@/lib/blog-store"
+import { updateBlogPost } from "@/Shamba-Connect-Website/lib/blog-store"
 
 interface BlogPostProps {
   post: BlogPostType

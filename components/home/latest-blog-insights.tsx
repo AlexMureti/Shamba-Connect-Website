@@ -4,7 +4,7 @@ import Link from "next/link"
 import { Card, CardContent } from "@/Shamba-Connect-Website/components/ui/card"
 import { Button } from "@/Shamba-Connect-Website/components/ui/button"
 import { ArrowRight, Clock } from "lucide-react"
-import { useBlogStore } from "@/lib/blog-store"
+import { useBlogStore } from "@/Shamba-Connect-Website/lib/blog-store"
 
 export function LatestBlogInsights() {
   const posts = useBlogStore((state) => state.posts)

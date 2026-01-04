@@ -11,7 +11,7 @@ import { Textarea } from "@/Shamba-Connect-Website/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/Shamba-Connect-Website/components/ui/select"
 import { ImagePlus, Save, Eye } from "lucide-react"
 import Link from "next/link"
-import { saveBlogPost, generateSlug } from "@/lib/blog-store"
+import { saveBlogPost, generateSlug } from "@/Shamba-Connect-Website/lib/blog-store"
 
 export default function NewBlogPostPage() {
   const router = useRouter()

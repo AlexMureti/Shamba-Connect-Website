@@ -6,7 +6,7 @@ import { cva, VariantProps } from 'class-variance-authority'
 import { PanelLeftIcon } from 'lucide-react'
 
 import { useIsMobile } from '@/Shamba-Connect-Website/hooks/use-mobile'
-import { cn } from '@/lib/utils'
+import { cn } from '@/Shamba-Connect-Website/lib/utils'
 import { Button } from '@/Shamba-Connect-Website/components/ui/button'
 import { Input } from '@/Shamba-Connect-Website/components/ui/input'
 import { Separator } from '@/Shamba-Connect-Website/components/ui/separator'

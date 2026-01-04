@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/Sha
 import { Button } from "@/Shamba-Connect-Website/components/ui/button"
 import { Plus, Trash2, Eye } from "lucide-react"
 import Link from "next/link"
-import { useBlogStore } from "@/lib/blog-store"
+import { useBlogStore } from "@/Shamba-Connect-Website/lib/blog-store"
 
 export default function AdminBlogPage() {
   const posts = useBlogStore((state) => state.posts)

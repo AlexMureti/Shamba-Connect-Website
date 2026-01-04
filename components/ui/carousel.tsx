@@ -6,7 +6,7 @@ import useEmblaCarousel, {
 } from 'embla-carousel-react'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 
-import { cn } from '@/lib/utils'
+import { cn } from '@/Shamba-Connect-Website/lib/utils'
 import { Button } from '@/Shamba-Connect-Website/components/ui/button'
 
 type CarouselApi = UseEmblaCarouselType[1]

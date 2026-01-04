@@ -5,7 +5,7 @@ import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from "@/Sham
 import { Button } from "@/Shamba-Connect-Website/components/ui/button"
 import { Calendar, User, ArrowRight } from "lucide-react"
 import Link from "next/link"
-import { useBlogStore } from "@/lib/blog-store"
+import { useBlogStore } from "@/Shamba-Connect-Website/lib/blog-store"
 
 export function BlogGrid() {
   const allPosts = useBlogStore((state) => state.posts)

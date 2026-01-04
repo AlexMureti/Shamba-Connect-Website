@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/Shamba-Connect-Websi
 import { Button } from "@/Shamba-Connect-Website/components/ui/button"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
-import { useBlogStore } from "@/lib/blog-store"
+import { useBlogStore } from "@/Shamba-Connect-Website/lib/blog-store"
 
 interface RelatedPostsProps {
   currentPostId: string

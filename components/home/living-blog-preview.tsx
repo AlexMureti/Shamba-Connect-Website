@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { useBlogStore } from "@/lib/blog-store"
+import { useBlogStore } from "@/Shamba-Connect-Website/lib/blog-store"
 import { Calendar, Tag, ArrowRight } from "lucide-react"
 import { Button } from "@/Shamba-Connect-Website/components/ui/button"
 

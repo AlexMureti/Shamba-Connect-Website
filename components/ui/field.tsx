@@ -3,7 +3,7 @@
 import { useMemo } from 'react'
 import { cva, type VariantProps } from 'class-variance-authority'
 
-import { cn } from '@/lib/utils'
+import { cn } from '@/Shamba-Connect-Website/lib/utils'
 import { Label } from '@/Shamba-Connect-Website/components/ui/label'
 import { Separator } from '@/Shamba-Connect-Website/components/ui/separator'
 

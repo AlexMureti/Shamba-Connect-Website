@@ -5,7 +5,7 @@ import { use } from "react"
 import { BlogPost } from "@/Shamba-Connect-Website/components/blog/blog-post"
 import { RelatedPosts } from "@/Shamba-Connect-Website/components/blog/related-posts"
 import { CommentSection } from "@/Shamba-Connect-Website/components/blog/comment-section"
-import { useBlogStore } from "@/lib/blog-store"
+import { useBlogStore } from "@/Shamba-Connect-Website/lib/blog-store"
 import { notFound } from "next/navigation"
 
 export default function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
