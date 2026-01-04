@@ -3,8 +3,36 @@
 import Link from "next/link"
 import { Button } from "@/Shamba-Connect-Website/components/ui/button"
 import { ArrowRight, Sprout, Rabbit, GraduationCap } from "lucide-react"
+import { ImageSlideshow } from "@/Shamba-Connect-Website/components/ui/image-slideshow"
 
 export function EditorialHero() {
+  const slides = [
+    {
+      src: "/slideshow/Screenshot from 2026-01-04 14-04-47.png",
+      alt: "Shamba Connect slideshow image 1",
+    },
+    {
+      src: "/slideshow/Screenshot from 2026-01-04 14-05-18.png",
+      alt: "Shamba Connect slideshow image 2",
+    },
+    {
+      src: "/slideshow/Screenshot from 2026-01-04 14-05-52.png",
+      alt: "Shamba Connect slideshow image 3",
+    },
+    {
+      src: "/slideshow/Screenshot from 2026-01-04 14-07-00.png",
+      alt: "Shamba Connect slideshow image 4",
+    },
+    {
+      src: "/slideshow/Screenshot from 2026-01-04 14-10-07.png",
+      alt: "Shamba Connect slideshow image 7",
+    },
+    {
+      src: "/slideshow/Screenshot from 2026-01-04 14-12-44.png",
+      alt: "Shamba Connect slideshow image 8",
+    },
+  ]
+
   return (
     <section className="bg-white border-b border-border">
       <div className="container mx-auto px-4 py-6 md:py-8">
@@ -44,13 +72,12 @@ export function EditorialHero() {
 
           {/* Right Column: Imagery */}
           <div className="space-y-3">
-            <div className="rounded-lg overflow-hidden border border-border">
-              <img
-                src="/thriving-urban-rooftop-kitchen-garden-with-fresh-v.jpg"
-                alt="Urban agriculture setup with rabbits"
-                className="w-full h-48 md:h-64 object-cover"
-              />
-            </div>
+            <ImageSlideshow
+              slides={slides}
+              intervalMs={5000}
+              className="border border-border"
+              imageClassName="h-56 sm:h-64 md:h-72 lg:h-80"
+            />
           </div>
         </div>
 

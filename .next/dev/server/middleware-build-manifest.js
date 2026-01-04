@@ -4,20 +4,20 @@ globalThis.__BUILD_MANIFEST = {
   },
   "devFiles": [],
   "polyfillFiles": [
-    "static/chunks/bf204_next_dist_build_polyfills_polyfill-nomodule.js"
+    "static/chunks/79d31_next_dist_build_polyfills_polyfill-nomodule.js"
   ],
   "lowPriorityFiles": [],
   "rootMainFiles": [
-    "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_a76e8d40._.js",
-    "static/chunks/bf204_next_dist_compiled_react-dom_df3ab084._.js",
-    "static/chunks/bf204_next_dist_compiled_react-server-dom-turbopack_cce3aee9._.js",
-    "static/chunks/bf204_next_dist_compiled_next-devtools_index_3f2249ef.js",
-    "static/chunks/bf204_next_dist_compiled_6dc6e6c4._.js",
-    "static/chunks/bf204_next_dist_client_6d3cf3c2._.js",
-    "static/chunks/bf204_next_dist_d757cbdf._.js",
-    "static/chunks/07bca_@swc_helpers_cjs_e57f7bde._.js",
-    "static/chunks/Downloads_shamba-connect-website (3)_a0ff3932._.js",
-    "static/chunks/turbopack-Downloads_shamba-connect-website (3)_26d5d75a._.js"
+    "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_5ff33198._.js",
+    "static/chunks/79d31_next_dist_compiled_react-dom_21a21714._.js",
+    "static/chunks/79d31_next_dist_compiled_react-server-dom-turbopack_d5502ae9._.js",
+    "static/chunks/79d31_next_dist_compiled_next-devtools_index_6df2e370.js",
+    "static/chunks/79d31_next_dist_compiled_804e8aac._.js",
+    "static/chunks/79d31_next_dist_client_b74d306c._.js",
+    "static/chunks/79d31_next_dist_84d37915._.js",
+    "static/chunks/eed51_@swc_helpers_cjs_d1056716._.js",
+    "static/chunks/Downloads_shamba-connect-website (3)_Shamba-Connect-Website_a0ff3932._.js",
+    "static/chunks/turbopack-Downloads_shamba-connect-website (3)_Shamba-Connect-Website_635eaaae._.js"
   ]
 };
 globalThis.__BUILD_MANIFEST.lowPriorityFiles = [

@@ -3,16 +3,13 @@
 import Link from "next/link"
 import { Button } from "@/Shamba-Connect-Website/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import { HeroSlideshow } from "@/Shamba-Connect-Website/components/home/hero-slideshow"
 
 export function Hero() {
   return (
     <section className="relative h-[75vh] md:h-[85vh] overflow-hidden">
       <div className="absolute inset-0">
-        <img
-          src="/thriving-urban-rooftop-kitchen-garden-with-fresh-v.jpg"
-          alt="Transform your space with Shamba Connect"
-          className="w-full h-full object-cover"
-        />
+        <HeroSlideshow />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/80"></div>
       </div>
 
