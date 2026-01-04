@@ -1,6 +1,6 @@
-import { BlogHero } from "@/components/blog/blog-hero"
-import { BlogCategories } from "@/components/blog/blog-categories"
-import { BlogGrid } from "@/components/blog/blog-grid"
+import { BlogHero } from "@/Shamba-Connect-Website/components/blog/blog-hero"
+import { BlogCategories } from "@/Shamba-Connect-Website/components/blog/blog-categories"
+import { BlogGrid } from "@/Shamba-Connect-Website/components/blog/blog-grid"
 
 export const metadata = {
   title: "Blog - Shamba Connect",
