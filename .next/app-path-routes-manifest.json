@@ -1,0 +1,18 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/about/page": "/about",
+  "/admin/blog/new/page": "/admin/blog/new",
+  "/admin/blog/page": "/admin/blog",
+  "/blog/[slug]/page": "/blog/[slug]",
+  "/blog/page": "/blog",
+  "/book-consultation/page": "/book-consultation",
+  "/contact/page": "/contact",
+  "/login/page": "/login",
+  "/page": "/",
+  "/privacy/page": "/privacy",
+  "/register/page": "/register",
+  "/services/page": "/services",
+  "/shop/page": "/shop",
+  "/terms/page": "/terms"
+}

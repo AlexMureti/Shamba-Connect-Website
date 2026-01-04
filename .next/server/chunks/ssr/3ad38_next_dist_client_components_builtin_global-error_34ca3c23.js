@@ -1,0 +1,3 @@
+module.exports=[85582,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(95929);a.n(d("[project]/Downloads/shamba-connect-website (3)/node_modules/.pnpm/next@16.0.10_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/client/components/builtin/global-error.js <module evaluation>"))},61114,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(95929);a.n(d("[project]/Downloads/shamba-connect-website (3)/node_modules/.pnpm/next@16.0.10_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/client/components/builtin/global-error.js"))},56023,a=>{"use strict";a.i(85582);var b=a.i(61114);a.n(b)}];
+
+//# sourceMappingURL=3ad38_next_dist_client_components_builtin_global-error_34ca3c23.js.map

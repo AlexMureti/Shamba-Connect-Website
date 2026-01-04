@@ -1,0 +1,13 @@
+var R=require("../../chunks/ssr/[turbopack]_runtime.js")("server/app/_not-found/page.js")
+R.c("server/chunks/ssr/Downloads_shamba-connect-website (3)_59568a2e._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__63752893._.js")
+R.c("server/chunks/ssr/3ad38_next_dist_esm_build_templates_app-page_1fe2c27a.js")
+R.c("server/chunks/ssr/[root-of-the-server]__2ea4093c._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__ed4bfafd._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__2f86833e._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__d0c0c9b2._.js")
+R.c("server/chunks/ssr/3ad38_next_dist_client_components_303adb7a._.js")
+R.c("server/chunks/ssr/3ad38_next_dist_client_components_builtin_forbidden_7653bf63.js")
+R.c("server/chunks/ssr/5d16c_a-connect-website (3)__next-internal_server_app__not-found_page_actions_941e6cea.js")
+R.m(69181)
+module.exports=R.m(69181).exports

@@ -1,0 +1,12 @@
+:HL["/_next/static/chunks/1be606a80d10cdc8.css","style"]
+:HL["/_next/static/chunks/7d9d883dc7e3cf3c.css","style"]
+:HL["/_next/static/media/2a65768255d6b625-s.p.d19752fb.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/797e433ab948586e-s.p.dbea232f.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.853070df.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/professional-kitchen-garden-installation-setup-wit.jpg","image"]
+:HL["/beautiful-foodscape-landscape-design-combining-aes.jpg","image"]
+:HL["/organic-vegetable-seedlings-in-propagation-trays.jpg","image"]
+:HL["/modern-rabbit-farming-unit-with-proper-housing-an.jpg","image"]
+:HL["/agricultural-training-session-hands-on-learning-w.jpg","image"]
+:HL["/organic-farming-inputs-and-supplies-garden-kits-t.jpg","image"]
+0:{"buildId":"LOL9KZc2obK6OLFbTHdOx","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"services","paramType":null,"paramKey":"services","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
