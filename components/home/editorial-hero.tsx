@@ -34,33 +34,31 @@ export function EditorialHero() {
   ]
 
   return (
-    <section className="bg-white border-b border-border">
+    <section className="bg-white border-b border-border overflow-hidden">
       <div className="container mx-auto px-4 py-6 md:py-8">
         <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-start">
           {/* Left Column: Editorial Content */}
-          <div className="space-y-3 md:space-y-4">
+          <div className="space-y-3 md:space-y-4 animate-fade-in">
             <div className="space-y-2">
-              <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-md">
-                Founded & Led by Mercy Munene
-              </div>
+
               <div className="inline-block px-3 py-1 bg-accent/10 text-accent text-sm font-medium rounded-md ml-2">
                 Since 2018
               </div>
             </div>
 
-            <h1 className="font-serif text-2xl md:text-3xl lg:text-4xl text-foreground leading-tight">
-              Urban Agriculture & Rabbit Farming Excellence Across Kenya
+            <h1 className="font-serif text-2xl md:text-3xl lg:text-5xl text-foreground leading-tight">
+              Sustainable Urban Agriculture & Commercial Rabbit Farming in Kenya
             </h1>
 
-            <p className="text-sm md:text-base text-muted-foreground leading-snug">
-              Premium rabbit meat, breeder stock, and leather tanning paired with kitchen gardens, training, and
-              supplies. Mercy Munene leads Shamba Connect's mission to transform food security across Kenya.
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+              Transforming urban spaces into productive organic gardens. We provide premium rabbit meat, breeder stock, 
+              professional kitchen garden installations, and expert agricultural training to ensure your food security.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-2 pt-1">
               <Button asChild size="sm" className="w-full sm:w-auto">
                 <Link href="/book-consultation">
-                  Consult with Mercy
+                  Book a Consultation
                   <ArrowRight className="ml-2" size={16} />
                 </Link>
               </Button>
@@ -71,7 +69,7 @@ export function EditorialHero() {
           </div>
 
           {/* Right Column: Imagery */}
-          <div className="space-y-3">
+          <div className="space-y-3 animate-slide-up">
             <ImageSlideshow
               slides={slides}
               intervalMs={5000}
@@ -81,7 +79,7 @@ export function EditorialHero() {
           </div>
         </div>
 
-        <div className="grid sm:grid-cols-3 gap-3 mt-6 md:mt-8">
+        <div className="grid sm:grid-cols-3 gap-3 mt-6 md:mt-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>
           <Link
             href="/services#rabbit-farming"
             className="group p-4 bg-card border border-primary/30 border-2 rounded-lg hover:border-primary hover:shadow-md transition-all"

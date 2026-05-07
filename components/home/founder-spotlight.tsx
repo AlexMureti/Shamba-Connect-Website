@@ -26,25 +26,21 @@ export function FounderSpotlight() {
           </div>
           <div className="space-y-6 order-1 lg:order-2">
             <div className="space-y-4">
-              <p className="text-primary font-semibold text-sm uppercase tracking-wider">Meet Our Founder</p>
+              <p className="text-primary font-semibold text-sm uppercase tracking-wider">Our Origin Story</p>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground text-balance">
-                Mercy Munene: From Personal Health Journey to Social Enterprise
+                From a Personal Vision to a Collective Mission: Shamba Connect's Journey
               </h2>
               <div className="relative pl-6 border-l-4 border-primary/30 my-6">
                 <Quote className="absolute -left-3 -top-2 text-primary/20 w-8 h-8" />
                 <p className="text-lg text-foreground/90 italic leading-relaxed">
-                  "My health challenges opened my eyes to the dangers of food adulteration. I wanted every family to
-                  have access to safe, organic food—right from their homes."
+                  "The realization of widespread food adulteration fueled a passion to make safe, organic food accessible to every family, right from their homes."
                 </p>
               </div>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Shamba Connect was born from Mercy's personal experience with food-related health challenges. After
-                discovering the impact of food adulteration on her health, she embarked on a mission to make organic,
-                safe food accessible to urban families.
+                Shamba Connect was born from a deep-seated commitment to address food-related health challenges. Recognizing the impact of food adulteration, our founders embarked on a mission to make organic, safe food accessible to urban families.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Since 2018, Mercy has built Shamba Connect into a trusted agri-enterprise, partnering with government
-                agencies, NGOs, and corporate organizations to promote urban agriculture and food security across Kenya.
+                Since 2018, Shamba Connect has grown into a trusted agri-enterprise, partnering with government agencies, NGOs, and corporate organizations to promote urban agriculture and food security across Kenya.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">

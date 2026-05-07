@@ -6,7 +6,7 @@ export function GrowthRoadmap() {
     {
       year: "2017",
       title: "The Beginning",
-      description: "Mercy's personal health journey sparks the vision",
+      description: "A personal health journey sparks the vision for safe, organic food",
       status: "completed",
     },
     {
@@ -47,7 +47,7 @@ export function GrowthRoadmap() {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Our Growth Roadmap</h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            A journey of transformation from personal health challenges to national impact
+            A journey of transformation from a personal vision to national impact
           </p>
         </div>
 

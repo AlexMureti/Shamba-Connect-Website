@@ -35,15 +35,17 @@ export function WhatWeDoSnapshot() {
   ]
 
   return (
-    <section className="py-10 md:py-14 bg-muted/30">
+    <section className="py-10 md:py-14 bg-muted/30 relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-px section-divider opacity-20" />
       <div className="container mx-auto px-4">
-        <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-8">What We Do</h2>
+        <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-8 animate-fade-in">What We Do</h2>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-          {services.map((service) => (
+          {services.map((service, index) => (
             <div
               key={service.title}
-              className="flex items-start gap-4 p-4 bg-card rounded-lg border border-border hover:border-primary/50 transition-colors"
+              className="flex items-start gap-4 p-4 bg-card rounded-lg border border-border hover-card-effect transition-all animate-slide-up"
+              style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="p-2 bg-primary/10 rounded-md flex-shrink-0">
                 <service.icon className="text-primary" size={20} />

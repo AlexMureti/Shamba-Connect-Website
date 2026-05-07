@@ -10,7 +10,7 @@ export function MediaMentions() {
     },
     {
       outlet: "Business Daily Africa",
-      title: "Social Enterprises Making Impact: Mercy Munene's Food Security Mission",
+      title: "Social Enterprises Making Impact: Shamba Connect's Food Security Mission",
       year: "2022",
     },
     {

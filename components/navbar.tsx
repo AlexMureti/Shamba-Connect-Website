@@ -87,7 +87,7 @@ export function Navbar() {
             </Link>
             {/* </CHANGE> */}
             <Button asChild>
-              <Link href="/book-consultation">Consult with us</Link>
+              <Link href="/book-consultation">Book a Consultation</Link>
             </Button>
           </div>
 

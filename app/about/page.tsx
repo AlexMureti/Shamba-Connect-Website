@@ -8,7 +8,7 @@ import { TeamStructure } from "@/Shamba-Connect-Website/components/about/team-st
 export const metadata = {
   title: "About Us - Shamba Connect",
   description:
-    "Learn about Mercy Munene's journey from personal health challenges to founding Kenya's leading urban agriculture social enterprise.",
+    "Learn about Shamba Connect's journey from a personal vision to becoming Kenya's leading urban agriculture social enterprise.",
 }
 
 export default function AboutPage() {

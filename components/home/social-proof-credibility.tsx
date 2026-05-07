@@ -17,12 +17,10 @@ export function SocialProofCredibility() {
             <h2 className="font-serif text-2xl md:text-3xl text-foreground">Built on Experience & Trust</h2>
             <div className="space-y-3">
               <p className="text-base text-foreground leading-relaxed">
-                <strong>Founded by Mercy Munene</strong>, Shamba Connect emerged from personal experience with
-                health challenges and a passion for safe, home-grown food.
+                Shamba Connect emerged from a deep understanding of the need for safe, home-grown food and sustainable agricultural practices.
               </p>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                From starting a small backyard garden in 2017 to serving hundreds of urban farmers across Kenya, we've
-                built our reputation through practical solutions and genuine care for our community's food security.
+                Since 2017, our team has been dedicated to serving hundreds of urban farmers across Kenya, building our reputation through practical solutions and genuine care for our community's food security.
               </p>
             </div>
           </div>

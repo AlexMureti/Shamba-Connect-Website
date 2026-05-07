@@ -10,7 +10,7 @@ export function WhatWeDoEnhanced() {
           <div className="relative rounded-lg overflow-hidden shadow-2xl h-[400px]">
             <img
               src="/professional-portrait-of-mercy-munene-african-woma.jpg"
-              alt="Mercy Munene - Founder of Shamba Connect"
+              alt="Shamba Connect - Leading Urban Agriculture in Kenya"
               className="w-full h-full object-cover"
             />
           </div>

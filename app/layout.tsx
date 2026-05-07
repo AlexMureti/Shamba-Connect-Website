@@ -11,18 +11,18 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 const _playfair = Playfair_Display({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Shamba Connect - Urban Agriculture Solutions in Kenya",
+  title: "Shamba Connect | Sustainable Urban Agriculture & Rabbit Farming Kenya",
   description:
-    "Professional agri-tech platform offering kitchen gardens, rabbit farming, training, and organic farming solutions for urban Kenya. Founded by Mercy Munene.",
+    "Kenya's leading urban agriculture platform. We specialize in organic kitchen garden installations, commercial rabbit farming, professional training, and sustainable farming solutions.",
   keywords: [
-    "urban agriculture",
-    "kitchen gardens",
-    "organic farming",
-    "Kenya",
-    "Mercy Munene",
-    "rabbit farming",
-    "seedlings",
-    "sustainable agriculture",
+    "urban agriculture Kenya",
+    "kitchen garden installation Nairobi",
+    "commercial rabbit farming Kenya",
+    "organic farming solutions",
+    "rabbit meat suppliers Kenya",
+    "urban farming training",
+    "sustainable agriculture Kenya",
+    "Shamba Connect",
   ],
   generator: "v0.app",
   icons: {

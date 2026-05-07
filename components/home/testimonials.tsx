@@ -11,7 +11,7 @@ export function Testimonials() {
     },
     {
       quote:
-        "The kitchen garden has been life-changing for our family. We save money on groceries and enjoy fresh organic vegetables every day. Mercy's team was professional and supportive throughout.",
+        "The kitchen garden has been life-changing for our family. We save money on groceries and enjoy fresh organic vegetables every day. The team was professional and supportive throughout.",
       author: "James Omondi",
       role: "Homeowner, Karen",
     },

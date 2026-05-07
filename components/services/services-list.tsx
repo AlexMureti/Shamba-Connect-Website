@@ -36,7 +36,7 @@ export function ServicesList() {
       icon: Rabbit,
       title: "Rabbit Unit Setup & Management",
       description:
-        "Complete rabbit farming systems including housing, breeding stock, meat production, and leather tanning. Mercy Munene's expert team ensures your success.",
+        "Complete rabbit farming systems including housing, breeding stock, meat production, and leather tanning. Our expert team ensures your success.",
       image: "/modern-rabbit-farming-unit-with-proper-housing-an.jpg",
       highlights: ["Complete setup", "Breeding stock", "Full training"],
     },

@@ -41,9 +41,9 @@ export function FounderStory() {
           </div>
           <div className="space-y-6">
             <div className="space-y-4">
-              <p className="text-primary font-semibold text-sm uppercase tracking-wider">Our Founder</p>
+              <p className="text-primary font-semibold text-sm uppercase tracking-wider">Our Story</p>
               <h1 className="text-4xl md:text-5xl font-bold text-foreground text-balance">
-                Mercy Munene: A Personal Journey to Social Impact
+                From a Personal Vision to a National Mission
               </h1>
             </div>
             <div className="flex flex-wrap gap-3">
@@ -58,25 +58,25 @@ export function FounderStory() {
             </div>
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
               <p>
-                Shamba Connect was born from personal experience. In 2017, Mercy Munene faced serious health challenges
-                that she later traced back to food adulteration and contaminated produce. This revelation became the
-                catalyst for change.
+                Shamba Connect was born from a profound personal experience. In 2017, our founder faced serious health challenges
+                traced back to food adulteration and contaminated produce. This revelation became the catalyst for a 
+                mission to transform how urban families access food.
               </p>
               <p>
-                Determined to take control of her family's food security, Mercy began growing her own organic vegetables
-                in her urban home. As she regained her health, neighbors and friends took notice. What started as a
-                personal solution quickly evolved into a mission to help others access safe, organic food.
+                What began as a personal solution in a small urban home quickly evolved into a collective mission. 
+                As the benefits of organic, home-grown food became clear, the vision expanded to help others achieve 
+                the same food security and health benefits.
               </p>
               <p>
-                In 2018, Mercy founded Shamba Connect as a social enterprise dedicated to making urban agriculture
-                accessible, practical, and sustainable for Kenyan families, schools, and institutions. Today, the
-                company has installed over 2000 gardens and trained more than 5000 individuals in sustainable farming
-                practices.
+                In 2018, Shamba Connect was established as a social enterprise dedicated to making urban agriculture
+                accessible, practical, and sustainable for Kenyan families, schools, and institutions. Today, our 
+                team has installed over 2000 gardens and trained more than 5000 individuals in sustainable farming
+                practices, building a healthier, more food-secure Kenya.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button asChild size="lg">
-                <Link href="/book-consultation">Work With Mercy</Link>
+                <Link href="/book-consultation">Book a Consultation</Link>
               </Button>
               <Button asChild size="lg" variant="outline">
                 <Link href="/contact">Get in Touch</Link>
