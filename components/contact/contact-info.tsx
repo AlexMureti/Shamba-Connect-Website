@@ -32,10 +32,10 @@ export function ContactInfo() {
             <div>
               <p className="font-semibold text-foreground mb-1">Phone</p>
               <a
-                href="tel:+254700000000"
+                href="tel:+254725684352"
                 className="text-muted-foreground hover:text-primary transition-colors underline"
               >
-                +254 700 000 000
+                +254 725 684 352
               </a>
             </div>
           </div>
@@ -77,7 +77,7 @@ export function ContactInfo() {
           </div>
           <Button asChild className="w-full bg-white text-primary hover:bg-white/90">
             <a
-              href="https://wa.me/254700000000?text=Hello%20Shamba%20Connect!%20I'm%20interested%20in%20learning%20more%20about%20your%20services."
+              href="https://wa.me/254725684352?text=Hello%20Shamba%20Connect!%20I'm%20interested%20in%20learning%20more%20about%20your%20services."
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -95,28 +95,36 @@ export function ContactInfo() {
         <CardContent>
           <div className="flex gap-4">
             <a
-              href="#"
+              href="https://www.facebook.com/shambaconnectke"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
               aria-label="Visit our Facebook page"
             >
               <Facebook size={24} />
             </a>
             <a
-              href="#"
+              href="https://x.com/shambaconnect"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
               aria-label="Follow us on Twitter"
             >
               <Twitter size={24} />
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/shamba_connect"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
               aria-label="Follow us on Instagram"
             >
               <Instagram size={24} />
             </a>
             <a
-              href="#"
+              href="https://ke.linkedin.com/in/mercy-munene-mba-bb655620"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
               aria-label="Connect on LinkedIn"
             >
