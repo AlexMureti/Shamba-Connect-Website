@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState, useMemo } from "react"
+import Image from "next/image"
 import { Card, CardContent, CardHeader, CardTitle } from "@/Shamba-Connect-Website/components/ui/card"
 import { Button } from "@/Shamba-Connect-Website/components/ui/button"
 import Link from "next/link"
@@ -53,11 +54,15 @@ export function RelatedPosts({ currentPostId, category }: RelatedPostsProps) {
         <div className="grid md:grid-cols-3 gap-6">
           {relatedPosts.map((post) => (
             <Card key={post.id} className="overflow-hidden hover:shadow-lg transition-shadow">
-              <img
-                src={post.featuredImage || "/placeholder.svg"}
-                alt={post.title}
-                className="w-full h-48 object-cover"
-              />
+              <div className="relative w-full h-48">
+                <Image
+                  src={post.featuredImage || "/placeholder.svg"}
+                  alt={post.title}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
               <CardHeader>
                 <CardTitle className="text-lg">{post.title}</CardTitle>
               </CardHeader>

@@ -11,7 +11,7 @@ import { Textarea } from "@/Shamba-Connect-Website/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/Shamba-Connect-Website/components/ui/select"
 import { ImagePlus, Save, Eye } from "lucide-react"
 import Link from "next/link"
-import { saveBlogPost, generateSlug } from "@/Shamba-Connect-Website/lib/blog-store"
+import { saveBlogPost, generateSlug, calculateReadTime } from "@/Shamba-Connect-Website/lib/blog-store"
 
 export default function NewBlogPostPage() {
   const router = useRouter()
@@ -82,7 +82,7 @@ export default function NewBlogPostPage() {
       featuredImage,
       slug,
       published: status === "published",
-      readTime: "5 min read",
+      readTime: calculateReadTime(content),
     })
 
     // Trigger storage event for same-tab updates

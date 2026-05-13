@@ -1,6 +1,7 @@
 "use client"
 
 import { Calendar, User, Share2, Eye } from "lucide-react"
+import Image from "next/image"
 import { Button } from "@/Shamba-Connect-Website/components/ui/button"
 import type { BlogPost as BlogPostType } from "@/Shamba-Connect-Website/lib/blog-store"
 import { useEffect } from "react"
@@ -97,11 +98,15 @@ export function BlogPost({ post }: BlogPostProps) {
             </div>
           </div>
 
-          <img
-            src={post.featuredImage || "/placeholder.svg"}
-            alt={post.title}
-            className="w-full h-96 object-cover rounded-lg shadow-lg"
-          />
+          <div className="relative w-full h-96 rounded-lg shadow-lg overflow-hidden">
+            <Image
+              src={post.featuredImage || "/placeholder.svg"}
+              alt={post.title}
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
 
           <div className="prose prose-lg max-w-none space-y-6">
             <p className="text-lg text-muted-foreground leading-relaxed">{post.excerpt}</p>

@@ -350,6 +350,23 @@ export const useBlogStore = create<BlogStore>((set, get) => ({
   },
 }))
 
+export function calculateReadTime(content: string): string {
+  // Average reading speed is 200 words per minute
+  const WORDS_PER_MINUTE = 200
+  
+  // Count words in the content
+  const wordCount = content.trim().split(/\s+/).length
+  
+  // Calculate read time in minutes
+  const readTimeMinutes = Math.ceil(wordCount / WORDS_PER_MINUTE)
+  
+  // Return formatted string
+  if (readTimeMinutes < 1) {
+    return "< 1 min read"
+  }
+  return `${readTimeMinutes} min read`
+}
+
 export function generateSlug(title: string): string {
   return title
     .toLowerCase()

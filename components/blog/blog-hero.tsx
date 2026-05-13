@@ -1,3 +1,5 @@
+import { BlogSearch } from "./blog-search"
+
 export function BlogHero() {
   return (
     <section className="py-16 bg-background">
@@ -6,9 +8,10 @@ export function BlogHero() {
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">
             Urban Farming Knowledge Hub
           </h1>
-          <p className="text-lg text-muted-foreground leading-relaxed">
+          <p className="text-lg text-muted-foreground leading-relaxed mb-8">
             Expert tips, practical guides, and inspiring stories from the world of urban agriculture
           </p>
+          <BlogSearch />
         </div>
       </div>
     </section>
