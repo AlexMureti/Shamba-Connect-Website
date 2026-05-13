@@ -52,14 +52,7 @@ export function ProductGrid() {
       description: "Large breed, excellent for meat production",
       image: "/breeder-rabbits-quality-stock.jpg",
     },
-    {
-      id: 106,
-      name: "Tanned Rabbit Leather (per piece)",
-      category: "Rabbit Leather",
-      price: 1500,
-      description: "Premium quality tanned rabbit leather for crafts",
-      image: "/tanned-rabbit-leather-premium.jpg",
-    },
+
     {
       id: 107,
       name: "Pet Rabbit - Dwarf Breed",
