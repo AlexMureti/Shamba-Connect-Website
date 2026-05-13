@@ -56,7 +56,7 @@ export function ContactForm() {
 
           <div className="space-y-2">
             <Label htmlFor="contact-phone">Phone Number</Label>
-            <Input id="contact-phone" type="tel" placeholder="+254 700 000 000" />
+            <Input id="contact-phone" type="tel" placeholder="+254 725 684 352" />
           </div>
 
           <div className="space-y-2">

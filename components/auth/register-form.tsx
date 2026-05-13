@@ -45,7 +45,7 @@ export function RegisterForm() {
 
       <div className="space-y-2">
         <Label htmlFor="register-phone">Phone Number</Label>
-        <Input id="register-phone" type="tel" placeholder="+254 700 000 000" autoComplete="tel" />
+        <Input id="register-phone" type="tel" placeholder="+254 725 684 352" autoComplete="tel" />
       </div>
 
       <div className="space-y-2">
