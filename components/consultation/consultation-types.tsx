@@ -8,14 +8,16 @@ export function ConsultationTypes() {
       title: "Phone Consultation",
       description: "Quick 30-minute call to discuss your project and get initial guidance",
       duration: "30 minutes",
-      price: "KES 1,500",
+      price: "FREE",
+      isFree: true,
     },
     {
       icon: Video,
       title: "Virtual Consultation",
       description: "Detailed video call with screen sharing to review your space and create a plan",
       duration: "60 minutes",
-      price: "KES 3,500",
+      price: "FREE",
+      isFree: true,
     },
     {
       icon: MapPin,
@@ -48,7 +50,7 @@ export function ConsultationTypes() {
                 <CardDescription>
                   {type.description}
                   <div className="mt-2 text-primary font-semibold">{type.duration}</div>
-                  <div className="mt-1 text-foreground font-semibold">{type.price}</div>
+                  <div className={`mt-1 font-semibold ${type.isFree ? 'text-green-600' : 'text-foreground'}`}>{type.price}</div>
                   {type.note && <div className="mt-1 text-xs">{type.note}</div>}
                 </CardDescription>
               </CardHeader>

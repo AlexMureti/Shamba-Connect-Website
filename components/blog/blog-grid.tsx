@@ -20,9 +20,11 @@ export function BlogGrid() {
   const posts = useMemo(() => {
     let publishedPosts = allPosts.filter((p) => p.published)
     
-    // Filter by category
+    // Filter by category - convert category name to slug format for comparison
     if (selectedCategory !== "all") {
-      publishedPosts = publishedPosts.filter((p) => p.category.toLowerCase().replace(/\s+/g, "-") === selectedCategory)
+      const categorySlug = selectedCategory
+      const categoryName = categorySlug.replace(/-/g, " ").split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ")
+      publishedPosts = publishedPosts.filter((p) => p.category === categoryName)
     }
     
     // Filter by search query

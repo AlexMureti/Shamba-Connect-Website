@@ -4,9 +4,11 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Button } from "@/Shamba-Connect-Website/components/ui/button"
 import { ShoppingCart, Phone } from "lucide-react"
 import { useState } from "react"
+import { useCartStore } from "@/Shamba-Connect-Website/lib/cart-store"
 
 export function ProductGrid() {
-  const [cart, setCart] = useState<number[]>([])
+  const { addItem } = useCartStore()
+  const [addedMessage, setAddedMessage] = useState<number | null>(null)
 
   const products = [
     // Rabbit Products
@@ -141,8 +143,16 @@ export function ProductGrid() {
     },
   ]
 
-  const addToCart = (productId: number) => {
-    setCart([...cart, productId])
+  const handleAddToCart = (product: (typeof products)[0]) => {
+    addItem({
+      id: product.id,
+      name: product.name,
+      price: product.price,
+      image: product.image,
+      category: product.category,
+    })
+    setAddedMessage(product.id)
+    setTimeout(() => setAddedMessage(null), 2000)
   }
 
   const whatsappOrder = (product: (typeof products)[0]) => {
@@ -181,9 +191,13 @@ export function ProductGrid() {
                 <p className="text-sm text-muted-foreground line-clamp-2">{product.description}</p>
               </CardContent>
               <CardFooter className="flex-col gap-2 pt-0">
-                <Button onClick={() => addToCart(product.id)} className="w-full">
+                <Button 
+                  onClick={() => handleAddToCart(product)} 
+                  className="w-full"
+                  variant={addedMessage === product.id ? "default" : "default"}
+                >
                   <ShoppingCart size={16} className="mr-2" />
-                  Add to Cart
+                  {addedMessage === product.id ? "Added!" : "Add to Cart"}
                 </Button>
                 <Button onClick={() => whatsappOrder(product)} variant="outline" className="w-full">
                   <Phone size={16} className="mr-2" />
@@ -194,14 +208,7 @@ export function ProductGrid() {
           ))}
         </div>
 
-        {cart.length > 0 && (
-          <div className="fixed bottom-6 right-6 bg-primary text-primary-foreground rounded-full w-14 h-14 md:w-16 md:h-16 flex items-center justify-center shadow-2xl hover:scale-110 transition-transform cursor-pointer z-50">
-            <ShoppingCart size={24} />
-            <span className="absolute -top-2 -right-2 bg-destructive text-destructive-foreground rounded-full w-7 h-7 flex items-center justify-center text-sm font-bold">
-              {cart.length}
-            </span>
-          </div>
-        )}
+
       </div>
     </section>
   )
