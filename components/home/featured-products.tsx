@@ -8,38 +8,34 @@ const featuredProducts = [
   {
     id: 1,
     name: "10-Pot Vertical Garden Kit",
-    price: "KES 4,500",
     useCase: "Perfect for balconies & small spaces",
     image: "/vertical-garden-kit-with-pots.jpg",
     link: "/shop#garden-kits",
-    whatsappLink: "https://wa.me/254725684352?text=Hi%20Shamba%20Connect!%20I'm%20interested%20in%20the%2010-Pot%20Vertical%20Garden%20Kit%20(KES%204,500).%20Can%20you%20provide%20more%20details?",
+    whatsappLink: "https://wa.me/254725684352?text=Hi%20Shamba%20Connect!%20I'm%20interested%20in%20the%2010-Pot%20Vertical%20Garden%20Kit.%20Can%20you%20provide%20more%20details?",
   },
   {
     id: 2,
     name: "Starter Rabbit Cage (2 Breeders)",
-    price: "KES 8,000",
     useCase: "Complete setup for rabbit farming",
     image: "/outdoor-rabbit-hutches-professional.jpg",
     link: "/shop#rabbit-supplies",
-    whatsappLink: "https://wa.me/254725684352?text=Hi%20Shamba%20Connect!%20I'm%20interested%20in%20the%20Starter%20Rabbit%20Cage%202%20Breeders%20(KES%208,000).%20Can%20you%20provide%20more%20details?",
+    whatsappLink: "https://wa.me/254725684352?text=Hi%20Shamba%20Connect!%20I'm%20interested%20in%20the%20Starter%20Rabbit%20Cage%202%20Breeders.%20Can%20you%20provide%20more%20details?",
   },
   {
     id: 3,
     name: "Organic Seedling Pack",
-    price: "From KES 800",
     useCase: "Balcony-friendly vegetables",
     image: "/organic-vegetable-seedlings-in-propagation-trays.jpg",
     link: "/shop#seedlings",
-    whatsappLink: "https://wa.me/254725684352?text=Hi%20Shamba%20Connect!%20I'm%20interested%20in%20the%20Organic%20Seedling%20Pack%20(From%20KES%20800).%20Can%20you%20provide%20more%20details?",
+    whatsappLink: "https://wa.me/254725684352?text=Hi%20Shamba%20Connect!%20I'm%20interested%20in%20the%20Organic%20Seedling%20Pack.%20Can%20you%20provide%20more%20details?",
   },
   {
     id: 4,
     name: "Premium Rabbit Meat (1kg)",
-    price: "KES 1,200",
     useCase: "Fresh, hormone-free protein",
     image: "/rabbit-meat-fresh-premium.jpg",
     link: "/shop#rabbit-meat",
-    whatsappLink: "https://wa.me/254725684352?text=Hi%20Shamba%20Connect!%20I'm%20interested%20in%20the%20Premium%20Rabbit%20Meat%201kg%20(KES%201,200).%20Can%20you%20provide%20more%20details?",
+    whatsappLink: "https://wa.me/254725684352?text=Hi%20Shamba%20Connect!%20I'm%20interested%20in%20the%20Premium%20Rabbit%20Meat%201kg.%20Can%20you%20provide%20more%20details?",
   },
 ]
 
@@ -73,8 +69,7 @@ export function FeaturedProducts() {
                   {product.name}
                 </h3>
                 <p className="text-xs text-muted-foreground mb-2 leading-snug">{product.useCase}</p>
-                <div className="flex items-center justify-between">
-                  <span className="font-bold text-base text-primary">{product.price}</span>
+                <div className="flex justify-end">
                   <Button asChild size="sm" variant="ghost" className="h-8 px-3">
                     <a href={product.whatsappLink} target="_blank" rel="noopener noreferrer">
                       <ShoppingCart size={14} className="mr-1" />
