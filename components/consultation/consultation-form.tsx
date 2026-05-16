@@ -71,7 +71,7 @@ export function ConsultationForm() {
 
               <div className="space-y-2">
                 <Label htmlFor="phone">Phone Number *</Label>
-                <Input id="phone" type="tel" required placeholder="+254 725 684 352" />
+                <Input id="phone" type="tel" required placeholder="0725 684352" />
               </div>
 
               <div className="space-y-2">

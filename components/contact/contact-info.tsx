@@ -32,10 +32,10 @@ export function ContactInfo() {
             <div>
               <p className="font-semibold text-foreground mb-1">Phone</p>
               <a
-                href="tel:+254725684352"
+                href="tel:0725 684352"
                 className="text-muted-foreground hover:text-primary transition-colors underline"
               >
-                +254 725 684 352
+                0725 684352
               </a>
             </div>
           </div>

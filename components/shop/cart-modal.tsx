@@ -158,7 +158,7 @@ export function CartModal({ isOpen, onClose }: CartModalProps) {
                   <label className="text-sm font-semibold block mb-1">Phone Number *</label>
                   <Input
                     type="tel"
-                    placeholder="+254 725 684 352"
+                    placeholder="0725 684352"
                     value={customerPhone}
                     onChange={(e) => setCustomerPhone(e.target.value)}
                     className="text-sm"
