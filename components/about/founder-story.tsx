@@ -11,7 +11,7 @@ export function FounderStory() {
             <div className="absolute -inset-4 bg-gradient-to-br from-primary to-accent rounded-lg blur-xl opacity-20"></div>
             <div className="relative">
               <img
-                src="/professional-portrait-of-mercy-munene-african-woma.jpg"
+                src="/mercy-munene-founder-with-rabbit.jpg"
                 alt="Mercy Munene, Founder and CEO of Shamba Connect"
                 className="rounded-lg shadow-2xl w-full h-[600px] object-cover"
               />
