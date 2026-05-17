@@ -123,7 +123,7 @@ export function Navbar() {
 
       {/* Floating WhatsApp button */}
       <a
-        href={`https://wa.me/25425684352?text=${encodeURIComponent(
+        href={`https://wa.me/254725684352?text=${encodeURIComponent(
           "Hi Shamba Connect! I'd like to learn more about kitchen gardens / rabbit farming and book a consultation."
         )}`}
         target="_blank"

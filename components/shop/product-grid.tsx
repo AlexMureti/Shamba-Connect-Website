@@ -150,7 +150,7 @@ export function ProductGrid() {
 
   const whatsappOrder = (product: (typeof products)[0]) => {
     const message = `Hi! I'm interested in ordering: ${product.name} (KES ${product.price})`
-    window.open(`https://wa.me/254724731425?text=${encodeURIComponent(message)}`, "_blank")
+    window.open(`https://wa.me/254725684352?text=${encodeURIComponent(message)}`, "_blank")
   }
 
   return (
