@@ -124,8 +124,8 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-2 text-sm text-muted-foreground">
                 <Mail size={16} className="mt-0.5 flex-shrink-0" />
-                <a href="mailto:info@shambaconnect.co.ke" className="hover:text-primary transition-colors">
-                  info@shambaconnect.co.ke
+                <a href="mailto:shambaconnect@gmail.com" className="hover:text-primary transition-colors">
+                  shambaconnect@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-2 text-sm text-muted-foreground">

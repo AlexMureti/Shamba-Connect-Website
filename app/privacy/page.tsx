@@ -39,7 +39,7 @@ export default function PrivacyPage() {
           <section className="space-y-4">
             <h2 className="text-2xl font-bold text-foreground">Contact Us</h2>
             <p className="text-muted-foreground leading-relaxed">
-              If you have any questions about this Privacy Policy, please contact us at info@shambaconnect.co.ke
+              If you have any questions about this Privacy Policy, please contact us at shambaconnect@gmail.com
             </p>
           </section>
         </div>

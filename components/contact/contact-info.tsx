@@ -17,10 +17,10 @@ export function ContactInfo() {
             <div>
               <p className="font-semibold text-foreground mb-1">Email</p>
               <a
-                href="mailto:info@shambaconnect.co.ke"
+                href="mailto:shambaconnect@gmail.com"
                 className="text-muted-foreground hover:text-primary transition-colors underline"
               >
-                info@shambaconnect.co.ke
+                shambaconnect@gmail.com
               </a>
             </div>
           </div>

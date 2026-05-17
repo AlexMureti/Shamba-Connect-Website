@@ -38,7 +38,7 @@ export default function TermsPage() {
           <section className="space-y-4">
             <h2 className="text-2xl font-bold text-foreground">Contact Information</h2>
             <p className="text-muted-foreground leading-relaxed">
-              For questions about these Terms of Service, please contact us at info@shambaconnect.co.ke
+              For questions about these Terms of Service, please contact us at shambaconnect@gmail.com
             </p>
           </section>
         </div>
