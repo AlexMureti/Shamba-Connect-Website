@@ -24,8 +24,7 @@ export function ShopServicesTeasers() {
                   planting guide.
                 </p>
               </div>
-              <div className="flex items-center justify-between">
-                <span className="text-lg font-semibold text-primary">KSh 4,500</span>
+              <div className="flex justify-end">
                 <Button asChild size="sm">
                   <Link href="/shop">
                     <ShoppingCart className="mr-2" size={16} />
@@ -55,8 +54,7 @@ export function ShopServicesTeasers() {
                   farming setup.
                 </p>
               </div>
-              <div className="flex items-center justify-between">
-                <span className="text-lg font-semibold text-primary">From KSh 2,000</span>
+              <div className="flex justify-end">
                 <Button asChild size="sm" variant="outline">
                   <Link href="/book-consultation">
                     <Calendar className="mr-2" size={16} />
