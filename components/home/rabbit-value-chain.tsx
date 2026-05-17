@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { Card } from "@/Shamba-Connect-Website/components/ui/card"
 import { Button } from "@/Shamba-Connect-Website/components/ui/button"
-import { Rabbit, Beef, ShoppingBag, Shirt, ArrowRight } from "lucide-react"
+import { Rabbit, Beef, ShoppingBag, ArrowRight } from "lucide-react"
 
 export function RabbitValueChain() {
   const offerings = [
@@ -25,13 +25,6 @@ export function RabbitValueChain() {
       icon: Rabbit,
       image: "/breeder-rabbits-quality-stock.jpg",
       href: "/shop?category=breeder-rabbits",
-    },
-    {
-      title: "Rabbit Leather",
-      description: "Tanned rabbit leather for crafts and fashion",
-      icon: Shirt,
-      image: "/tanned-rabbit-leather-premium.jpg",
-      href: "/shop?category=rabbit-leather",
     },
   ]
 
