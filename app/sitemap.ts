@@ -1,18 +1,49 @@
 import type { MetadataRoute } from "next"
-import { useBlogStore } from "@/Shamba-Connect-Website/lib/blog-store"
+
+// Default blog posts data (same as in blog-store)
+const defaultPosts = [
+  {
+    slug: "getting-started-kitchen-garden",
+    date: "Jan 15, 2024",
+    published: true,
+  },
+  {
+    slug: "vegetables-thrive-nairobi",
+    date: "Jan 10, 2024",
+    published: true,
+  },
+  {
+    slug: "rabbit-farming-101",
+    date: "Jan 5, 2024",
+    published: true,
+  },
+  {
+    slug: "natural-pest-control-methods",
+    date: "Dec 28, 2023",
+    published: true,
+  },
+  {
+    slug: "success-story-wanjiru-family",
+    date: "Dec 20, 2023",
+    published: true,
+  },
+  {
+    slug: "composting-made-easy",
+    date: "Dec 15, 2023",
+    published: true,
+  },
+]
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  // Get all published blog posts from the store
-  const store = useBlogStore.getState()
-  const publishedPosts = store.posts.filter((post) => post.published)
-
   // Create sitemap entries for blog posts
-  const blogEntries = publishedPosts.map((post) => ({
-    url: `https://shambaconnect.co.ke/blog/${post.slug}`,
-    lastModified: new Date(post.date),
-    changeFrequency: "weekly" as const,
-    priority: 0.8,
-  }))
+  const blogEntries = defaultPosts
+    .filter((post) => post.published)
+    .map((post) => ({
+      url: `https://shambaconnect.co.ke/blog/${post.slug}`,
+      lastModified: new Date(post.date),
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    }))
 
   // Main site pages
   const mainPages: MetadataRoute.Sitemap = [
