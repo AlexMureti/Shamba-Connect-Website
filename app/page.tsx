@@ -6,6 +6,7 @@ import { WhatWeDoSnapshot } from "@/Shamba-Connect-Website/components/home/what-
 import { SocialProofCredibility } from "@/Shamba-Connect-Website/components/home/social-proof-credibility"
 import { CommunityCTA } from "@/Shamba-Connect-Website/components/home/community-cta"
 import { VideoShowcase } from "@/Shamba-Connect-Website/components/home/video-showcase"
+import { InstagramFeed } from "@/Shamba-Connect-Website/components/home/instagram-feed"
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
       <InTheField />
       <WhatWeDoSnapshot />
       <SocialProofCredibility />
+      <InstagramFeed />
       <VideoShowcase />
       <CommunityCTA />
     </>

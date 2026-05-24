@@ -29,7 +29,7 @@ export function LatestFromShamba() {
     <section className="bg-muted/30 border-b border-border">
       <div className="container mx-auto px-4 py-8 md:py-10">
         <div className="flex items-center justify-between mb-4">
-          <h2 className="font-serif text-xl md:text-2xl font-semibold">Latest from Shamba Connect</h2>
+          <h2 className="font-serif text-2xl md:text-3xl font-bold tracking-tight">The Newsroom</h2>
           <Link href="/blog" className="text-sm text-primary hover:underline flex items-center gap-1">
             All Articles
             <ArrowRight size={14} />

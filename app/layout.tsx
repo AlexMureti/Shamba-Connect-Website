@@ -11,19 +11,46 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 const _playfair = Playfair_Display({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Shamba Connect | Sustainable Urban Agriculture & Rabbit Farming Kenya",
+  title: "Shamba Connect | Urban Agriculture, Rabbit Farming & Kitchen Gardens Kenya",
   description:
-    "Kenya's leading urban agriculture platform. We specialize in organic kitchen garden installations, commercial rabbit farming, professional training, and sustainable farming solutions.",
+    "Kenya's #1 urban agriculture platform. Professional kitchen garden installations, premium rabbit farming supplies, organic seedlings, and expert agricultural training for food security.",
   keywords: [
     "urban agriculture Kenya",
     "kitchen garden installation Nairobi",
     "commercial rabbit farming Kenya",
     "organic farming solutions",
     "rabbit meat suppliers Kenya",
+    "vertical garden kits",
     "urban farming training",
     "sustainable agriculture Kenya",
+    "home gardening Nairobi",
     "Shamba Connect",
+    "food security Kenya",
+    "rabbit breeder Kenya",
   ],
+  openGraph: {
+    title: "Shamba Connect | Transform Your Urban Space into a Productive Garden",
+    description: "Join 5,000+ Kenyans growing their own organic food. Professional installations, premium rabbit farming, and expert training.",
+    url: "https://shambaconnect.co.ke",
+    type: "website",
+    images: [
+      {
+        url: "/mercy-munene-founder-with-rabbit.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Mercy Munene - Founder of Shamba Connect",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Shamba Connect - Urban Agriculture & Rabbit Farming Kenya",
+    description: "Transform your urban space into a productive organic garden. Professional installations & training.",
+    images: ["/mercy-munene-founder-with-rabbit.jpg"],
+  },
+  alternates: {
+    canonical: "https://shambaconnect.co.ke",
+  },
   generator: "v0.app",
   icons: {
     icon: [

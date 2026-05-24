@@ -46,13 +46,13 @@ export function EditorialHero() {
               </div>
             </div>
 
-            <h1 className="font-serif text-2xl md:text-3xl lg:text-5xl text-foreground leading-tight">
-              Sustainable Urban Agriculture & Commercial Rabbit Farming in Kenya
+            <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl text-foreground leading-[1.1] tracking-tight">
+              Revolutionizing Urban Agriculture & Rabbit Farming in Kenya
             </h1>
 
-            <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-              Transforming urban spaces into productive organic gardens. We provide premium rabbit meat, breeder stock, 
-              professional kitchen garden installations, and expert agricultural training to ensure your food security.
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
+              From premium rabbit breeding to professional vertical garden installations, we are building a food-secure future. 
+              <span className="text-primary font-semibold"> Join over 5,000 Kenyans</span> already growing their own organic food.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-2 pt-1">

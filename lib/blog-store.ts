@@ -269,6 +269,43 @@ Add finished compost to garden beds before planting. Use as mulch around establi
     views: 201,
     readTime: "5 min read",
   },
+  {
+    id: "7",
+    title: "Transforming Urban Spaces: The Beauty of Sustainable Kitchen Gardens",
+    excerpt:
+      "See how we're turning small urban corners into vibrant, productive green spaces. This latest installation showcases the power of organic gardening in the heart of the city.",
+    content: `## The Urban Green Revolution
+
+In the midst of concrete jungles, a new movement is taking root. Urban agriculture is no longer just a hobby; it's a vital part of sustainable city living. Our latest project in Nairobi demonstrates how even the smallest spaces can be transformed into lush, productive gardens.
+
+## Why Urban Gardening Matters
+
+**Food Security**: Growing your own food ensures access to fresh, organic produce regardless of market fluctuations.
+
+**Health & Wellness**: Gardening is therapeutic and ensures your family eats chemical-free vegetables.
+
+**Sustainability**: Reducing food miles and recycling kitchen waste through composting helps the planet.
+
+## Features of This Installation
+
+This specific project utilized a combination of raised beds and vertical gardening techniques to maximize yield in a limited footprint. We focused on:
+
+- **Companion Planting**: Mixing flowers and vegetables to naturally deter pests.
+- **Organic Soil Enrichment**: Using our premium rabbit manure compost.
+- **Smart Irrigation**: Efficient water use to keep plants thriving year-round.
+
+## Get Started Today
+
+You don't need a large farm to be a farmer. Whether it's a balcony, a small backyard, or a rooftop, Shamba Connect can help you start your journey to food independence.`,
+    category: "Kitchen Gardens",
+    author: "Mercy Munene",
+    date: "May 24, 2024",
+    featuredImage: "/urban-garden-transformation.jpg",
+    slug: "transforming-urban-spaces-sustainable-gardens",
+    published: true,
+    views: 10,
+    readTime: "3 min read",
+  },
 ]
 
 const getInitialPosts = (): BlogPost[] => {

@@ -6,8 +6,8 @@ export function CommunityCTA() {
   return (
     <section className="py-12 md:py-16 bg-primary/5 border-y border-primary/20">
       <div className="container mx-auto px-4 text-center max-w-3xl">
-        <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl text-foreground mb-4">
-          Start Your Journey to Safe, Home-Grown Food
+        <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-4 leading-tight">
+          Ready to Grow Your Own Food Security?
         </h2>
         <p className="text-base md:text-lg text-muted-foreground mb-8 leading-relaxed">
           Whether you're new to urban farming or looking to expand your operations, we're here to guide you every step
