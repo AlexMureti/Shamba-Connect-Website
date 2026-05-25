@@ -10,11 +10,11 @@ export function Footer() {
           {/* Brand Column */}
           <div className="space-y-4">
             <Image
-              src="/images/shambaconnect.png"
+              src="/logo-icon.png"
               alt="Shamba Connect"
-              width={120}
-              height={60}
-              className="h-14 w-auto"
+              width={50}
+              height={50}
+              className="h-12 w-auto"
             />
             <p className="text-sm text-muted-foreground">
               Transforming urban agriculture through sustainable farming solutions and empowering communities across

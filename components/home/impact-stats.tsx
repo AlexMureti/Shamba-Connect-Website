@@ -8,28 +8,28 @@ export function ImpactStats() {
       value: "2000+",
       label: "Kitchen Gardens Installed",
       description: "Across homes, schools, and institutions",
-      color: "text-green-600",
+      color: "text-primary-foreground",
     },
     {
       icon: Users,
       value: "5000+",
       label: "Farmers & Individuals Trained",
       description: "In sustainable agriculture practices",
-      color: "text-blue-600",
+      color: "text-primary-foreground",
     },
     {
       icon: Heart,
       value: "1000+",
       label: "Mothers Supported",
       description: "Through nutrition and farming programs",
-      color: "text-red-600",
+      color: "text-primary-foreground",
     },
     {
       icon: TrendingUp,
       value: "50+",
       label: "Community Programs",
       description: "Food security and health initiatives",
-      color: "text-purple-600",
+      color: "text-primary-foreground",
     },
   ]
 

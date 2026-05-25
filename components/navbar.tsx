@@ -59,12 +59,13 @@ export function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <Image
-              src="/images/shambaconnect.png"
+              src="/logo-icon.png"
               alt="Shamba Connect"
-              width={120}
-              height={60}
-              className="h-14 w-auto"
+              width={50}
+              height={50}
+              className="h-12 w-auto"
             />
+            <span className="hidden sm:inline font-bold text-lg text-primary">Shamba Connect</span>
           </Link>
 
           {/* Desktop Navigation */}

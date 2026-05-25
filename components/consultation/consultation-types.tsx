@@ -50,7 +50,7 @@ export function ConsultationTypes() {
                 <CardDescription>
                   {type.description}
                   <div className="mt-2 text-primary font-semibold">{type.duration}</div>
-                  <div className={`mt-1 font-semibold ${type.isFree ? 'text-green-600' : 'text-foreground'}`}>{type.price}</div>
+                  <div className={`mt-1 font-semibold ${type.isFree ? 'text-primary' : 'text-foreground'}`}>{type.price}</div>
                   {type.note && <div className="mt-1 text-xs">{type.note}</div>}
                 </CardDescription>
               </CardHeader>
