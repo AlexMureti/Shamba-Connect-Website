@@ -58,7 +58,7 @@ export default function AdminBlogPage() {
                         </span>
                         <span>{post.date}</span>
                         <span
-                          className={`px-2 py-1 rounded-full text-xs ${post.published ? "bg-green-500/10 text-green-600" : "bg-yellow-500/10 text-yellow-600"
+                          className={`px-2 py-1 rounded-full text-xs ${post.published ? "bg-primary/10 text-primary" : "bg-yellow-500/10 text-yellow-600"
                             }`}
                         >
                           {post.published ? "published" : "draft"}
