@@ -120,7 +120,7 @@ export function InstagramFeed() {
                     View on Instagram
                   </div>
                 </div>
-              </div>
+              </a>
             ))
           )}
         </div>
