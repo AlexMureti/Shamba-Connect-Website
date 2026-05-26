@@ -82,31 +82,31 @@ export function EditorialHero() {
         <div className="grid sm:grid-cols-3 gap-3 mt-6 md:mt-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>
           <Link
             href="/services#rabbit-farming"
-            className="group p-4 bg-card border border-primary/30 border-2 rounded-lg hover:border-primary hover:shadow-md transition-all"
+            className="group p-4 bg-card border border-secondary/30 border-2 rounded-lg hover:border-secondary hover:shadow-md transition-all"
           >
             <div className="flex items-start gap-3">
-              <div className="p-2 bg-accent/10 rounded-md group-hover:bg-accent/20 transition-colors">
-                <Rabbit className="text-accent" size={20} />
+              <div className="p-2 bg-secondary/10 rounded-md group-hover:bg-secondary/20 transition-colors">
+                <Rabbit className="text-secondary" size={20} />
               </div>
               <div className="flex-1">
-                <h3 className="font-semibold text-sm mb-0.5 group-hover:text-accent transition-colors">
+                <h3 className="font-semibold text-sm mb-0.5 group-hover:text-secondary transition-colors">
                   Rabbit Farming
                 </h3>
-                <p className="text-xs text-muted-foreground">Meat • Breeding • Leather</p>
+                <p className="text-xs text-muted-foreground">Meat • Breeding • Training</p>
               </div>
             </div>
           </Link>
 
           <Link
             href="/services#kitchen-gardens"
-            className="group p-4 bg-card border border-border rounded-lg hover:border-primary hover:shadow-md transition-all"
+            className="group p-4 bg-card border border-border rounded-lg hover:border-secondary hover:shadow-md transition-all"
           >
             <div className="flex items-start gap-3">
-              <div className="p-2 bg-primary/10 rounded-md group-hover:bg-primary/20 transition-colors">
-                <Sprout className="text-primary" size={20} />
+              <div className="p-2 bg-secondary/10 rounded-md group-hover:bg-secondary/20 transition-colors">
+                <Sprout className="text-secondary" size={20} />
               </div>
               <div className="flex-1">
-                <h3 className="font-semibold text-sm mb-0.5 group-hover:text-primary transition-colors">
+                <h3 className="font-semibold text-sm mb-0.5 group-hover:text-secondary transition-colors">
                   Kitchen Gardens
                 </h3>
                 <p className="text-xs text-muted-foreground">Professional installations</p>
@@ -116,14 +116,14 @@ export function EditorialHero() {
 
           <Link
             href="/services#training"
-            className="group p-4 bg-card border border-border rounded-lg hover:border-primary hover:shadow-md transition-all"
+            className="group p-4 bg-card border border-border rounded-lg hover:border-secondary hover:shadow-md transition-all"
           >
             <div className="flex items-start gap-3">
-              <div className="p-2 bg-primary/10 rounded-md group-hover:bg-primary/20 transition-colors">
-                <GraduationCap className="text-primary" size={20} />
+              <div className="p-2 bg-secondary/10 rounded-md group-hover:bg-secondary/20 transition-colors">
+                <GraduationCap className="text-secondary" size={20} />
               </div>
               <div className="flex-1">
-                <h3 className="font-semibold text-sm mb-0.5 group-hover:text-primary transition-colors">
+                <h3 className="font-semibold text-sm mb-0.5 group-hover:text-secondary transition-colors">
                   Training & Consultancy
                 </h3>
                 <p className="text-xs text-muted-foreground">Expert-led workshops</p>

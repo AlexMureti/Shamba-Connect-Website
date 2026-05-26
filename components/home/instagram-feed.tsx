@@ -66,11 +66,11 @@ export function InstagramFeed() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-100 text-pink-600 text-xs font-bold uppercase tracking-wider mb-4">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 text-secondary text-xs font-bold uppercase tracking-wider mb-4">
               <Instagram size={14} />
               Live from Instagram
             </div>
-            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight">
+            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight border-l-4 border-secondary pl-4">
               The Shamba Connect Feed
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
@@ -115,7 +115,7 @@ export function InstagramFeed() {
                   <p className="text-white text-sm line-clamp-3 mb-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                     {post.caption}
                   </p>
-                  <div className="flex items-center gap-2 text-pink-400 font-bold text-xs uppercase tracking-widest">
+                  <div className="flex items-center gap-2 text-secondary font-bold text-xs uppercase tracking-widest">
                     <Instagram size={14} />
                     View on Instagram
                   </div>

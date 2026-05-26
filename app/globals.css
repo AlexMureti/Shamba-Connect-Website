@@ -141,6 +141,14 @@
   .section-divider {
     background: linear-gradient(to right, transparent, var(--primary), transparent);
   }
+
+  .newsroom-title {
+    @apply border-l-4 border-secondary pl-4 font-serif;
+  }
+
+  .accent-pill {
+    @apply inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 text-secondary text-xs font-bold uppercase tracking-wider;
+  }
 }
 
 @keyframes fadeIn {

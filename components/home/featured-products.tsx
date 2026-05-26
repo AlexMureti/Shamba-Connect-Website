@@ -44,8 +44,8 @@ export function FeaturedProducts() {
     <section className="bg-white border-b border-border">
       <div className="container mx-auto px-4 py-8 md:py-10">
         <div className="flex items-center justify-between mb-4">
-          <h2 className="font-serif text-xl md:text-2xl font-semibold">Featured Products</h2>
-          <Link href="/shop" className="text-sm text-primary hover:underline flex items-center gap-1">
+          <h2 className="font-serif text-xl md:text-2xl font-semibold border-l-4 border-secondary pl-4">Featured Products</h2>
+          <Link href="/shop" className="text-sm text-secondary font-semibold hover:underline flex items-center gap-1">
             View Shop
             <ArrowRight size={14} />
           </Link>
@@ -55,7 +55,7 @@ export function FeaturedProducts() {
           {featuredProducts.map((product) => (
             <div
               key={product.id}
-              className="group bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg hover:border-primary transition-all"
+              className="group bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg hover:border-secondary transition-all"
             >
               <div className="aspect-square overflow-hidden bg-muted/20">
                 <img
@@ -65,12 +65,12 @@ export function FeaturedProducts() {
                 />
               </div>
               <div className="p-4">
-                <h3 className="font-semibold text-sm mb-1 leading-tight group-hover:text-primary transition-colors">
+                <h3 className="font-semibold text-sm mb-1 leading-tight group-hover:text-secondary transition-colors">
                   {product.name}
                 </h3>
                 <p className="text-xs text-muted-foreground mb-2 leading-snug">{product.useCase}</p>
                 <div className="flex justify-end">
-                  <Button asChild size="sm" variant="ghost" className="h-8 px-3">
+                  <Button asChild size="sm" variant="ghost" className="h-8 px-3 text-secondary hover:text-secondary hover:bg-secondary/10">
                     <a href={product.whatsappLink} target="_blank" rel="noopener noreferrer">
                       <ShoppingCart size={14} className="mr-1" />
                       Order

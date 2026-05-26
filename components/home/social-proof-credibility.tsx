@@ -27,9 +27,13 @@ export function SocialProofCredibility() {
 
           {/* Right: Impact metrics */}
           <div className="grid grid-cols-2 gap-4">
-            {metrics.map((metric) => (
-              <div key={metric.label} className="p-5 bg-primary/5 rounded-lg border border-primary/20 text-center">
-                <metric.icon className="text-primary mx-auto mb-2" size={28} />
+            {metrics.map((metric, idx) => (
+              <div key={metric.label} className={`p-5 rounded-lg border text-center transition-all hover:shadow-md ${
+                idx % 2 === 0 
+                  ? "bg-primary/5 border-primary/20" 
+                  : "bg-secondary/5 border-secondary/20"
+              }`}>
+                <metric.icon className={idx % 2 === 0 ? "text-primary mx-auto mb-2" : "text-secondary mx-auto mb-2"} size={28} />
                 <div className="font-serif text-3xl text-foreground mb-1">{metric.value}</div>
                 <div className="text-sm text-muted-foreground">{metric.label}</div>
               </div>

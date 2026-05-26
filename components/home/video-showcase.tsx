@@ -23,7 +23,7 @@ export function VideoShowcase() {
     <section className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-          <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">See Us in Action</h2>
+          <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4 border-l-4 border-secondary pl-4 inline-block">See Us in Action</h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
             Watch how our team is making a difference in urban agriculture and food security across Kenya.
           </p>
@@ -43,20 +43,20 @@ export function VideoShowcase() {
                     href={`https://www.youtube.com/watch?v=${video.id}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-16 h-16 md:w-20 md:h-20 bg-primary text-white rounded-full flex items-center justify-center shadow-2xl transform transition-transform duration-300 group-hover:scale-110"
+                    className="w-16 h-16 md:w-20 md:h-20 bg-secondary text-white rounded-full flex items-center justify-center shadow-2xl transform transition-transform duration-300 group-hover:scale-110"
                   >
                     <Play size={32} fill="currentColor" className="ml-1" />
                   </a>
                 </div>
               </div>
               <div className="space-y-2">
-                <h3 className="font-serif text-xl md:text-2xl font-semibold group-hover:text-primary transition-colors">
+                <h3 className="font-serif text-xl md:text-2xl font-semibold group-hover:text-secondary transition-colors">
                   {video.title}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
                   {video.description}
                 </p>
-                <Button variant="link" className="p-0 h-auto text-primary font-semibold" asChild>
+                <Button variant="link" className="p-0 h-auto text-secondary font-semibold hover:text-secondary/80" asChild>
                   <a href={`https://www.youtube.com/watch?v=${video.id}`} target="_blank" rel="noopener noreferrer">
                     Watch on YouTube <ExternalLink size={14} className="ml-1" />
                   </a>
