@@ -7,7 +7,7 @@ import { Button } from "@/Shamba-Connect-Website/components/ui/button"
 
 export function LivingBlogPreview() {
   const posts = useBlogStore((state) => state.posts)
-  const publishedPosts = posts.filter((post) => post.status === "published").slice(0, 3)
+  const publishedPosts = posts.filter((post) => post.published).slice(0, 3)
 
   if (publishedPosts.length === 0) return null
 
@@ -51,7 +51,7 @@ export function LivingBlogPreview() {
                 <p className="text-sm text-muted-foreground line-clamp-2">{post.excerpt}</p>
                 <div className="flex items-center gap-2 text-xs text-muted-foreground">
                   <Calendar size={14} />
-                  <time>{new Date(post.publishedAt).toLocaleDateString()}</time>
+                  <time>{post.date}</time>
                 </div>
               </div>
             </Link>
