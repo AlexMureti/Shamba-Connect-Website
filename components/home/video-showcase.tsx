@@ -20,47 +20,61 @@ export function VideoShowcase() {
   ]
 
   return (
-    <section className="py-16 md:py-24 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-          <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4 border-l-4 border-secondary pl-4 inline-block">See Us in Action</h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            Watch how our team is making a difference in urban agriculture and food security across Kenya.
-          </p>
+    <section className="bg-slate-900 text-white border-b border-border overflow-hidden">
+      <div className="container mx-auto px-4 py-20 md:py-32">
+        <div className="flex flex-col lg:flex-row lg:items-center justify-between mb-16 gap-10">
+          <div className="max-w-3xl space-y-6">
+            <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-secondary/20 text-secondary text-sm font-black uppercase tracking-[0.2em] border border-secondary/30">
+              <Play size={18} fill="currentColor" />
+              Video Showcase
+            </div>
+            <h2 className="bold-heading text-4xl md:text-6xl">
+              Farming in <span className="text-secondary">Action</span>
+            </h2>
+            <p className="text-xl text-slate-400 leading-relaxed border-l-4 border-secondary pl-6">
+              Watch our success stories and expert tutorials to see how we're building a food-secure future.
+            </p>
+          </div>
+          <Button asChild className="bg-white hover:bg-slate-100 text-slate-900 px-10 py-8 text-lg rounded-2xl shadow-2xl transition-all duration-300 hover:-translate-y-1">
+            <a href="https://www.youtube.com/@shambaconnect" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 font-bold">
+              Visit Our YouTube
+              <ExternalLink size={20} />
+            </a>
+          </Button>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid md:grid-cols-2 gap-10">
           {videos.map((video) => (
-            <div key={video.id} className="group space-y-4">
-              <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg border border-border">
+            <div
+              key={video.id}
+              className="group relative bg-slate-800 border border-slate-700 rounded-3xl overflow-hidden hover:shadow-[0_30px_60px_rgba(0,0,0,0.5)] transition-all duration-500"
+            >
+              <div className="relative aspect-video overflow-hidden">
                 <img
-                  src={video.thumbnail}
+                  src={video.thumbnail || "/placeholder.svg"}
                   alt={video.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700"
                 />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors flex items-center justify-center">
+                <div className="absolute inset-0 flex items-center justify-center">
                   <a
                     href={`https://www.youtube.com/watch?v=${video.id}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-16 h-16 md:w-20 md:h-20 bg-secondary text-white rounded-full flex items-center justify-center shadow-2xl transform transition-transform duration-300 group-hover:scale-110"
+                    className="w-20 h-20 orange-gradient-bg text-white rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-500 shadow-2xl border-4 border-white/20"
                   >
-                    <Play size={32} fill="currentColor" className="ml-1" />
+                    <Play size={32} fill="currentColor" />
                   </a>
                 </div>
+                <div className="absolute top-6 left-6">
+                  <span className="px-4 py-2 bg-black/40 backdrop-blur-md text-white font-bold rounded-full text-xs border border-white/10 uppercase tracking-widest">
+                    Success Story
+                  </span>
+                </div>
               </div>
-              <div className="space-y-2">
-                <h3 className="font-serif text-xl md:text-2xl font-semibold group-hover:text-secondary transition-colors">
+              <div className="p-8">
+                <h3 className="bold-heading text-2xl group-hover:text-secondary transition-colors line-clamp-1">
                   {video.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  {video.description}
-                </p>
-                <Button variant="link" className="p-0 h-auto text-secondary font-semibold hover:text-secondary/80" asChild>
-                  <a href={`https://www.youtube.com/watch?v=${video.id}`} target="_blank" rel="noopener noreferrer">
-                    Watch on YouTube <ExternalLink size={14} className="ml-1" />
-                  </a>
-                </Button>
               </div>
             </div>
           ))}

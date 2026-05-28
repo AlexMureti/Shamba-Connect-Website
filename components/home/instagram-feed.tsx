@@ -62,33 +62,33 @@ export function InstagramFeed() {
   }, [])
 
   return (
-    <section className="py-16 md:py-24 bg-slate-50 border-y border-border">
+    <section className="py-20 md:py-32 bg-white border-y border-border overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
-          <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 text-secondary text-xs font-bold uppercase tracking-wider mb-4">
-              <Instagram size={14} />
-              Live from Instagram
+        <div className="flex flex-col lg:flex-row lg:items-center justify-between mb-16 gap-10">
+          <div className="max-w-3xl space-y-6">
+            <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-secondary/10 text-secondary text-sm font-black uppercase tracking-[0.2em]">
+              <Instagram size={18} />
+              Social Community
             </div>
-            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight border-l-4 border-secondary pl-4">
-              The Shamba Connect Feed
+            <h2 className="bold-heading text-4xl md:text-6xl text-foreground">
+              Follow Our <span className="text-secondary">Green Journey</span>
             </h2>
-            <p className="mt-4 text-lg text-muted-foreground">
-              Follow our daily journey in urban agriculture and sustainable farming through our latest videos and updates.
+            <p className="text-xl text-muted-foreground leading-relaxed border-l-4 border-primary pl-6">
+              Get daily updates, tips, and behind-the-scenes looks at our urban farming projects across Kenya.
             </p>
           </div>
-          <Button asChild variant="outline" className="group">
-            <a href="https://www.instagram.com/shamba_connect/" target="_blank" rel="noopener noreferrer">
-              Follow @shamba_connect
-              <ExternalLink size={16} className="ml-2 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+          <Button asChild className="bg-secondary hover:bg-secondary/90 text-white px-10 py-8 text-lg rounded-2xl shadow-xl shadow-secondary/20 transition-all duration-300 hover:-translate-y-1">
+            <a href="https://www.instagram.com/shamba_connect/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3">
+              Join Us on Instagram
+              <ExternalLink size={20} />
             </a>
           </Button>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {loading ? (
             Array(4).fill(0).map((_, i) => (
-              <div key={i} className="aspect-square bg-muted animate-pulse rounded-xl" />
+              <div key={i} className="aspect-square bg-muted animate-pulse rounded-3xl" />
             ))
           ) : (
             posts.map((post) => (
@@ -97,27 +97,27 @@ export function InstagramFeed() {
                 href={post.permalink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative aspect-square overflow-hidden rounded-xl bg-black shadow-lg hover:shadow-2xl transition-all duration-500"
+                className="group relative aspect-square overflow-hidden rounded-3xl bg-black shadow-xl hover:shadow-[0_30px_60px_rgba(230,126,34,0.3)] transition-all duration-700"
               >
                 <img
                   src={post.thumbnail_url || post.media_url}
                   alt={post.caption || "Instagram post"}
-                  className="h-full w-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700"
+                  className="h-full w-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-1000"
                 />
                 
                 {post.media_type === "VIDEO" && (
-                  <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm p-2 rounded-full text-white">
-                    <Play size={16} fill="currentColor" />
+                  <div className="absolute top-6 right-6 w-12 h-12 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white border border-white/30">
+                    <Play size={20} fill="currentColor" />
                   </div>
                 )}
 
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                  <p className="text-white text-sm line-clamp-3 mb-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 via-secondary/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-8">
+                  <p className="text-white font-medium text-sm line-clamp-3 mb-6 transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
                     {post.caption}
                   </p>
-                  <div className="flex items-center gap-2 text-secondary font-bold text-xs uppercase tracking-widest">
-                    <Instagram size={14} />
-                    View on Instagram
+                  <div className="flex items-center gap-3 text-white font-black text-xs uppercase tracking-[0.2em]">
+                    <Instagram size={16} />
+                    View Post
                   </div>
                 </div>
               </a>

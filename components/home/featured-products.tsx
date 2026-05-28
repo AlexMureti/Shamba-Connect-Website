@@ -42,41 +42,55 @@ const featuredProducts = [
 export function FeaturedProducts() {
   return (
     <section className="bg-white border-b border-border">
-      <div className="container mx-auto px-4 py-8 md:py-10">
-        <div className="flex items-center justify-between mb-4">
-          <h2 className="font-serif text-xl md:text-2xl font-semibold border-l-4 border-secondary pl-4">Featured Products</h2>
-          <Link href="/shop" className="text-sm text-secondary font-semibold hover:underline flex items-center gap-1">
-            View Shop
-            <ArrowRight size={14} />
-          </Link>
+      <div className="container mx-auto px-4 py-16 md:py-24">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+          <div className="space-y-4">
+            <div className="flex items-center gap-2 text-primary font-bold uppercase tracking-widest text-sm">
+              <span className="w-8 h-1 bg-primary rounded-full" />
+              Our Marketplace
+            </div>
+            <h2 className="bold-heading text-4xl md:text-5xl text-foreground">
+              Featured <span className="text-primary">Products</span>
+            </h2>
+          </div>
+          <Button asChild variant="link" className="text-secondary font-bold text-lg hover:no-underline group">
+            <Link href="/shop" className="flex items-center gap-2">
+              Browse Full Shop
+              <ArrowRight size={20} className="group-hover:translate-x-2 transition-transform" />
+            </Link>
+          </Button>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {featuredProducts.map((product) => (
             <div
               key={product.id}
-              className="group bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg hover:border-secondary transition-all"
+              className="group bg-white border border-border rounded-3xl overflow-hidden hover:shadow-2xl hover:border-secondary/30 transition-all duration-500"
             >
-              <div className="aspect-square overflow-hidden bg-muted/20">
+              <div className="relative aspect-square overflow-hidden bg-muted/20">
                 <img
                   src={product.image || "/placeholder.svg"}
                   alt={product.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
-              </div>
-              <div className="p-4">
-                <h3 className="font-semibold text-sm mb-1 leading-tight group-hover:text-secondary transition-colors">
-                  {product.name}
-                </h3>
-                <p className="text-xs text-muted-foreground mb-2 leading-snug">{product.useCase}</p>
-                <div className="flex justify-end">
-                  <Button asChild size="sm" variant="ghost" className="h-8 px-3 text-secondary hover:text-secondary hover:bg-secondary/10">
-                    <a href={product.whatsappLink} target="_blank" rel="noopener noreferrer">
-                      <ShoppingCart size={14} className="mr-1" />
-                      Order
-                    </a>
-                  </Button>
+                <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="w-10 h-10 orange-gradient-bg text-white rounded-full flex items-center justify-center shadow-lg">
+                    <ShoppingCart size={20} />
+                  </div>
                 </div>
+              </div>
+              <div className="p-6 space-y-4">
+                <div>
+                  <h3 className="font-bold text-xl mb-2 group-hover:text-secondary transition-colors line-clamp-1">
+                    {product.name}
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed line-clamp-2">{product.useCase}</p>
+                </div>
+                <Button asChild className="w-full bg-secondary hover:bg-secondary/90 text-white font-bold py-6 rounded-xl shadow-lg shadow-secondary/10">
+                  <a href={product.whatsappLink} target="_blank" rel="noopener noreferrer">
+                    Order via WhatsApp
+                  </a>
+                </Button>
               </div>
             </div>
           ))}

@@ -26,67 +26,89 @@ export function LatestFromShamba() {
   if (!featuredPost) return null
 
   return (
-    <section className="bg-muted/30 border-b border-border">
-      <div className="container mx-auto px-4 py-8 md:py-10">
-        <div className="flex items-center justify-between mb-4">
-          <h2 className="font-serif text-2xl md:text-3xl font-bold tracking-tight border-l-4 border-secondary pl-4">The Newsroom</h2>
-          <Link href="/blog" className="text-sm text-secondary font-semibold hover:underline flex items-center gap-1">
-            All Articles
-            <ArrowRight size={14} />
-          </Link>
+    <section className="bg-slate-50 border-b border-border overflow-hidden">
+      <div className="container mx-auto px-4 py-16 md:py-24">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+          <div className="space-y-4">
+            <div className="flex items-center gap-2 text-secondary font-bold uppercase tracking-widest text-sm">
+              <span className="w-8 h-1 bg-secondary rounded-full" />
+              Latest Insights
+            </div>
+            <h2 className="bold-heading text-4xl md:text-5xl lg:text-6xl text-foreground">
+              The <span className="text-secondary">Newsroom</span>
+            </h2>
+          </div>
+          <Button asChild variant="outline" className="border-secondary text-secondary hover:bg-secondary hover:text-white transition-all duration-300">
+            <Link href="/blog" className="flex items-center gap-2">
+              Explore All Articles
+              <ArrowRight size={18} />
+            </Link>
+          </Button>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
-          {/* Featured Article - Large */}
-          <Link href={`/blog/${featuredPost.slug}`} className="group block">
-            <div className="bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg transition-all">
-              <div className="aspect-video overflow-hidden">
-                <img
-                  src={featuredPost.featuredImage || "/placeholder.svg"}
-                  alt={featuredPost.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="p-5">
-                <div className="flex items-center gap-2 text-xs text-muted-foreground mb-2">
-                  <span className="px-2 py-0.5 bg-secondary/10 text-secondary font-medium rounded">{featuredPost.category}</span>
-                  <span className="flex items-center gap-1">
-                    <Clock size={12} />
-                    {featuredPost.readTime}
-                  </span>
+        <div className="grid lg:grid-cols-12 gap-8">
+          {/* Featured Article - Large & Bold */}
+          <div className="lg:col-span-7">
+            <Link href={`/blog/${featuredPost.slug}`} className="group block h-full">
+              <div className="relative h-full bg-white border border-border rounded-3xl overflow-hidden newsroom-card-hover">
+                <div className="aspect-[16/9] lg:aspect-auto lg:h-[400px] overflow-hidden">
+                  <img
+                    src={featuredPost.featuredImage || "/placeholder.svg"}
+                    alt={featuredPost.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute top-6 left-6">
+                    <span className="px-4 py-2 orange-gradient-bg text-white font-bold rounded-full text-xs shadow-lg shadow-secondary/20">
+                      {featuredPost.category}
+                    </span>
+                  </div>
                 </div>
-                <h3 className="font-serif text-lg md:text-xl font-semibold mb-2 group-hover:text-secondary transition-colors leading-tight">
-                  {featuredPost.title}
-                </h3>
-                <p className="text-sm text-muted-foreground line-clamp-2 leading-snug">{featuredPost.excerpt}</p>
+                <div className="p-8 space-y-4">
+                  <div className="flex items-center gap-4 text-sm text-muted-foreground font-medium">
+                    <span className="flex items-center gap-2">
+                      <Clock size={16} className="text-secondary" />
+                      {featuredPost.readTime}
+                    </span>
+                    <span>{featuredPost.date}</span>
+                  </div>
+                  <h3 className="bold-heading text-2xl md:text-3xl group-hover:text-secondary transition-colors">
+                    {featuredPost.title}
+                  </h3>
+                  <p className="text-muted-foreground text-lg line-clamp-2 leading-relaxed">
+                    {featuredPost.excerpt}
+                  </p>
+                  <div className="pt-4 flex items-center text-secondary font-bold group-hover:translate-x-2 transition-transform">
+                    Read Full Story <ArrowRight size={20} className="ml-2" />
+                  </div>
+                </div>
               </div>
-            </div>
-          </Link>
+            </Link>
+          </div>
 
-          {/* Sidebar Headlines - Compact */}
-          <div className="space-y-3">
+          {/* Sidebar Headlines - Modern & Compact */}
+          <div className="lg:col-span-5 space-y-6">
             {sidebarPosts.map((post) => (
               <Link
                 key={post.id}
                 href={`/blog/${post.slug}`}
-                className="group block bg-card border border-border rounded-lg p-4 hover:shadow-md hover:border-primary transition-all"
+                className="group block"
               >
-                <div className="flex gap-4">
-                  <div className="w-24 h-20 flex-shrink-0 rounded overflow-hidden">
+                <div className="flex gap-6 p-4 bg-white border border-border rounded-2xl newsroom-card-hover">
+                  <div className="w-32 h-24 flex-shrink-0 rounded-xl overflow-hidden">
                     <img
                       src={post.featuredImage || "/placeholder.svg"}
                       alt={post.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                   </div>
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-center gap-2 text-xs text-muted-foreground mb-1">
-                      <span className="px-1.5 py-0.5 bg-secondary/10 text-secondary font-medium rounded text-[10px]">
+                  <div className="flex-1 space-y-2">
+                    <div className="flex items-center gap-3">
+                      <span className="text-[10px] font-black uppercase tracking-widest text-secondary">
                         {post.category}
                       </span>
-                      <span className="text-[10px]">{post.readTime}</span>
+                      <span className="text-[10px] text-muted-foreground font-bold">{post.readTime}</span>
                     </div>
-                    <h4 className="font-semibold text-sm leading-snug group-hover:text-secondary transition-colors line-clamp-2">
+                    <h4 className="font-bold text-lg leading-snug group-hover:text-secondary transition-colors line-clamp-2">
                       {post.title}
                     </h4>
                   </div>

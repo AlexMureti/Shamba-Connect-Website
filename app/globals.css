@@ -149,6 +149,22 @@
   .accent-pill {
     @apply inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 text-secondary text-xs font-bold uppercase tracking-wider;
   }
+
+  .orange-gradient-bg {
+    background: linear-gradient(135deg, #E67E22 0%, #D35400 100%);
+  }
+
+  .green-gradient-bg {
+    background: linear-gradient(135deg, #336822 0%, #1E3F14 100%);
+  }
+
+  .newsroom-card-hover {
+    @apply transition-all duration-300 hover:shadow-[0_20px_50px_rgba(230,126,34,0.15)] hover:-translate-y-2 border-transparent hover:border-secondary/30;
+  }
+
+  .bold-heading {
+    @apply font-serif font-black tracking-tight leading-[1.1];
+  }
 }
 
 @keyframes fadeIn {
