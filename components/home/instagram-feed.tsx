@@ -9,7 +9,7 @@ const INSTAGRAM_URL = "https://www.instagram.com/shamba_connect/"
 // not a simulated feed. Each links through to our Instagram for the latest updates.
 const gallery = [
   {
-    src: "/professional-portrait-of-mercy-munene-african-woma.jpg",
+    src: "/mercy-munene-founder-with-rabbit.jpg",
     label: "Mercy Munene, Founder",
     span: "row-span-2",
   },
