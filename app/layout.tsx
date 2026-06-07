@@ -11,6 +11,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 const _playfair = Playfair_Display({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://shambaconnect.co.ke"),
   title: "Shamba Connect | Urban Agriculture, Rabbit Farming & Kitchen Gardens Kenya",
   description:
     "Kenya's #1 urban agriculture platform. Professional kitchen garden installations, premium rabbit farming supplies, organic seedlings, and expert agricultural training for food security.",
