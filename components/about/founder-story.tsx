@@ -41,9 +41,12 @@ export function FounderStory() {
           </div>
           <div className="space-y-6">
             <div className="space-y-4">
-              <p className="text-primary font-semibold text-sm uppercase tracking-wider">Our Story</p>
-              <h1 className="text-4xl md:text-5xl font-bold text-foreground text-balance">
-                From a Personal Vision to a National Mission
+              <span className="kicker">
+                <span className="rule" />
+                Our story
+              </span>
+              <h1 className="text-headline text-foreground">
+                From a Personal Vision to a <span className="text-secondary">Global Mission</span>
               </h1>
             </div>
             <div className="flex flex-wrap gap-3">
@@ -58,20 +61,20 @@ export function FounderStory() {
             </div>
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
               <p>
-                Shamba Connect was born from a profound personal experience. In 2017, our founder faced serious health challenges
-                traced back to food adulteration and contaminated produce. This revelation became the catalyst for a 
-                mission to transform how urban families access food.
+                Shamba Connect was born from a profound personal experience. In 2017, our founder faced serious health
+                challenges traced back to food adulteration and contaminated produce. That moment sparked one conviction:
+                every family, anywhere, deserves to know exactly where their food comes from.
               </p>
               <p>
-                What began as a personal solution in a small urban home quickly evolved into a collective mission. 
-                As the benefits of organic, home-grown food became clear, the vision expanded to help others achieve 
-                the same food security and health benefits.
+                What began as a personal solution in a small urban home grew into something far bigger. As the benefits
+                of organic, home-grown food became undeniable, the vision expanded beyond one household, one
+                neighborhood, and one country &mdash; toward a world where growing your own food is normal, not exceptional.
               </p>
               <p>
-                In 2018, Shamba Connect was established as a social enterprise dedicated to making urban agriculture
-                accessible, practical, and sustainable for Kenyan families, schools, and institutions. Today, our 
-                team has installed over 2000 gardens and trained more than 5000 individuals in sustainable farming
-                practices, building a healthier, more food-secure Kenya.
+                Established in 2018 as a social enterprise, Shamba Connect makes urban agriculture accessible, practical,
+                and sustainable for families, schools, and institutions. We've installed over 2,000 gardens and trained
+                more than 5,000 people in sustainable farming &mdash; and we're building toward a global movement for food
+                security, one garden at a time.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">

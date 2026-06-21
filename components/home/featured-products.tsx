@@ -41,22 +41,22 @@ const featuredProducts = [
 
 export function FeaturedProducts() {
   return (
-    <section className="bg-white border-b border-border">
+    <section className="bg-background border-b border-border">
       <div className="container mx-auto px-4 py-16 md:py-24">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
-          <div className="space-y-4">
-            <div className="flex items-center gap-2 text-primary font-bold uppercase tracking-widest text-sm">
-              <span className="w-8 h-1 bg-primary rounded-full" />
-              Our Marketplace
-            </div>
-            <h2 className="bold-heading text-4xl md:text-5xl text-foreground">
-              Featured <span className="text-primary">Products</span>
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 gap-6">
+          <div className="space-y-4 max-w-2xl">
+            <span className="kicker">
+              <span className="rule" />
+              Our marketplace
+            </span>
+            <h2 className="text-headline text-foreground">
+              Featured <span className="text-secondary">products</span>
             </h2>
           </div>
-          <Button asChild variant="link" className="text-secondary font-bold text-lg hover:no-underline group">
+          <Button asChild variant="link" className="text-secondary font-semibold text-base hover:no-underline group px-0">
             <Link href="/shop" className="flex items-center gap-2">
-              Browse Full Shop
-              <ArrowRight size={20} className="group-hover:translate-x-2 transition-transform" />
+              Browse full shop
+              <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </Link>
           </Button>
         </div>
@@ -65,7 +65,7 @@ export function FeaturedProducts() {
           {featuredProducts.map((product) => (
             <div
               key={product.id}
-              className="group bg-white border border-border rounded-3xl overflow-hidden hover:shadow-2xl hover:border-secondary/30 transition-all duration-500"
+              className="group bg-card border border-border rounded-2xl overflow-hidden shadow-soft transition-all duration-300 hover:-translate-y-1 hover:border-secondary/30"
             >
               <div className="relative aspect-square overflow-hidden bg-muted/20">
                 <img
@@ -81,7 +81,7 @@ export function FeaturedProducts() {
               </div>
               <div className="p-6 space-y-4">
                 <div>
-                  <h3 className="font-bold text-xl mb-2 group-hover:text-secondary transition-colors line-clamp-1">
+                  <h3 className="font-semibold text-lg mb-2 text-foreground group-hover:text-secondary transition-colors line-clamp-1">
                     {product.name}
                   </h3>
                   <p className="text-sm text-muted-foreground leading-relaxed line-clamp-2">{product.useCase}</p>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Shamba Connect">
+  <defs>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3c7a28"/>
+      <stop offset="1" stop-color="#274f18"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#faf6ec"/>
+  <!-- seed -->
+  <ellipse cx="32" cy="47.5" rx="4.4" ry="6" fill="#e67e22"/>
+  <!-- stem -->
+  <path d="M32 49 C 31 40 31 34 32 27" fill="none" stroke="#336822" stroke-width="4" stroke-linecap="round"/>
+  <!-- left leaf (green) -->
+  <path d="M32 31 C 24 30 17 25 14 16 C 24 17 31 23 33 31 Z" fill="url(#leaf)"/>
+  <!-- right leaf (orange) -->
+  <path d="M32 28 C 40 25 46 19 49 11 C 39 13 32 19 31 28 Z" fill="#e67e22"/>
+</svg>

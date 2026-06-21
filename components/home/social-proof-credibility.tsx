@@ -1,36 +1,103 @@
-import { Users, Sprout, Award, Building2 } from "lucide-react"
+"use client"
 
-export function SocialProofCredibility() {
-  const metrics = [
-    { icon: Users, value: "500+", label: "Households Reached" },
-    { icon: Sprout, value: "300+", label: "Gardens Installed" },
-    { icon: Award, value: "50+", label: "Training Sessions" },
-    { icon: Building2, value: "20+", label: "Business Clients" },
-  ]
+import { useEffect, useRef, useState } from "react"
+import type { ComponentType, SVGProps } from "react"
+import {
+  HouseIcon,
+  GardenIcon,
+  PeopleIcon,
+  StorefrontIcon,
+} from "@/Shamba-Connect-Website/components/icons/farm-icons"
+
+type Metric = {
+  Icon: ComponentType<SVGProps<SVGSVGElement>>
+  value: number
+  suffix?: string
+  label: string
+}
+
+const metrics: Metric[] = [
+  { Icon: HouseIcon, value: 500, suffix: "+", label: "Households Reached" },
+  { Icon: GardenIcon, value: 300, suffix: "+", label: "Gardens Installed" },
+  { Icon: PeopleIcon, value: 50, suffix: "+", label: "Training Sessions" },
+  { Icon: StorefrontIcon, value: 20, suffix: "+", label: "Business Clients" },
+]
+
+function CountUp({ value, suffix }: { value: number; suffix?: string }) {
+  const ref = useRef<HTMLDivElement>(null)
+  const [n, setN] = useState(0)
+
+  useEffect(() => {
+    const el = ref.current
+    if (!el) return
+
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return
+        io.disconnect()
+
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+          setN(value)
+          return
+        }
+        const duration = 1500
+        const start = performance.now()
+        let raf = 0
+        const tick = (t: number) => {
+          const p = Math.min((t - start) / duration, 1)
+          const eased = 1 - Math.pow(1 - p, 3)
+          setN(Math.round(value * eased))
+          if (p < 1) raf = requestAnimationFrame(tick)
+        }
+        raf = requestAnimationFrame(tick)
+      },
+      { threshold: 0.4 },
+    )
+
+    io.observe(el)
+    return () => io.disconnect()
+  }, [value])
 
   return (
-    <section className="bg-white border-b border-border relative overflow-hidden">
-      <div className="container mx-auto px-4 py-24 md:py-32">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="group p-10 bg-slate-50 rounded-[2.5rem] text-center hover:bg-primary transition-all duration-500 hover:-translate-y-2">
-            <div className="text-5xl md:text-6xl font-black text-primary mb-4 group-hover:text-white transition-colors">500+</div>
-            <div className="text-sm font-black uppercase tracking-[0.2em] text-slate-500 group-hover:text-white/80 transition-colors">Households Reached</div>
-          </div>
-          
-          <div className="group p-10 orange-gradient-bg rounded-[2.5rem] text-center shadow-2xl shadow-secondary/20 hover:-translate-y-2 transition-all duration-500">
-            <div className="text-5xl md:text-6xl font-black text-white mb-4">300+</div>
-            <div className="text-sm font-black uppercase tracking-[0.2em] text-white/80">Gardens Installed</div>
-          </div>
+    <div
+      ref={ref}
+      className="font-serif text-5xl md:text-6xl font-bold text-foreground mb-2 leading-none tabular-nums"
+    >
+      {n}
+      {suffix}
+    </div>
+  )
+}
 
-          <div className="group p-10 bg-slate-50 rounded-[2.5rem] text-center hover:bg-primary transition-all duration-500 hover:-translate-y-2">
-            <div className="text-5xl md:text-6xl font-black text-primary mb-4 group-hover:text-white transition-colors">50+</div>
-            <div className="text-sm font-black uppercase tracking-[0.2em] text-slate-500 group-hover:text-white/80 transition-colors">Training Sessions</div>
-          </div>
+export function SocialProofCredibility() {
+  return (
+    <section className="section-y bg-card border-b border-border">
+      <div className="container mx-auto px-4">
+        <div className="space-y-4 mb-12 md:mb-16 max-w-2xl">
+          <span className="kicker">
+            <span className="rule" />
+            Our impact
+          </span>
+          <h2 className="text-headline text-foreground">
+            Measured in <span className="text-secondary">harvests</span>, not promises
+          </h2>
+        </div>
 
-          <div className="group p-10 bg-slate-900 rounded-[2.5rem] text-center hover:bg-secondary transition-all duration-500 hover:-translate-y-2">
-            <div className="text-5xl md:text-6xl font-black text-white mb-4 transition-colors">20+</div>
-            <div className="text-sm font-black uppercase tracking-[0.2em] text-white/60 group-hover:text-white/80 transition-colors">Business Clients</div>
-          </div>
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
+          {metrics.map(({ Icon, value, suffix, label }) => (
+            <div
+              key={label}
+              className="group p-8 md:p-10 bg-muted/50 rounded-3xl border border-border text-center transition-all duration-300 hover:-translate-y-1.5 hover:border-secondary/40 hover:shadow-soft"
+            >
+              <div className="w-12 h-12 mx-auto mb-6 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary transition-colors duration-300 group-hover:bg-secondary group-hover:text-white">
+                <Icon className="h-6 w-6" />
+              </div>
+              <CountUp value={value} suffix={suffix} />
+              <div className="text-sm font-medium uppercase tracking-wider text-muted-foreground">
+                {label}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

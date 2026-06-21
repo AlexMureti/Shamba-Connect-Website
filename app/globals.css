@@ -3,81 +3,90 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/*
+  Shamba Connect — Design System
+  ------------------------------------------------------------------
+  Direction : Premium editorial (restraint-first)
+  Neutrals  : warm "heritage farm" stone/clay — never cold grey
+  Brand     : forest green (--primary) + earthy orange (--secondary)
+  Type      : Playfair Display (editorial serif) / Geist (clean sans)
+*/
+
 :root {
-  --background: #ffffff;
-  --foreground: #121212;
-  --card: #f8f8f8;
-  --card-foreground: #121212;
+  --background: #faf9f6;          /* warm paper white */
+  --foreground: #1b1a17;          /* warm near-black */
+  --card: #ffffff;                /* cards lift off the warm page */
+  --card-foreground: #1b1a17;
   --popover: #ffffff;
-  --popover-foreground: #121212;
-  --primary: #336822;
+  --popover-foreground: #1b1a17;
+  --primary: #336822;             /* forest green */
   --primary-foreground: #ffffff;
-  --secondary: #E67E22;
+  --secondary: #e67e22;           /* earthy orange */
   --secondary-foreground: #ffffff;
-  --muted: #e6e6e6;
-  --muted-foreground: #666666;
-  --accent: #E67E22;
+  --muted: #f1eee8;               /* warm stone-100 */
+  --muted-foreground: #5b5347;    /* warm stone-600 — AA on paper */
+  --accent: #e67e22;
   --accent-foreground: #ffffff;
-  --destructive: #e02717;
+  --destructive: #c0392b;
   --destructive-foreground: #ffffff;
-  --border: #d4d4d4;
-  --input: #f0f0f0;
+  --border: #e7e2d9;              /* warm stone-200 */
+  --input: #ece8e0;
   --ring: #336822;
   --chart-1: #336822;
-  --chart-2: #E67E22;
+  --chart-2: #e67e22;
   --chart-3: #5a9f3f;
-  --chart-4: #e02717;
-  --chart-5: #f0e6d2;
-  --radius: 0.625rem;
+  --chart-4: #c0392b;
+  --chart-5: #d8c9a3;
+  --radius: 0.75rem;
   --sidebar: #ffffff;
-  --sidebar-foreground: #121212;
+  --sidebar-foreground: #1b1a17;
   --sidebar-primary: #336822;
   --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #E67E22;
-  --sidebar-accent-foreground: #ffffff;
-  --sidebar-border: #d4d4d4;
+  --sidebar-accent: #f1eee8;
+  --sidebar-accent-foreground: #1b1a17;
+  --sidebar-border: #e7e2d9;
   --sidebar-ring: #336822;
 }
 
 .dark {
-  --background: #121212;
-  --foreground: #ffffff;
-  --card: #1e1e1e;
-  --card-foreground: #ffffff;
-  --popover: #1e1e1e;
-  --popover-foreground: #ffffff;
-  --primary: #336822;
-  --primary-foreground: #ffffff;
-  --secondary: #E67E22;
-  --secondary-foreground: #ffffff;
-  --muted: #333333;
-  --muted-foreground: #b0b0b0;
-  --accent: #E67E22;
-  --accent-foreground: #ffffff;
-  --destructive: #e02717;
+  --background: #16140f;          /* warm midnight soil */
+  --foreground: #f5f2ec;
+  --card: #201d17;
+  --card-foreground: #f5f2ec;
+  --popover: #201d17;
+  --popover-foreground: #f5f2ec;
+  --primary: #6cb049;             /* brightened green for dark contrast */
+  --primary-foreground: #0f1b0a;
+  --secondary: #e98c3c;
+  --secondary-foreground: #1b1206;
+  --muted: #2a261f;
+  --muted-foreground: #b3ab9c;
+  --accent: #e98c3c;
+  --accent-foreground: #1b1206;
+  --destructive: #e25a4d;
   --destructive-foreground: #ffffff;
-  --border: #333333;
-  --input: #2a2a2a;
-  --ring: #336822;
-  --chart-1: #336822;
-  --chart-2: #E67E22;
-  --chart-3: #5a9f3f;
-  --chart-4: #e02717;
-  --chart-5: #3d3d2d;
-  --sidebar: #1e1e1e;
-  --sidebar-foreground: #ffffff;
-  --sidebar-primary: #336822;
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #E67E22;
-  --sidebar-accent-foreground: #ffffff;
-  --sidebar-border: #333333;
-  --sidebar-ring: #336822;
+  --border: #322d25;
+  --input: #2a261f;
+  --ring: #6cb049;
+  --chart-1: #6cb049;
+  --chart-2: #e98c3c;
+  --chart-3: #8bc46a;
+  --chart-4: #e25a4d;
+  --chart-5: #4a4230;
+  --sidebar: #201d17;
+  --sidebar-foreground: #f5f2ec;
+  --sidebar-primary: #6cb049;
+  --sidebar-primary-foreground: #0f1b0a;
+  --sidebar-accent: #2a261f;
+  --sidebar-accent-foreground: #f5f2ec;
+  --sidebar-border: #322d25;
+  --sidebar-ring: #6cb049;
 }
 
 @theme inline {
-  --font-sans: "Geist", "Geist Fallback";
-  --font-mono: "Geist Mono", "Geist Mono Fallback";
-  --font-serif: "Playfair Display", "Georgia", serif;
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, "SF Mono", monospace;
+  --font-serif: var(--font-playfair), "Playfair Display", Georgia, "Times New Roman", serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -151,7 +160,7 @@
   .animate-fade-in {
     animation: fadeIn 0.8s ease-out forwards;
   }
-  
+
   .animate-slide-up {
     animation: slideUp 0.8s ease-out forwards;
   }
@@ -173,11 +182,11 @@
   }
 
   .orange-gradient-bg {
-    background: linear-gradient(135deg, #E67E22 0%, #D35400 100%);
+    background: linear-gradient(135deg, #e67e22 0%, #d35400 100%);
   }
 
   .green-gradient-bg {
-    background: linear-gradient(135deg, #336822 0%, #1E3F14 100%);
+    background: linear-gradient(135deg, #336822 0%, #1e3f14 100%);
   }
 
   .newsroom-card-hover {
@@ -189,16 +198,70 @@
     font-optical-sizing: auto;
   }
 
-  /* Fluid display type for hero / section openers — scales smoothly, no breakpoint jumps */
+  /* Fluid display type for the hero — scales smoothly, no breakpoint jumps */
   .text-display {
     font-size: clamp(2.5rem, 1.5rem + 4.5vw, 5rem);
     line-height: 1.04;
     letter-spacing: -0.02em;
   }
 
+  /* Section opener heading — one editorial step below the hero display */
+  .text-headline {
+    @apply font-serif font-bold text-balance;
+    font-size: clamp(2rem, 1.3rem + 2.6vw, 3.25rem);
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    font-optical-sizing: auto;
+  }
+
+  /* Standard eyebrow / kicker above section headings */
+  .kicker {
+    @apply inline-flex items-center gap-2.5 text-secondary font-semibold uppercase text-xs;
+    letter-spacing: 0.2em;
+  }
+
+  /* Consistent vertical rhythm for page sections */
+  .section-y {
+    @apply py-20 md:py-28;
+  }
+
   /* Optimal reading measure for long-form body copy (~66 chars) */
   .measure {
     max-width: 66ch;
+  }
+
+  /* Premium depth — soft, warm-tinted lift (not harsh black) */
+  .shadow-premium {
+    box-shadow: 0 30px 70px -25px rgba(27, 26, 23, 0.45);
+  }
+  .shadow-soft {
+    box-shadow: 0 1px 2px rgba(27, 26, 23, 0.04), 0 14px 36px -18px rgba(27, 26, 23, 0.2);
+  }
+
+  /* Hairline rule used between editorial blocks */
+  .rule {
+    @apply h-px w-10 bg-secondary;
+  }
+
+  /* Newsroom ticker — seamless scroll (content is duplicated, track shifts -50%) */
+  .animate-marquee {
+    animation: marquee 40s linear infinite;
+    will-change: transform;
+  }
+  .marquee-pause:hover .animate-marquee {
+    animation-play-state: paused;
+  }
+
+  /* Animated underline for editorial links */
+  .link-underline {
+    background-image: linear-gradient(var(--secondary), var(--secondary));
+    background-size: 0% 2px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease;
+  }
+  .link-underline:hover {
+    background-size: 100% 2px;
   }
 }
 
@@ -216,6 +279,11 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
 
 /* Professional card hover effects */

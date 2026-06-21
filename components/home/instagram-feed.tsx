@@ -34,15 +34,15 @@ const gallery = [
 
 export function InstagramFeed() {
   return (
-    <section className="py-20 md:py-32 bg-white border-y border-border overflow-hidden">
+    <section className="section-y bg-background border-y border-border overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-12 gap-8">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-12 md:mb-16 gap-8">
           <div className="max-w-2xl space-y-5">
-            <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-secondary/10 text-secondary text-sm font-bold uppercase tracking-[0.2em]">
-              <Instagram size={18} />
+            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-secondary/10 text-secondary text-xs font-semibold uppercase tracking-[0.2em]">
+              <Instagram size={16} />
               @shamba_connect
             </div>
-            <h2 className="bold-heading text-4xl md:text-5xl text-foreground">
+            <h2 className="text-headline text-foreground">
               Follow our <span className="text-secondary">green journey</span>
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">

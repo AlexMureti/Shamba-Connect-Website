@@ -27,16 +27,16 @@ export function LatestFromShamba() {
   if (!featuredPost) return null
 
   return (
-    <section className="bg-slate-50 border-b border-border overflow-hidden">
+    <section className="bg-muted/40 border-b border-border overflow-hidden">
       <div className="container mx-auto px-4 py-16 md:py-24">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 gap-6">
           <div className="space-y-4">
-            <div className="flex items-center gap-2 text-secondary font-bold uppercase tracking-widest text-sm">
-              <span className="w-8 h-1 bg-secondary rounded-full" />
-              Latest Insights
-            </div>
-            <h2 className="bold-heading text-4xl md:text-5xl lg:text-6xl text-foreground">
-              The <span className="text-secondary">Newsroom</span>
+            <span className="kicker">
+              <span className="rule" />
+              Stories &amp; guides
+            </span>
+            <h2 className="text-headline text-foreground">
+              From the <span className="text-secondary">Shamba</span>
             </h2>
           </div>
           <Button asChild variant="outline" className="border-secondary text-secondary hover:bg-secondary hover:text-white transition-all duration-300">
@@ -51,7 +51,7 @@ export function LatestFromShamba() {
           {/* Featured Article - Large & Bold */}
           <div className="lg:col-span-7">
             <Link href={`/blog/${featuredPost.slug}`} className="group block h-full">
-              <div className="relative h-full bg-white border border-border rounded-3xl overflow-hidden newsroom-card-hover">
+              <div className="relative h-full bg-card border border-border rounded-3xl overflow-hidden newsroom-card-hover">
                 <div className="aspect-[16/9] lg:aspect-auto lg:h-[400px] overflow-hidden">
                   <img
                     src={featuredPost.featuredImage || "/placeholder.svg"}
@@ -94,7 +94,7 @@ export function LatestFromShamba() {
                 href={`/blog/${post.slug}`}
                 className="group block"
               >
-                <div className="flex gap-6 p-4 bg-white border border-border rounded-2xl newsroom-card-hover">
+                <div className="flex gap-6 p-4 bg-card border border-border rounded-2xl newsroom-card-hover">
                   <div className="w-32 h-24 flex-shrink-0 rounded-xl overflow-hidden">
                     <img
                       src={post.featuredImage || "/placeholder.svg"}

@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { Button } from "@/Shamba-Connect-Website/components/ui/button"
-import { ArrowRight, Sprout, Rabbit, GraduationCap } from "lucide-react"
+import { ArrowRight, Sprout, Play } from "lucide-react"
 import { ImageSlideshow } from "@/Shamba-Connect-Website/components/ui/image-slideshow"
 
 export function EditorialHero() {
@@ -30,27 +30,6 @@ export function EditorialHero() {
     {
       src: "/slideshow/Screenshot from 2026-01-04 14-12-44.png",
       alt: "Shamba Connect slideshow image 8",
-    },
-  ]
-
-  const pillars = [
-    {
-      href: "/services#rabbit-farming",
-      icon: Rabbit,
-      title: "Rabbit Farming",
-      copy: "Premium meat, breeding stock, and expert training for sustainable protein.",
-    },
-    {
-      href: "/services#kitchen-gardens",
-      icon: Sprout,
-      title: "Kitchen Gardens",
-      copy: "Professional vertical garden installations for any urban space or balcony.",
-    },
-    {
-      href: "/services#training",
-      icon: GraduationCap,
-      title: "Training & Consultancy",
-      copy: "Expert-led workshops and hands-on guidance for modern farming success.",
     },
   ]
 
@@ -107,6 +86,15 @@ export function EditorialHero() {
               >
                 <Link href="/services">Explore our solutions</Link>
               </Button>
+              <a
+                href="#watch"
+                className="inline-flex items-center gap-2.5 text-sm font-semibold text-foreground/80 transition-colors hover:text-secondary"
+              >
+                <span className="flex h-10 w-10 items-center justify-center rounded-full bg-secondary text-white shadow-lg shadow-secondary/25">
+                  <Play size={15} fill="currentColor" className="ml-0.5" />
+                </span>
+                Watch our story
+              </a>
             </div>
           </div>
 
@@ -131,38 +119,6 @@ export function EditorialHero() {
           </div>
         </div>
 
-        {/* Service pillars */}
-        <div
-          className="grid sm:grid-cols-3 gap-5 mt-20 md:mt-28 animate-slide-up"
-          style={{ animationDelay: "0.15s" }}
-        >
-          {pillars.map(({ href, icon: Icon, title, copy }) => (
-            <Link
-              key={href}
-              href={href}
-              className="group p-7 bg-card rounded-2xl ring-1 ring-border/70 hover:ring-secondary/50 hover:shadow-lg transition-all duration-200"
-            >
-              <div className="space-y-4">
-                <div className="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center transition-colors duration-200 group-hover:bg-secondary">
-                  <Icon size={26} className="text-secondary transition-colors duration-200 group-hover:text-white" />
-                </div>
-                <div className="space-y-1.5">
-                  <h3 className="text-lg font-semibold text-foreground group-hover:text-secondary transition-colors duration-200">
-                    {title}
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed text-[15px]">{copy}</p>
-                </div>
-                <div className="flex items-center gap-1.5 text-secondary font-semibold text-sm pt-1">
-                  Learn more
-                  <ArrowRight
-                    size={15}
-                    className="transition-transform duration-200 group-hover:translate-x-1"
-                  />
-                </div>
-              </div>
-            </Link>
-          ))}
-        </div>
       </div>
     </section>
   )

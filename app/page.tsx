@@ -7,18 +7,20 @@ import { SocialProofCredibility } from "@/Shamba-Connect-Website/components/home
 import { CommunityCTA } from "@/Shamba-Connect-Website/components/home/community-cta"
 import { VideoShowcase } from "@/Shamba-Connect-Website/components/home/video-showcase"
 import { InstagramFeed } from "@/Shamba-Connect-Website/components/home/instagram-feed"
+import { NewsTicker } from "@/Shamba-Connect-Website/components/news-ticker"
 
 export default function HomePage() {
   return (
     <>
+      <NewsTicker />
       <EditorialHero />
-      <LatestFromShamba />
+      <VideoShowcase />
+      <SocialProofCredibility />
+      <WhatWeDoSnapshot />
       <FeaturedProducts />
       <InTheField />
-      <WhatWeDoSnapshot />
-      <SocialProofCredibility />
+      <LatestFromShamba />
       <InstagramFeed />
-      <VideoShowcase />
       <CommunityCTA />
     </>
   )

@@ -1,15 +1,14 @@
 "use client"
 
-import { MapPin, Calendar } from "lucide-react"
+import { MapPin } from "lucide-react"
 
 const fieldActivities = [
   {
     id: 1,
     title: "Utawala Rooftop Garden",
-    description: "Installed last week",
+    description: "Vertical kitchen garden installation",
     location: "Nairobi",
     image: "/professional-kitchen-garden-installation-setup-wit.jpg",
-    date: "Dec 2024",
   },
   {
     id: 2,
@@ -17,57 +16,56 @@ const fieldActivities = [
     description: "Teaching sustainable farming",
     location: "Ruai",
     image: "/agricultural-training-session-hands-on-learning-w.jpg",
-    date: "Dec 2024",
   },
   {
     id: 3,
     title: "Commercial Rabbit Farm Setup",
-    description: "50-cage installation",
+    description: "50-cage breeding installation",
     location: "Machakos",
     image: "/modern-rabbit-farming-unit-with-proper-housing-an.jpg",
-    date: "Nov 2024",
   },
   {
     id: 4,
     title: "Community Garden Launch",
-    description: "Estate-wide project",
+    description: "Estate-wide food project",
     location: "Kitengela",
     image: "/happy-kenyan-family-harvesting-vegetables-from-bac.jpg",
-    date: "Nov 2024",
   },
 ]
 
 export function InTheField() {
   return (
-    <section className="bg-muted/30 border-b border-border">
-      <div className="container mx-auto px-4 py-8 md:py-10">
-        <h2 className="font-serif text-xl md:text-2xl font-semibold mb-4">In the Field</h2>
+    <section className="section-y bg-muted/40 border-b border-border">
+      <div className="container mx-auto px-4">
+        <div className="space-y-4 mb-12 md:mb-14 max-w-2xl">
+          <span className="kicker">
+            <span className="rule" />
+            On the ground
+          </span>
+          <h2 className="text-headline text-foreground">
+            Recent work, <span className="text-secondary">in the field</span>
+          </h2>
+        </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {fieldActivities.map((activity) => (
             <div
               key={activity.id}
-              className="group bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg transition-all"
+              className="group bg-card border border-border rounded-2xl overflow-hidden shadow-soft transition-all duration-300 hover:-translate-y-1"
             >
               <div className="aspect-[4/3] overflow-hidden">
                 <img
                   src={activity.image || "/placeholder.svg"}
                   alt={activity.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <div className="p-4">
-                <h3 className="font-semibold text-sm mb-1 leading-tight">{activity.title}</h3>
-                <p className="text-xs text-muted-foreground mb-2">{activity.description}</p>
-                <div className="flex items-center justify-between text-xs text-muted-foreground">
-                  <span className="flex items-center gap-1">
-                    <MapPin size={12} />
-                    {activity.location}
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <Calendar size={12} />
-                    {activity.date}
-                  </span>
+              <div className="p-5">
+                <h3 className="font-semibold text-base mb-1 leading-tight text-foreground">{activity.title}</h3>
+                <p className="text-sm text-muted-foreground mb-3">{activity.description}</p>
+                <div className="flex items-center gap-1.5 text-xs font-medium text-muted-foreground">
+                  <MapPin size={13} className="text-secondary" />
+                  {activity.location}
                 </div>
               </div>
             </div>
