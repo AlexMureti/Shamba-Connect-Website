@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/next"
 import { Navbar } from "@/Shamba-Connect-Website/components/navbar"
 import { Footer } from "@/Shamba-Connect-Website/components/footer"
 import "./globals.css"
+import { SITE_URL } from "@/lib/site"
 
 const geistSans = Geist({
   subsets: ["latin"],
@@ -23,7 +24,7 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://shambaconnect.co.ke"),
+  metadataBase: new URL(SITE_URL),
   title: "Shamba Connect | Urban Agriculture, Rabbit Farming & Kitchen Gardens Kenya",
   description:
     "Kenya's #1 urban agriculture platform. Professional kitchen garden installations, premium rabbit farming supplies, organic seedlings, and expert agricultural training for food security.",
@@ -44,7 +45,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Shamba Connect | Transform Your Urban Space into a Productive Garden",
     description: "Join 5,000+ Kenyans growing their own organic food. Professional installations, premium rabbit farming, and expert training.",
-    url: "https://shambaconnect.co.ke",
+    url: SITE_URL,
     type: "website",
     images: [
       {
@@ -62,7 +63,7 @@ export const metadata: Metadata = {
     images: ["/mercy-munene-founder-with-rabbit.jpg"],
   },
   alternates: {
-    canonical: "https://shambaconnect.co.ke",
+    canonical: SITE_URL,
   },
 }
 

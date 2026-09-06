@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next"
+import { SITE_URL } from "@/lib/site"
 
 // Default blog posts data (same as in blog-store)
 const defaultPosts = [
@@ -39,7 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const blogEntries = defaultPosts
     .filter((post) => post.published)
     .map((post) => ({
-      url: `https://shambaconnect.co.ke/blog/${post.slug}`,
+      url: `${SITE_URL}/blog/${post.slug}`,
       lastModified: new Date(post.date),
       changeFrequency: "weekly" as const,
       priority: 0.8,
@@ -48,43 +49,43 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Main site pages
   const mainPages: MetadataRoute.Sitemap = [
     {
-      url: "https://shambaconnect.co.ke",
+      url: SITE_URL,
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 1,
     },
     {
-      url: "https://shambaconnect.co.ke/about",
+      url: `${SITE_URL}/about`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: "https://shambaconnect.co.ke/services",
+      url: `${SITE_URL}/services`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
-      url: "https://shambaconnect.co.ke/shop",
+      url: `${SITE_URL}/shop`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: "https://shambaconnect.co.ke/blog",
+      url: `${SITE_URL}/blog`,
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 0.9,
     },
     {
-      url: "https://shambaconnect.co.ke/contact",
+      url: `${SITE_URL}/contact`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
-      url: "https://shambaconnect.co.ke/book-consultation",
+      url: `${SITE_URL}/book-consultation`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
