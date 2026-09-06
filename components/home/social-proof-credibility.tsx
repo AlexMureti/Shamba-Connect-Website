@@ -25,37 +25,55 @@ const metrics: Metric[] = [
 
 function CountUp({ value, suffix }: { value: number; suffix?: string }) {
   const ref = useRef<HTMLDivElement>(null)
-  const [n, setN] = useState(0)
+  // Start at the real figure, not zero.
+  //
+  // This used to be useState(0), so the server-rendered HTML shipped "0+" and
+  // only became true once an IntersectionObserver fired at a 0.4 threshold.
+  // Anyone whose JS had not run -- crawlers, link previews, a slow phone, a
+  // section taller than the viewport -- read a site claiming zero households,
+  // zero gardens and zero clients, directly under the heading "Measured in
+  // harvests, not promises". It was live on shambaconnect.co.ke that way.
+  //
+  // The number is now correct at rest. The count-up still runs, but only when
+  // the block starts off-screen, so it animates on scroll and never blanks a
+  // figure the visitor can already see.
+  const [n, setN] = useState(value)
 
   useEffect(() => {
     const el = ref.current
     if (!el) return
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return
 
+    const box = el.getBoundingClientRect()
+    const alreadyVisible = box.top < window.innerHeight && box.bottom > 0
+    if (alreadyVisible) return
+
+    let raf = 0
     const io = new IntersectionObserver(
       ([entry]) => {
         if (!entry.isIntersecting) return
         io.disconnect()
 
-        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-          setN(value)
-          return
-        }
         const duration = 1500
         const start = performance.now()
-        let raf = 0
         const tick = (t: number) => {
           const p = Math.min((t - start) / duration, 1)
           const eased = 1 - Math.pow(1 - p, 3)
           setN(Math.round(value * eased))
           if (p < 1) raf = requestAnimationFrame(tick)
+          else setN(value)
         }
+        setN(0)
         raf = requestAnimationFrame(tick)
       },
       { threshold: 0.4 },
     )
 
     io.observe(el)
-    return () => io.disconnect()
+    return () => {
+      io.disconnect()
+      cancelAnimationFrame(raf)
+    }
   }, [value])
 
   return (
