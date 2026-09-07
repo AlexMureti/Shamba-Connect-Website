@@ -22,12 +22,8 @@ export function LatestFromShamba() {
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 gap-6">
           <div className="space-y-4">
-            <span className="kicker">
-              <span className="rule" />
-              Stories &amp; guides
-            </span>
             <h2 className="text-headline text-foreground">
-              From the <span className="text-secondary">Shamba</span>
+              From the Shamba
             </h2>
           </div>
           <Button asChild variant="outline" className="border-secondary text-secondary hover:bg-secondary hover:text-white transition-all duration-300">

@@ -38,12 +38,8 @@ export function InTheField() {
     <section className="section-y bg-muted/40 border-b border-border">
       <div className="container mx-auto px-4">
         <div className="space-y-4 mb-12 md:mb-14 max-w-2xl">
-          <span className="kicker">
-            <span className="rule" />
-            On the ground
-          </span>
           <h2 className="text-headline text-foreground">
-            Recent work, <span className="text-secondary">in the field</span>
+            Recent work, in the field
           </h2>
         </div>
 

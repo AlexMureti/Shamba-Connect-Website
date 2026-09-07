@@ -7,10 +7,6 @@ export function CommunityCTA() {
     <section className="section-y bg-primary/5 border-y border-primary/15">
       <div className="container mx-auto px-4 text-center max-w-3xl">
         <div className="flex justify-center mb-5">
-          <span className="kicker">
-            <span className="rule" />
-            Get started
-          </span>
         </div>
         <h2 className="text-headline text-foreground mb-5">
           Grow Your Own Food &mdash; Ready?

@@ -49,11 +49,6 @@ export function EditorialHero() {
         <div className="grid items-center gap-12 py-16 md:py-24 lg:min-h-[42rem] lg:grid-cols-2">
           {/* Editorial content */}
           <div className="max-w-xl space-y-7 animate-fade-in">
-            <span className="kicker">
-              <span className="rule" />
-              Growing Kenya since 2018
-            </span>
-
             <h1 className="text-display font-serif font-bold text-balance text-foreground">
               Urban agriculture &amp; rabbit farming,{" "}
               <span className="text-secondary">done properly</span>.
@@ -89,21 +84,27 @@ export function EditorialHero() {
               </a>
             </div>
 
-            {/* Credibility line — replaces the floating badge */}
-            <div className="flex flex-wrap items-center gap-x-6 gap-y-2 border-t border-border pt-6 text-sm font-medium text-muted-foreground">
-              <span className="inline-flex items-center gap-2">
-                <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-                100% organic methods
-              </span>
-              <span className="inline-flex items-center gap-2">
-                <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
-                Featured on Safaricom Newsroom
-              </span>
-              <span className="inline-flex items-center gap-2">
-                <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-                7+ years on the ground
-              </span>
-            </div>
+            {/* Three facts, not three badges.
+
+                This row used to read "100% organic methods / Featured on
+                Safaricom Newsroom / 7+ years on the ground", each behind a
+                little coloured dot alternating primary and secondary. Two
+                problems: "100% organic methods" is a claim nobody can check,
+                and "7+ years" is the same fact as the "Growing Kenya since
+                2018" eyebrow that used to sit above the headline. Each item
+                here is now something a visitor could go and verify. */}
+            <dl className="flex flex-wrap gap-x-8 gap-y-3 border-t border-border pt-6 text-sm">
+              {[
+                ["Nairobi", "since 2018"],
+                ["Featured", "Safaricom Newsroom"],
+                ["Exhibited", "Nairobi Show 2025"],
+              ].map(([label, value]) => (
+                <div key={label}>
+                  <dt className="text-xs uppercase tracking-wide text-muted-foreground/70">{label}</dt>
+                  <dd className="mt-0.5 font-medium text-foreground">{value}</dd>
+                </div>
+              ))}
+            </dl>
           </div>
 
           {/* Mobile / tablet imagery */}

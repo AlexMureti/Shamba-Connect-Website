@@ -92,12 +92,8 @@ export function SocialProofCredibility() {
     <section className="section-y bg-card border-b border-border">
       <div className="container mx-auto px-4">
         <div className="space-y-4 mb-12 md:mb-16 max-w-2xl">
-          <span className="kicker">
-            <span className="rule" />
-            Our impact
-          </span>
           <h2 className="text-headline text-foreground">
-            Measured in <span className="text-secondary">harvests</span>, not promises
+            Measured in harvests, not promises
           </h2>
         </div>
 

@@ -214,11 +214,6 @@
     font-optical-sizing: auto;
   }
 
-  /* Standard eyebrow / kicker above section headings */
-  .kicker {
-    @apply inline-flex items-center gap-2.5 text-secondary font-semibold uppercase text-xs;
-    letter-spacing: 0.2em;
-  }
 
   /* Consistent vertical rhythm for page sections */
   .section-y {
@@ -239,9 +234,6 @@
   }
 
   /* Hairline rule used between editorial blocks */
-  .rule {
-    @apply h-px w-10 bg-secondary;
-  }
 
   /* Newsroom ticker — seamless scroll (content is duplicated, track shifts -50%) */
   .animate-marquee {

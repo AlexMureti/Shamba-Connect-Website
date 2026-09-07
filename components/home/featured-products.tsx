@@ -45,12 +45,8 @@ export function FeaturedProducts() {
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 gap-6">
           <div className="space-y-4 max-w-2xl">
-            <span className="kicker">
-              <span className="rule" />
-              Our marketplace
-            </span>
             <h2 className="text-headline text-foreground">
-              Featured <span className="text-secondary">products</span>
+              Featured products
             </h2>
           </div>
           <Button asChild variant="link" className="text-secondary font-semibold text-base hover:no-underline group px-0">

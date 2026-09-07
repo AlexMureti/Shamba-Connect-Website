@@ -97,12 +97,8 @@ export function VideoShowcase() {
       <div className="container relative mx-auto px-4 py-20 md:py-28">
         <div className="mb-12 flex flex-col gap-6 md:mb-16 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-2xl space-y-5">
-            <span className="kicker">
-              <span className="rule" />
-              Watch &amp; learn
-            </span>
             <h2 className="text-headline text-foreground">
-              Start with our <span className="text-secondary">why</span>
+              Start with our why
             </h2>
             <p className="text-lg leading-relaxed text-muted-foreground">
               See the work, hear the story, and learn the methods — straight from the shamba.

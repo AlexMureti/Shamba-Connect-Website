@@ -53,12 +53,8 @@ export function WhatWeDoSnapshot() {
     <section className="section-y bg-muted/40 border-b border-border">
       <div className="container mx-auto px-4">
         <div className="space-y-4 mb-12 md:mb-16 max-w-2xl">
-          <span className="kicker">
-            <span className="rule" />
-            What we do
-          </span>
           <h2 className="text-headline text-foreground">
-            Everything you need to <span className="text-primary">grow</span>
+            Everything you need to grow
           </h2>
         </div>
 

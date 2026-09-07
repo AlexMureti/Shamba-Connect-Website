@@ -41,10 +41,6 @@ export function FounderStory() {
           </div>
           <div className="space-y-6">
             <div className="space-y-4">
-              <span className="kicker">
-                <span className="rule" />
-                Our story
-              </span>
               <h1 className="text-headline text-foreground">
                 From a Personal Vision to a <span className="text-secondary">Global Mission</span>
               </h1>
