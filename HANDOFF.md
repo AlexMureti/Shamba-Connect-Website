@@ -122,3 +122,87 @@ peer — **removing them would have broken the build.** `autoprefixer` and
 
 Decide the Gardens Installed number — 300 or 2000 — then push and deploy. The
 counter fix is worth nothing until it ships.
+
+---
+
+# Session 2 — 2026-09-07: her real photographs, and the logo
+
+**9 commits on `fix/impact-counters-2026-09-06`. Clean tree. STILL UNPUSHED.**
+
+## The logo — 1.39 MB to 8.4 KB
+
+`shamba-connect-full-logo.png` was **2508×1672, 1358 KB**, rendered at 200×60 in
+the navbar with `priority`, so it preloaded on every page. On metered Kenyan
+mobile that was the heaviest thing on the site.
+
+`sharp` trimmed **457×326 of transparent padding**, resized to 293×192 (a 64px
+slot at 3× DPR), webp q90 with full alpha.
+
+**1358 KB → 8.4 KB. 99.4%. 1.35 MB saved per page load.** Trimming the padding
+also makes the mark render **larger in the same box**, because `object-contain`
+had been fitting empty margin instead of artwork. Both `Image` tags declared
+200×60 against a 1.5:1 asset and were letterboxing it; they now declare 293×192.
+
+**Not used:** `shamba_connect_logo.svg` from Downloads. It is a VTracer
+auto-trace — 1254×1254 square, opaque `#FDFDFD` background, no `viewBox` — so it
+is the icon mark, not the horizontal wordmark, and would render as a white box.
+**If she has a true horizontal SVG, that is worth having.**
+
+## The hero was screenshots
+
+Six PNGs named `Screenshot from 2026-01-04 14-04-47.png` through `14-12-44.png`,
+5.0 MB of them, serving as the hero of the business — while **48 real
+photographs sat unused in Downloads**.
+
+Several other images carry AI-prompt filenames
+(`happy-kenyan-family-harvesting-vegetables-from-bac.jpg`,
+`modern-rabbit-farming-unit-with-proper-housing-an.jpg`) — the truncated
+descriptive naming of generated stock. **`mercy-munene-founder-with-rabbit.jpg`
+is genuinely her**, so not everything was stock.
+
+**`scripts/import-media.mjs`** imports her library to `public/media` as
+EXIF-rotated webp capped at 1600px with a manifest:
+**11,639 KB → 8,533 KB, 48 photos, 23 landscape / 25 portrait.**
+
+The hero now runs on six of hers: Mercy carrying a harvest, vertical
+hydroponics, training young farmers, tiered raised beds, chard in recycled pipe,
+and a breeding rabbit. `public/slideshow` deleted once unreferenced.
+
+## What is in her library, and what it unlocks
+
+| | |
+|---|---|
+| **Mercy portraits** | carrying greens (the hero shot), with a rabbit, speaking at a training, at the International Nairobi Show 4 Oct 2025, at an overseas industrial facility |
+| **ECO-GROW Organic Foliar** | a real packaged 5L SKU — the rabbit-urine-to-fertiliser product the press writes about. **Not on the site.** |
+| **Rabbit meat** | four appetising cooked dishes. **Not on the site.** |
+| **Gardens** | vertical PVC hydroponic, wall pockets, tiered wooden, stone-clad planters, terracotta |
+| **Live rabbits** | several breeds, in real hutches |
+| **Training** | Mercy with young farmers holding poultry |
+| **Spice line** | Mint, Marjoram, Thyme, Cloves, Cinnamon, Hibiscus — **print-ready labels in Downloads, zero web presence** |
+
+## ⚠ Needs Alex before it can be used
+
+**`public/media/shamba-11.webp`** — a trophy presentation at what appears to be a
+national agricultural show. The man strongly resembles the President of Kenya.
+
+**I did not caption it and did not put it on the site.** I cannot verify who is
+in it, or what it was awarded for. An award claim naming a real person and a real
+institution is not something to guess at. **Confirm who and what, and it becomes
+the single strongest credibility asset on the page.**
+
+## Research: Mercy's credentials, none of them on her site
+
+MBA in Finance & Strategy (USIU) · Kenya Fellow, **African Food Fellowship** ·
+speaker at **AFSF 2025** on taking up leadership space as a young farmer ·
+**AWAK** · Rotary · **500+ installations** · Utawala · 7 years climate-smart ·
+turns rabbit urine into organic foliar. Press: **Business Daily**, **The
+Standard / FarmKenya**, **Safaricom Newsroom**, African Food Changemakers.
+
+Google's E-E-A-T rewards exactly this and the site shows none of it.
+
+## Still the biggest lever, still not done
+
+**The blog lives in `localStorage`.** All 7 posts render as empty shells with a
+duplicate `<title>`, and all 7 are in the sitemap. Google cannot read a word of
+it. Plan: MDX files in the repo, statically generated. No CMS, no cost, no auth
+surface.
