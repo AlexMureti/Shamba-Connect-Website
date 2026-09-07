@@ -30,6 +30,21 @@
   --destructive: #c0392b;
   --destructive-foreground: #ffffff;
   --border: #e7e2d9;              /* warm stone-200 */
+
+  /* Anchor sections.
+
+     Ten sections ran background / card / muted-40 -- #faf9f6, #ffffff and
+     #f1eee8 at 40%. Every band on the page was within a few percent of white,
+     which is why it read as fog: nothing to catch the eye on the way down and
+     no sense of where one thing ends. These two sit the proof block and the
+     closing ask on deep forest so the page has a spine.
+
+     Measured against #1e3d14: white 12.12:1, --ink-foreground 11.01:1,
+     --ink-muted 6.94:1 -- all AA for body text. The brand orange is 4.25:1,
+     so it is used on headings and accents here, never on small body copy. */
+  --ink: #1e3d14;
+  --ink-foreground: #f2f5ee;
+  --ink-muted: #b9c9ad;
   --input: #ece8e0;
   --ring: #336822;
   --chart-1: #336822;
@@ -66,6 +81,12 @@
   --destructive: #e25a4d;
   --destructive-foreground: #ffffff;
   --border: #322d25;
+
+  /* In dark mode the page is already #16140f, so the anchor has to come UP to
+     stay a separate band rather than down. */
+  --ink: #25491a;
+  --ink-foreground: #f2f5ee;
+  --ink-muted: #b9c9ad;
   --input: #2a261f;
   --ring: #6cb049;
   --chart-1: #6cb049;
@@ -104,6 +125,9 @@
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
   --color-border: var(--border);
+  --color-ink: var(--ink);
+  --color-ink-foreground: var(--ink-foreground);
+  --color-ink-muted: var(--ink-muted);
   --color-input: var(--input);
   --color-ring: var(--ring);
   --color-chart-1: var(--chart-1);

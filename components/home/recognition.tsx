@@ -12,12 +12,9 @@ import Image from "next/image"
  * in doubt it comes out -- an award claim naming a head of state is not
  * something to leave standing on a guess.
  *
- * The alt text used to say "Mercy Munene receiving a trophy". It no longer names
- * who is receiving. The woman accepting the trophy in this frame does not
- * obviously match the Mercy in the hero photograph or the video thumbnail, and
- * identifying a person from a photograph is not something to guess at in an
- * accessibility label that a screen reader will read out as fact. Alex to
- * confirm; if it is her, put the name back.
+ * The alt text names Mercy. It was briefly made anonymous because she looked
+ * different here to the hero photograph; Alex confirmed on 2026-09-07 that it
+ * is her and that the award is on her LinkedIn.
  */
 
 const supporting = [
@@ -43,13 +40,13 @@ const supporting = [
 
 export function Recognition() {
   return (
-    <section className="section-y border-b border-border bg-card">
+    <section className="section-y bg-ink text-ink-foreground">
       <div className="container mx-auto px-4">
         <div className="mb-12 max-w-2xl space-y-4 md:mb-16">
-          <h2 className="text-headline text-foreground">
+          <h2 className="text-headline text-ink-foreground">
             Seven years, and the receipts to show for it
           </h2>
-          <p className="leading-relaxed text-muted-foreground">
+          <p className="leading-relaxed text-ink-muted">
             Shamba Connect is led by Mercy Munene — MBA, Kenya Fellow of the African Food
             Fellowship, member of the Association of Women in Agriculture Kenya, and
             co-founder of La Satarah, a GlobalG.A.P-certified herb exporter supplying the
@@ -75,11 +72,11 @@ export function Recognition() {
             2.35:1 looked better in the abstract and cut the handshake in half:
             the President is at 40% of the frame and the recipient at 65%, so
             any narrower crop loses one of them. */}
-        <figure className="group relative overflow-hidden rounded-3xl border border-border">
+        <figure className="group relative overflow-hidden rounded-3xl">
           <div className="relative aspect-[3/2]">
             <Image
               src="/media/shamba-11.webp"
-              alt="A trophy being presented by President William Ruto at an Agricultural Society of Kenya show"
+              alt="Mercy Munene receiving a trophy from President William Ruto at an Agricultural Society of Kenya show"
               fill
               sizes="(min-width: 1280px) 1216px, 100vw"
               className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
@@ -96,7 +93,7 @@ export function Recognition() {
         <ul className="mt-6 grid gap-6 sm:grid-cols-3 lg:mt-8 lg:gap-8">
           {supporting.map((item) => (
             <li key={item.src}>
-              <figure className="group h-full overflow-hidden rounded-3xl border border-border bg-background">
+              <figure className="group h-full overflow-hidden rounded-3xl bg-white/5 ring-1 ring-white/10">
                 <div className="relative aspect-[4/3]">
                   <Image
                     src={item.src}
@@ -107,8 +104,8 @@ export function Recognition() {
                   />
                 </div>
                 <figcaption className="p-5">
-                  <p className="font-medium leading-snug text-foreground">{item.caption}</p>
-                  <p className="mt-1 text-sm text-muted-foreground">{item.meta}</p>
+                  <p className="font-medium leading-snug text-ink-foreground">{item.caption}</p>
+                  <p className="mt-1 text-sm text-ink-muted">{item.meta}</p>
                 </figcaption>
               </figure>
             </li>

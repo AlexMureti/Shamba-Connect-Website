@@ -5,7 +5,7 @@
     "category": "Rabbit Meat",
     "price": 800,
     "description": "Premium lean rabbit meat, healthy and delicious",
-    "image": "/media/shamba-33.webp"
+    "image": "/media/shamba-35.webp"
   },
   {
     "id": 102,
@@ -13,7 +13,7 @@
     "category": "Rabbit Hutches",
     "price": 12000,
     "description": "Durable outdoor hutch for 2-4 rabbits with feeding area",
-    "image": "/media/shamba-17.webp"
+    "image": "/media/shamba-25.webp"
   },
   {
     "id": 103,
@@ -21,7 +21,7 @@
     "category": "Rabbit Hutches",
     "price": 25000,
     "description": "Large commercial-grade hutch for 8-12 rabbits",
-    "image": "/media/shamba-17.webp"
+    "image": "/media/shamba-26.webp"
   },
   {
     "id": 104,
@@ -61,7 +61,7 @@
     "category": "Garden Kits",
     "price": 3500,
     "description": "Complete kit with raised bed, soil, and 20 seedlings",
-    "image": "/media/shamba-08.webp"
+    "image": "/media/shamba-29.webp"
   },
   {
     "id": 2,
@@ -85,7 +85,7 @@
     "category": "Organic Inputs",
     "price": 800,
     "description": "Premium quality organic compost for healthy soil",
-    "image": "/media/shamba-46.webp"
+    "image": "/media/shamba-31.webp"
   },
   {
     "id": 5,
@@ -109,14 +109,14 @@
     "category": "Garden Kits",
     "price": 1200,
     "description": "Basil, mint, coriander, and parsley seedlings",
-    "image": "/media/shamba-08.webp"
+    "image": "/media/shamba-02.webp"
   },
   {
     "id": 9,
-    "name": "Organic Pest Control",
+    "name": "ECO-GROW Organic Foliar (5L)",
     "category": "Organic Inputs",
     "price": 600,
-    "description": "Natural pest control solution, safe for vegetables",
+    "description": "Made from rabbit urine. Promotes root formation, feeds soil microbes and fixes nitrogen. 250ml in 20L water, sprayed twice weekly.",
     "image": "/media/shamba-46.webp"
   }
 ]
