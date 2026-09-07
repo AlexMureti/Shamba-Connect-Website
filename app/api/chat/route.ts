@@ -1,4 +1,5 @@
 import { systemPrompt, LEAK_MARKERS } from "@/Shamba-Connect-Website/lib/assistant-knowledge"
+import { catalogueAnswer, catalogueFallback } from "@/Shamba-Connect-Website/lib/assistant-lookup"
 
 /**
  * Server-side proxy to NVIDIA's OpenAI-compatible endpoint.
@@ -43,12 +44,6 @@ function bad(message: string, status: number) {
 }
 
 export async function POST(req: Request) {
-  const key = process.env.NVIDIA_API_KEY
-  if (!key) {
-    // 503, not 500: the code is fine, the deployment is missing a variable.
-    return bad("The assistant is not configured yet.", 503)
-  }
-
   let body: { messages?: unknown }
   try {
     body = await req.json()
@@ -71,6 +66,24 @@ export async function POST(req: Request) {
     turns.push({ role, content: content.slice(0, MAX_CHARS) })
   }
   if (turns.length === 0) return bad("No usable messages.", 400)
+
+  const key = process.env.NVIDIA_API_KEY
+  if (!key) {
+    // No key on this deployment. Rather than refuse, answer what the catalogue
+    // can answer: "do you sell seedlings?" is a lookup, not a conversation.
+    // The header lets the panel say plainly that this is a price-list answer
+    // and not the assistant, so nobody is misled about what replied.
+    const last = turns[turns.length - 1].content
+    const text = catalogueAnswer(last) ?? catalogueFallback()
+    return new Response(text, {
+      headers: {
+        "Content-Type": "text/plain; charset=utf-8",
+        "Cache-Control": "no-store",
+        "X-Content-Type-Options": "nosniff",
+        "X-Assistant-Mode": "catalogue",
+      },
+    })
+  }
 
   let upstream: Response
   try {

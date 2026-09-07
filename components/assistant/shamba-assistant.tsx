@@ -70,6 +70,10 @@ export function ShambaAssistant() {
   const [input, setInput] = useState("")
   const [busy, setBusy] = useState(false)
   const [offline, setOffline] = useState(false)
+  // "catalogue" means the server answered from the price list because this
+  // deployment has no NVIDIA_API_KEY. The panel says so rather than letting a
+  // lookup pass for a conversation.
+  const [mode, setMode] = useState<"live" | "catalogue">("live")
   const [nudge, setNudge] = useState(false)
 
   const endRef = useRef<HTMLDivElement>(null)
@@ -169,6 +173,8 @@ export function ShambaAssistant() {
           return
         }
         if (!res.ok || !res.body) throw new Error(String(res.status))
+
+        setMode(res.headers.get("X-Assistant-Mode") === "catalogue" ? "catalogue" : "live")
 
         const reader = res.body.getReader()
         const decoder = new TextDecoder()
@@ -328,7 +334,7 @@ export function ShambaAssistant() {
           </form>
 
           <p className="border-t border-border px-4 py-2 text-center text-[11px] text-muted-foreground">
-            Answers are automated.{" "}
+            {mode === "catalogue" ? "Answering from the price list." : "Answers are automated."}{" "}
             <a href={WHATSAPP} className="font-medium text-secondary hover:underline">
               Talk to Mercy
             </a>
