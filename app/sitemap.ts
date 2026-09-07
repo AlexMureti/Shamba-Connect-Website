@@ -1,96 +1,43 @@
 import type { MetadataRoute } from "next"
 import { SITE_URL } from "@/lib/site"
+import { getAllPosts } from "@/Shamba-Connect-Website/lib/posts"
 
-// Default blog posts data (same as in blog-store)
-const defaultPosts = [
-  {
-    slug: "getting-started-kitchen-garden",
-    date: "Jan 15, 2024",
-    published: true,
-  },
-  {
-    slug: "vegetables-thrive-nairobi",
-    date: "Jan 10, 2024",
-    published: true,
-  },
-  {
-    slug: "rabbit-farming-101",
-    date: "Jan 5, 2024",
-    published: true,
-  },
-  {
-    slug: "natural-pest-control-methods",
-    date: "Dec 28, 2023",
-    published: true,
-  },
-  {
-    slug: "success-story-wanjiru-family",
-    date: "Dec 20, 2023",
-    published: true,
-  },
-  {
-    slug: "composting-made-easy",
-    date: "Dec 15, 2023",
-    published: true,
-  },
-]
-
+/**
+ * Derived, not retyped.
+ *
+ * The previous version carried its own hardcoded copy of the post list with a
+ * comment saying "same as in blog-store". It was not: it listed six posts and
+ * the site had seven, so transforming-urban-spaces-sustainable-gardens was
+ * never submitted to Google. Reading getAllPosts() means a new post appears in
+ * the sitemap the moment it is published, and an unpublished one cannot leak in.
+ */
 export default function sitemap(): MetadataRoute.Sitemap {
-  // Create sitemap entries for blog posts
-  const blogEntries = defaultPosts
-    .filter((post) => post.published)
-    .map((post) => ({
-      url: `${SITE_URL}/blog/${post.slug}`,
-      lastModified: new Date(post.date),
-      changeFrequency: "weekly" as const,
-      priority: 0.8,
-    }))
+  const now = new Date()
 
-  // Main site pages
-  const mainPages: MetadataRoute.Sitemap = [
-    {
-      url: SITE_URL,
-      lastModified: new Date(),
-      changeFrequency: "daily",
-      priority: 1,
-    },
-    {
-      url: `${SITE_URL}/about`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${SITE_URL}/services`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${SITE_URL}/shop`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: `${SITE_URL}/blog`,
-      lastModified: new Date(),
-      changeFrequency: "daily",
-      priority: 0.9,
-    },
-    {
-      url: `${SITE_URL}/contact`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${SITE_URL}/book-consultation`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
+  const pages: { path: string; priority: number; changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"] }[] = [
+    { path: "", priority: 1, changeFrequency: "daily" },
+    { path: "/services", priority: 0.9, changeFrequency: "monthly" },
+    { path: "/blog", priority: 0.9, changeFrequency: "daily" },
+    { path: "/about", priority: 0.8, changeFrequency: "monthly" },
+    { path: "/shop", priority: 0.8, changeFrequency: "weekly" },
+    { path: "/book-consultation", priority: 0.8, changeFrequency: "monthly" },
+    { path: "/contact", priority: 0.7, changeFrequency: "monthly" },
+    { path: "/privacy", priority: 0.3, changeFrequency: "yearly" },
+    { path: "/terms", priority: 0.3, changeFrequency: "yearly" },
   ]
 
-  return [...mainPages, ...blogEntries]
+  return [
+    ...pages.map((p) => ({
+      url: `${SITE_URL}${p.path}`,
+      lastModified: now,
+      changeFrequency: p.changeFrequency,
+      priority: p.priority,
+    })),
+    ...getAllPosts().map((post) => ({
+      url: `${SITE_URL}/blog/${post.slug}`,
+      lastModified: new Date(post.date),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
+  ]
 }

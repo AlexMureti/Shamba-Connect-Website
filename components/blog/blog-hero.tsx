@@ -1,6 +1,6 @@
 import { BlogSearch } from "./blog-search"
 
-export function BlogHero() {
+export function BlogHero({ query }: { query?: string }) {
   return (
     <section className="py-16 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -11,7 +11,7 @@ export function BlogHero() {
           <p className="text-lg text-muted-foreground leading-relaxed mb-8">
             Expert tips, practical guides, and inspiring stories from the world of urban agriculture
           </p>
-          <BlogSearch />
+          <BlogSearch initial={query} />
         </div>
       </div>
     </section>

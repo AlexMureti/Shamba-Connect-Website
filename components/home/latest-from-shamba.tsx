@@ -1,26 +1,17 @@
-"use client"
-
-import { useEffect, useState, useMemo } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowRight, Clock } from "lucide-react"
-import { useBlogStore } from "@/Shamba-Connect-Website/lib/blog-store"
+import { getAllPosts } from "@/Shamba-Connect-Website/lib/posts"
 import { Button } from "@/Shamba-Connect-Website/components/ui/button"
 
+/**
+ * Server component. This sits on the homepage -- the most crawled page on the
+ * site -- and was rendering a bare 256px grey box on the server, because it read
+ * posts from a localStorage-backed store behind a `mounted` gate. Four article
+ * headlines and four internal links were invisible to every crawler.
+ */
 export function LatestFromShamba() {
-  const allPosts = useBlogStore((state) => state.posts)
-  const [mounted, setMounted] = useState(false)
-
-  const posts = useMemo(() => allPosts.filter((p) => p.published).slice(0, 4), [allPosts])
-
-  useEffect(() => {
-    setMounted(true)
-  }, [])
-
-  // Prevent hydration mismatch
-  if (!mounted) {
-    return <div className="bg-muted/30 border-b border-border h-64" />
-  }
-
+  const posts = getAllPosts().slice(0, 4)
   const featuredPost = posts[0]
   const sidebarPosts = posts.slice(1, 4)
 
@@ -52,11 +43,13 @@ export function LatestFromShamba() {
           <div className="lg:col-span-7">
             <Link href={`/blog/${featuredPost.slug}`} className="group block h-full">
               <div className="relative h-full bg-card border border-border rounded-3xl overflow-hidden newsroom-card-hover">
-                <div className="aspect-[16/9] lg:aspect-auto lg:h-[400px] overflow-hidden">
-                  <img
+                <div className="relative aspect-[16/9] lg:aspect-auto lg:h-[400px] overflow-hidden">
+                  <Image
                     src={featuredPost.featuredImage || "/placeholder.svg"}
                     alt={featuredPost.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 58vw"
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                   <div className="absolute top-6 left-6">
                     <span className="px-4 py-2 orange-gradient-bg text-white font-bold rounded-full text-xs shadow-lg shadow-secondary/20">
@@ -95,11 +88,13 @@ export function LatestFromShamba() {
                 className="group block"
               >
                 <div className="flex gap-6 p-4 bg-card border border-border rounded-2xl newsroom-card-hover">
-                  <div className="w-32 h-24 flex-shrink-0 rounded-xl overflow-hidden">
-                    <img
+                  <div className="relative w-32 h-24 flex-shrink-0 rounded-xl overflow-hidden">
+                    <Image
                       src={post.featuredImage || "/placeholder.svg"}
                       alt={post.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      fill
+                      sizes="128px"
+                      className="object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                   </div>
                   <div className="flex-1 space-y-2">

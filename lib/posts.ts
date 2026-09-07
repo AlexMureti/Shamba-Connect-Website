@@ -57,3 +57,50 @@ export function getRelatedPosts(slug: string, limit = 3): Post[] {
   const rest = getAllPosts().filter((p) => p.slug !== slug && p.category !== post.category)
   return [...sameCategory, ...rest].slice(0, limit)
 }
+
+/** Slug form used in ?category= URLs. "Rabbit Farming" -> "rabbit-farming". */
+export function categorySlug(name: string): string {
+  return name.toLowerCase().replace(/\s+/g, "-")
+}
+
+/**
+ * Category + search filtering, on the server.
+ *
+ * This ran in the browser before, inside a useMemo behind a `mounted` gate, so
+ * /blog?category=rabbit-farming was served to crawlers as an empty section.
+ */
+export function filterPosts({ category, query }: { category?: string; query?: string }): Post[] {
+  let out = getAllPosts()
+
+  if (category && category !== "all") {
+    out = out.filter((p) => categorySlug(p.category) === category)
+  }
+
+  if (query?.trim()) {
+    const q = query.trim().toLowerCase()
+    out = out.filter(
+      (p) =>
+        p.title.toLowerCase().includes(q) ||
+        p.excerpt.toLowerCase().includes(q) ||
+        p.content.toLowerCase().includes(q),
+    )
+  }
+
+  return out
+}
+
+/**
+ * "Jan 15, 2024" -> "2024-01-15".
+ *
+ * Not `new Date(d).toISOString()`. The human string parses as local midnight, so
+ * in Nairobi (UTC+3) toISOString() rolls it back to the 14th at 21:00Z -- which
+ * is what the first version of the BlogPosting schema published. Reading the
+ * local parts back out matches how the string was parsed, in any timezone,
+ * including the UTC build machine.
+ */
+export function isoDate(human: string): string {
+  const d = new Date(human)
+  if (Number.isNaN(d.getTime())) return ""
+  const pad = (n: number) => String(n).padStart(2, "0")
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`
+}

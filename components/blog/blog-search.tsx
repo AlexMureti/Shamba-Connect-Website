@@ -1,62 +1,47 @@
 "use client"
 
-import { useState, useEffect } from "react"
-import { useRouter, useSearchParams } from "next/navigation"
+import { useState } from "react"
+import { useRouter } from "next/navigation"
 import { Input } from "@/Shamba-Connect-Website/components/ui/input"
 import { Button } from "@/Shamba-Connect-Website/components/ui/button"
 import { X, Search } from "lucide-react"
 
-export function BlogSearch() {
+/**
+ * The initial value is passed down from the server page rather than read from
+ * useSearchParams inside an effect. That removed the `mounted` gate, which was
+ * rendering an empty 40px box on the server and on the first client frame.
+ */
+export function BlogSearch({ initial = "" }: { initial?: string }) {
   const router = useRouter()
-  const searchParams = useSearchParams()
-  const [searchQuery, setSearchQuery] = useState("")
-  const [mounted, setMounted] = useState(false)
+  const [q, setQ] = useState(initial)
 
-  // Initialize search query from URL on mount
-  useEffect(() => {
-    const query = searchParams.get("search") || ""
-    setSearchQuery(query)
-    setMounted(true)
-  }, [searchParams])
-
-  const handleSearch = (e: React.FormEvent) => {
+  const submit = (e: React.FormEvent) => {
     e.preventDefault()
-    
-    if (searchQuery.trim()) {
-      // Update URL with search query
-      router.push(`/blog?search=${encodeURIComponent(searchQuery.trim())}`)
-    } else {
-      // Clear search
-      router.push("/blog")
-    }
-  }
-
-  const handleClear = () => {
-    setSearchQuery("")
-    router.push("/blog")
-  }
-
-  // Prevent hydration mismatch
-  if (!mounted) {
-    return <div className="w-full h-10" />
+    router.push(q.trim() ? `/blog?search=${encodeURIComponent(q.trim())}` : "/blog")
   }
 
   return (
-    <form onSubmit={handleSearch} className="w-full">
+    <form onSubmit={submit} className="w-full" role="search">
       <div className="relative flex items-center gap-2">
         <div className="relative flex-1">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" size={18} />
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" size={18} aria-hidden="true" />
           <Input
-            type="text"
+            type="search"
+            name="search"
+            aria-label="Search blog posts"
             placeholder="Search blog posts..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
+            value={q}
+            onChange={(e) => setQ(e.target.value)}
             className="pl-10 pr-10"
           />
-          {searchQuery && (
+          {q && (
             <button
               type="button"
-              onClick={handleClear}
+              aria-label="Clear search"
+              onClick={() => {
+                setQ("")
+                router.push("/blog")
+              }}
               className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground"
             >
               <X size={18} />
