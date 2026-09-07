@@ -8,7 +8,7 @@ export function ServiceDetails() {
     {
       id: "kitchen-gardens",
       title: "Kitchen Garden Installation",
-      image: "/professional-kitchen-garden-installation-setup-wit.jpg",
+      image: "/media/shamba-30.webp",
       description:
         "Transform your available space into a productive organic garden. Our professional team handles everything from site assessment to installation and ongoing support.",
       whoItsFor: ["Homeowners", "Schools and educational institutions", "Corporate offices", "Residential estates"],
@@ -23,7 +23,7 @@ export function ServiceDetails() {
     {
       id: "landscaping",
       title: "Landscape-cum-Foodscape Design",
-      image: "/beautiful-foodscape-landscape-design-combining-aes.jpg",
+      image: "/media/shamba-23.webp",
       description:
         "Create beautiful outdoor spaces that are both aesthetically pleasing and productive. We design landscapes that grow food while maintaining visual appeal.",
       whoItsFor: ["Luxury homes", "Hotels and resorts", "Corporate campuses", "Community centers"],
@@ -38,7 +38,7 @@ export function ServiceDetails() {
     {
       id: "seedlings",
       title: "Seedling Propagation",
-      image: "/organic-vegetable-seedlings-in-propagation-trays.jpg",
+      image: "/media/shamba-07.webp",
       description:
         "Access high-quality organic seedlings grown in our nursery. We supply healthy, disease-free seedlings ready for transplanting.",
       whoItsFor: ["Home gardeners", "Commercial farmers", "Schools", "Community projects"],
@@ -53,7 +53,7 @@ export function ServiceDetails() {
     {
       id: "rabbit-farming",
       title: "Rabbit Unit Setup & Management",
-      image: "/healthy-rabbits-in-modern-farming-setup-with-hutch.jpg",
+      image: "/media/shamba-15.webp",
       description:
         "Establish a sustainable rabbit farming operation with our comprehensive setup and training services. Rabbits provide healthy protein and require minimal space.",
       whoItsFor: ["Individual families", "Schools", "Community groups", "Small-scale farmers"],
@@ -68,7 +68,7 @@ export function ServiceDetails() {
     {
       id: "training",
       title: "Training & Consultancy",
-      image: "/training-workshop-agriculture.jpg",
+      image: "/media/shamba-19.webp",
       description:
         "Expert-led training programs tailored to your needs. From beginner gardening to advanced farming techniques, we equip you with practical knowledge.",
       whoItsFor: ["Individuals", "Schools", "NGOs", "Corporate CSR programs", "Government agencies"],
@@ -83,7 +83,7 @@ export function ServiceDetails() {
     {
       id: "retail",
       title: "Retail of Inputs",
-      image: "/garden-supplies-organic-inputs.jpg",
+      image: "/media/shamba-13.webp",
       description:
         "One-stop shop for all your urban farming needs. We stock quality organic inputs, tools, and supplies carefully selected for urban agriculture.",
       whoItsFor: ["Home gardeners", "Schools", "Farming groups", "Anyone starting or maintaining a garden"],

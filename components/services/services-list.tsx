@@ -10,7 +10,7 @@ export function ServicesList() {
       title: "Kitchen Garden Installation",
       description:
         "Professional organic garden setup for homes, schools, and institutions with ongoing maintenance support.",
-      image: "/professional-kitchen-garden-installation-setup-wit.jpg",
+      image: "/media/shamba-30.webp",
       highlights: ["Site assessment", "Organic inputs", "3 months support"],
     },
     {
@@ -19,7 +19,7 @@ export function ServicesList() {
       title: "Landscape-cum-Foodscape Design",
       description:
         "Beautify your space while growing food. Functional landscapes that combine aesthetics with productivity.",
-      image: "/beautiful-foodscape-landscape-design-combining-aes.jpg",
+      image: "/media/shamba-23.webp",
       highlights: ["Custom design", "Aesthetic + productive", "Water-efficient"],
     },
     {
@@ -28,7 +28,7 @@ export function ServicesList() {
       title: "Seedling Propagation",
       description:
         "High-quality organic seedlings for vegetables, herbs, and ornamental plants delivered to your location.",
-      image: "/organic-vegetable-seedlings-in-propagation-trays.jpg",
+      image: "/media/shamba-07.webp",
       highlights: ["100% organic", "Wide variety", "Doorstep delivery"],
     },
     {
@@ -37,7 +37,7 @@ export function ServicesList() {
       title: "Rabbit Unit Setup & Management",
       description:
         "Complete rabbit farming systems including housing, breeding stock, meat production, and leather tanning. Our expert team ensures your success.",
-      image: "/modern-rabbit-farming-unit-with-proper-housing-an.jpg",
+      image: "/media/shamba-16.webp",
       highlights: ["Complete setup", "Breeding stock", "Full training"],
     },
     {
@@ -45,7 +45,7 @@ export function ServicesList() {
       icon: GraduationCap,
       title: "Training & Consultancy",
       description: "Expert agricultural training programs for individuals, schools, NGOs, and corporate organizations.",
-      image: "/agricultural-training-session-hands-on-learning-w.jpg",
+      image: "/media/shamba-18.webp",
       highlights: ["Hands-on training", "Certification", "Ongoing support"],
     },
     {
@@ -53,7 +53,7 @@ export function ServicesList() {
       icon: ShoppingBag,
       title: "Retail of Inputs",
       description: "Quality organic inputs, garden kits, tools, and farming supplies for your urban agriculture needs.",
-      image: "/organic-farming-inputs-and-supplies-garden-kits-t.jpg",
+      image: "/media/shamba-46.webp",
       highlights: ["Quality products", "Competitive prices", "Expert advice"],
     },
   ]

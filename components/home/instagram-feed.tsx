@@ -14,20 +14,20 @@ const gallery = [
     span: "row-span-2",
   },
   {
-    src: "/thriving-urban-rooftop-kitchen-garden-with-fresh-v.jpg",
+    src: "/media/shamba-29.webp",
     label: "Rooftop kitchen garden",
   },
   {
-    src: "/healthy-rabbits-in-modern-farming-setup-with-hutch.jpg",
+    src: "/media/shamba-15.webp",
     label: "Our rabbitry",
   },
   {
-    src: "/agricultural-training-workshop-kenya.jpg",
+    src: "/media/shamba-09.webp",
     label: "Hands-on training",
     span: "col-span-2",
   },
   {
-    src: "/happy-kenyan-family-harvesting-vegetables-from-bac.jpg",
+    src: "/media/shamba-48.webp",
     label: "A family harvest",
   },
 ]

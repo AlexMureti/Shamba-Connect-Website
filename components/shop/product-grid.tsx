@@ -18,7 +18,7 @@ export function ProductGrid() {
       category: "Rabbit Meat",
       price: 800,
       description: "Premium lean rabbit meat, healthy and delicious",
-      image: "/rabbit-meat-fresh-premium.jpg",
+      image: "/media/shamba-33.webp",
     },
     {
       id: 102,
@@ -26,7 +26,7 @@ export function ProductGrid() {
       category: "Rabbit Hutches",
       price: 12000,
       description: "Durable outdoor hutch for 2-4 rabbits with feeding area",
-      image: "/outdoor-rabbit-hutches-professional.jpg",
+      image: "/media/shamba-17.webp",
     },
     {
       id: 103,
@@ -34,7 +34,7 @@ export function ProductGrid() {
       category: "Rabbit Hutches",
       price: 25000,
       description: "Large commercial-grade hutch for 8-12 rabbits",
-      image: "/outdoor-rabbit-hutches-professional.jpg",
+      image: "/media/shamba-17.webp",
     },
     {
       id: 104,
@@ -42,7 +42,7 @@ export function ProductGrid() {
       category: "Breeder Rabbits",
       price: 8000,
       description: "Proven breeding pair, healthy and productive",
-      image: "/breeder-rabbits-quality-stock.jpg",
+      image: "/media/shamba-47.webp",
     },
     {
       id: 105,
@@ -50,7 +50,7 @@ export function ProductGrid() {
       category: "Breeder Rabbits",
       price: 9000,
       description: "Large breed, excellent for meat production",
-      image: "/breeder-rabbits-quality-stock.jpg",
+      image: "/media/shamba-47.webp",
     },
 
     {
@@ -59,7 +59,7 @@ export function ProductGrid() {
       category: "Pet Rabbits",
       price: 2500,
       description: "Friendly pet rabbit, perfect for families",
-      image: "/pet-rabbit-dwarf-friendly.jpg",
+      image: "/media/shamba-16.webp",
     },
     {
       id: 108,
@@ -67,7 +67,7 @@ export function ProductGrid() {
       category: "Rabbit Farming",
       price: 35000,
       description: "Complete kit: 2 hutches, breeding pair, feeds, and training",
-      image: "/rabbit-farming-complete-kit.jpg",
+      image: "/media/shamba-15.webp",
     },
     // Garden Products
     {
@@ -76,7 +76,7 @@ export function ProductGrid() {
       category: "Garden Kits",
       price: 3500,
       description: "Complete kit with raised bed, soil, and 20 seedlings",
-      image: "/starter-garden-kit-kenya.jpg",
+      image: "/media/shamba-08.webp",
     },
     {
       id: 2,
@@ -84,7 +84,7 @@ export function ProductGrid() {
       category: "Seedlings",
       price: 200,
       description: "Organic Roma tomato seedlings ready for transplanting",
-      image: "/organic-tomato-seedlings.jpg",
+      image: "/media/shamba-07.webp",
     },
     {
       id: 3,
@@ -92,7 +92,7 @@ export function ProductGrid() {
       category: "Seedlings",
       price: 150,
       description: "Sukuma wiki seedlings, organic and disease-free",
-      image: "/organic-kale-seedlings.jpg",
+      image: "/media/shamba-41.webp",
     },
     {
       id: 4,
@@ -100,7 +100,7 @@ export function ProductGrid() {
       category: "Organic Inputs",
       price: 800,
       description: "Premium quality organic compost for healthy soil",
-      image: "/organic-compost-fertilizer.jpg",
+      image: "/media/shamba-46.webp",
     },
     {
       id: 5,
@@ -108,7 +108,7 @@ export function ProductGrid() {
       category: "Garden Kits",
       price: 2500,
       description: "Essential tools: spade, fork, hoe, and watering can",
-      image: "/garden-tool-set.jpg",
+      image: "/media/shamba-14.webp",
     },
     {
       id: 7,
@@ -116,7 +116,7 @@ export function ProductGrid() {
       category: "Seedlings",
       price: 180,
       description: "Fresh organic spinach seedlings",
-      image: "/organic-spinach-seedlings.jpg",
+      image: "/media/shamba-24.webp",
     },
     {
       id: 8,
@@ -124,7 +124,7 @@ export function ProductGrid() {
       category: "Garden Kits",
       price: 1200,
       description: "Basil, mint, coriander, and parsley seedlings",
-      image: "/herb-garden-collection.jpg",
+      image: "/media/shamba-08.webp",
     },
     {
       id: 9,
@@ -132,7 +132,7 @@ export function ProductGrid() {
       category: "Organic Inputs",
       price: 600,
       description: "Natural pest control solution, safe for vegetables",
-      image: "/organic-pest-control.jpg",
+      image: "/media/shamba-46.webp",
     },
   ]
 

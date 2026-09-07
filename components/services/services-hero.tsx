@@ -7,7 +7,7 @@ export function ServicesHero() {
     <section className="relative py-20 bg-background overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/services-hero-garden.jpg"
+          src="/media/shamba-24.webp"
           alt="Professional urban agriculture services"
           fill
           className="object-cover opacity-10"

@@ -8,28 +8,28 @@ const fieldActivities = [
     title: "Utawala Rooftop Garden",
     description: "Vertical kitchen garden installation",
     location: "Nairobi",
-    image: "/professional-kitchen-garden-installation-setup-wit.jpg",
+    image: "/media/shamba-30.webp",
   },
   {
     id: 2,
     title: "School Training Session",
     description: "Teaching sustainable farming",
     location: "Ruai",
-    image: "/agricultural-training-session-hands-on-learning-w.jpg",
+    image: "/media/shamba-18.webp",
   },
   {
     id: 3,
     title: "Commercial Rabbit Farm Setup",
     description: "50-cage breeding installation",
     location: "Machakos",
-    image: "/modern-rabbit-farming-unit-with-proper-housing-an.jpg",
+    image: "/media/shamba-16.webp",
   },
   {
     id: 4,
     title: "Community Garden Launch",
     description: "Estate-wide food project",
     location: "Kitengela",
-    image: "/happy-kenyan-family-harvesting-vegetables-from-bac.jpg",
+    image: "/media/shamba-48.webp",
   },
 ]
 
