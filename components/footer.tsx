@@ -10,10 +10,10 @@ export function Footer() {
           {/* Brand Column */}
           <div className="space-y-4">
             <Image
-              src="/shamba-connect-full-logo.png"
+              src="/shamba-connect-full-logo.webp"
               alt="Shamba Connect"
-              width={180}
-              height={60}
+              width={293}
+              height={192}
               className="h-14 w-auto object-contain"
             />
             <p className="text-sm text-muted-foreground">

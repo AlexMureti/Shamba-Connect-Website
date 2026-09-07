@@ -59,10 +59,10 @@ export function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
-              src="/shamba-connect-full-logo.png"
+              src="/shamba-connect-full-logo.webp"
               alt="Shamba Connect"
-              width={200}
-              height={60}
+              width={293}
+              height={192}
               className="h-14 md:h-16 w-auto object-contain"
               priority
             />
