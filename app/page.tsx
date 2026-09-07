@@ -3,6 +3,7 @@ import { LatestFromShamba } from "@/Shamba-Connect-Website/components/home/lates
 import { FeaturedProducts } from "@/Shamba-Connect-Website/components/home/featured-products"
 import { InTheField } from "@/Shamba-Connect-Website/components/home/in-the-field"
 import { WhatWeDoSnapshot } from "@/Shamba-Connect-Website/components/home/what-we-do-snapshot"
+import { Recognition } from "@/Shamba-Connect-Website/components/home/recognition"
 import { SocialProofCredibility } from "@/Shamba-Connect-Website/components/home/social-proof-credibility"
 import { CommunityCTA } from "@/Shamba-Connect-Website/components/home/community-cta"
 import { VideoShowcase } from "@/Shamba-Connect-Website/components/home/video-showcase"
@@ -15,6 +16,7 @@ export default function HomePage() {
       <NewsTicker />
       <EditorialHero />
       <VideoShowcase />
+      <Recognition />
       <SocialProofCredibility />
       <WhatWeDoSnapshot />
       <FeaturedProducts />
