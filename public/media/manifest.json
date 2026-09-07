@@ -1,0 +1,386 @@
+[
+  {
+    "id": "shamba-01",
+    "file": "/media/shamba-01.webp",
+    "w": 1280,
+    "h": 960,
+    "orientation": "landscape",
+    "source": "photo_5789632446797123163_y.jpg"
+  },
+  {
+    "id": "shamba-02",
+    "file": "/media/shamba-02.webp",
+    "w": 960,
+    "h": 1280,
+    "orientation": "portrait",
+    "source": "photo_5789632446797123164_y.jpg"
+  },
+  {
+    "id": "shamba-03",
+    "file": "/media/shamba-03.webp",
+    "w": 960,
+    "h": 1280,
+    "orientation": "portrait",
+    "source": "photo_5789632446797123165_y.jpg"
+  },
+  {
+    "id": "shamba-04",
+    "file": "/media/shamba-04.webp",
+    "w": 1280,
+    "h": 960,
+    "orientation": "landscape",
+    "source": "photo_5789632446797123166_y.jpg"
+  },
+  {
+    "id": "shamba-05",
+    "file": "/media/shamba-05.webp",
+    "w": 1280,
+    "h": 960,
+    "orientation": "landscape",
+    "source": "photo_5789632446797123167_y.jpg"
+  },
+  {
+    "id": "shamba-06",
+    "file": "/media/shamba-06.webp",
+    "w": 1280,
+    "h": 960,
+    "orientation": "landscape",
+    "source": "photo_5789632446797123168_y.jpg"
+  },
+  {
+    "id": "shamba-07",
+    "file": "/media/shamba-07.webp",
+    "w": 540,
+    "h": 1170,
+    "orientation": "portrait",
+    "source": "photo_5789632446797123169_y.jpg"
+  },
+  {
+    "id": "shamba-08",
+    "file": "/media/shamba-08.webp",
+    "w": 576,
+    "h": 1280,
+    "orientation": "portrait",
+    "source": "photo_5789632446797123170_y.jpg"
+  },
+  {
+    "id": "shamba-09",
+    "file": "/media/shamba-09.webp",
+    "w": 960,
+    "h": 1280,
+    "orientation": "portrait",
+    "source": "photo_5789632446797123171_y.jpg"
+  },
+  {
+    "id": "shamba-10",
+    "file": "/media/shamba-10.webp",
+    "w": 548,
+    "h": 364,
+    "orientation": "landscape",
+    "source": "photo_5789632446797123172_x.jpg"
+  },
+  {
+    "id": "shamba-11",
+    "file": "/media/shamba-11.webp",
+    "w": 1072,
+    "h": 712,
+    "orientation": "landscape",
+    "source": "photo_5789632446797123173_y.jpg"
+  },
+  {
+    "id": "shamba-12",
+    "file": "/media/shamba-12.webp",
+    "w": 1280,
+    "h": 960,
+    "orientation": "landscape",
+    "source": "photo_5789632446797123174_y.jpg"
+  },
+  {
+    "id": "shamba-13",
+    "file": "/media/shamba-13.webp",
+    "w": 720,
+    "h": 1280,
+    "orientation": "portrait",
+    "source": "photo_5789632446797123175_y.jpg"
+  },
+  {
+    "id": "shamba-14",
+    "file": "/media/shamba-14.webp",
+    "w": 960,
+    "h": 1280,
+    "orientation": "portrait",
+    "source": "photo_5789632446797123176_y.jpg"
+  },
+  {
+    "id": "shamba-15",
+    "file": "/media/shamba-15.webp",
+    "w": 1280,
+    "h": 963,
+    "orientation": "landscape",
+    "source": "photo_5789632446797123177_y.jpg"
+  },
+  {
+    "id": "shamba-16",
+    "file": "/media/shamba-16.webp",
+    "w": 1280,
+    "h": 963,
+    "orientation": "landscape",
+    "source": "photo_5789632446797123178_y.jpg"
+  },
+  {
+    "id": "shamba-17",
+    "file": "/media/shamba-17.webp",
+    "w": 1280,
+    "h": 963,
+    "orientation": "landscape",
+    "source": "photo_5789632446797123179_y.jpg"
+  },
+  {
+    "id": "shamba-18",
+    "file": "/media/shamba-18.webp",
+    "w": 1280,
+    "h": 960,
+    "orientation": "landscape",
+    "source": "photo_5789632446797123180_y.jpg"
+  },
+  {
+    "id": "shamba-19",
+    "file": "/media/shamba-19.webp",
+    "w": 1280,
+    "h": 960,
+    "orientation": "landscape",
+    "source": "photo_5789632446797123181_y.jpg"
+  },
+  {
+    "id": "shamba-20",
+    "file": "/media/shamba-20.webp",
+    "w": 960,
+    "h": 1280,
+    "orientation": "portrait",
+    "source": "photo_5789632446797123182_y.jpg"
+  },
+  {
+    "id": "shamba-21",
+    "file": "/media/shamba-21.webp",
+    "w": 1280,
+    "h": 960,
+    "orientation": "landscape",
+    "source": "photo_5789632446797123183_y.jpg"
+  },
+  {
+    "id": "shamba-22",
+    "file": "/media/shamba-22.webp",
+    "w": 1280,
+    "h": 960,
+    "orientation": "landscape",
+    "source": "photo_5789632446797123184_y.jpg"
+  },
+  {
+    "id": "shamba-23",
+    "file": "/media/shamba-23.webp",
+    "w": 960,
+    "h": 1280,
+    "orientation": "portrait",
+    "source": "photo_5789632446797123185_y.jpg"
+  },
+  {
+    "id": "shamba-24",
+    "file": "/media/shamba-24.webp",
+    "w": 1280,
+    "h": 960,
+    "orientation": "landscape",
+    "source": "photo_5789632446797123186_y.jpg"
+  },
+  {
+    "id": "shamba-25",
+    "file": "/media/shamba-25.webp",
+    "w": 960,
+    "h": 1280,
+    "orientation": "portrait",
+    "source": "photo_5789632446797123187_y.jpg"
+  },
+  {
+    "id": "shamba-26",
+    "file": "/media/shamba-26.webp",
+    "w": 960,
+    "h": 1280,
+    "orientation": "portrait",
+    "source": "photo_5789632446797123188_y.jpg"
+  },
+  {
+    "id": "shamba-27",
+    "file": "/media/shamba-27.webp",
+    "w": 1280,
+    "h": 1280,
+    "orientation": "landscape",
+    "source": "photo_5789632446797123189_y.jpg"
+  },
+  {
+    "id": "shamba-28",
+    "file": "/media/shamba-28.webp",
+    "w": 1280,
+    "h": 720,
+    "orientation": "landscape",
+    "source": "photo_5789632446797123190_y.jpg"
+  },
+  {
+    "id": "shamba-29",
+    "file": "/media/shamba-29.webp",
+    "w": 1280,
+    "h": 960,
+    "orientation": "landscape",
+    "source": "photo_5789632446797123191_y.jpg"
+  },
+  {
+    "id": "shamba-30",
+    "file": "/media/shamba-30.webp",
+    "w": 1280,
+    "h": 960,
+    "orientation": "landscape",
+    "source": "photo_5789632446797123192_y.jpg"
+  },
+  {
+    "id": "shamba-31",
+    "file": "/media/shamba-31.webp",
+    "w": 780,
+    "h": 1040,
+    "orientation": "portrait",
+    "source": "photo_5789632446797123193_y.jpg"
+  },
+  {
+    "id": "shamba-32",
+    "file": "/media/shamba-32.webp",
+    "w": 960,
+    "h": 1280,
+    "orientation": "portrait",
+    "source": "photo_5789632446797123194_y.jpg"
+  },
+  {
+    "id": "shamba-33",
+    "file": "/media/shamba-33.webp",
+    "w": 960,
+    "h": 1280,
+    "orientation": "portrait",
+    "source": "photo_5789632446797123195_y.jpg"
+  },
+  {
+    "id": "shamba-34",
+    "file": "/media/shamba-34.webp",
+    "w": 780,
+    "h": 1040,
+    "orientation": "portrait",
+    "source": "photo_5789632446797123196_y.jpg"
+  },
+  {
+    "id": "shamba-35",
+    "file": "/media/shamba-35.webp",
+    "w": 780,
+    "h": 1040,
+    "orientation": "portrait",
+    "source": "photo_5789632446797123197_y.jpg"
+  },
+  {
+    "id": "shamba-36",
+    "file": "/media/shamba-36.webp",
+    "w": 780,
+    "h": 1040,
+    "orientation": "portrait",
+    "source": "photo_5789632446797123198_y (1).jpg"
+  },
+  {
+    "id": "shamba-37",
+    "file": "/media/shamba-37.webp",
+    "w": 780,
+    "h": 1040,
+    "orientation": "portrait",
+    "source": "photo_5789632446797123198_y (2).jpg"
+  },
+  {
+    "id": "shamba-38",
+    "file": "/media/shamba-38.webp",
+    "w": 1040,
+    "h": 780,
+    "orientation": "landscape",
+    "source": "photo_5789632446797123199_y (1).jpg"
+  },
+  {
+    "id": "shamba-39",
+    "file": "/media/shamba-39.webp",
+    "w": 768,
+    "h": 1024,
+    "orientation": "portrait",
+    "source": "photo_5789632446797123200_y (1).jpg"
+  },
+  {
+    "id": "shamba-40",
+    "file": "/media/shamba-40.webp",
+    "w": 768,
+    "h": 1024,
+    "orientation": "portrait",
+    "source": "photo_5789632446797123201_y (1).jpg"
+  },
+  {
+    "id": "shamba-41",
+    "file": "/media/shamba-41.webp",
+    "w": 622,
+    "h": 1280,
+    "orientation": "portrait",
+    "source": "photo_5789632446797123202_y (1).jpg"
+  },
+  {
+    "id": "shamba-42",
+    "file": "/media/shamba-42.webp",
+    "w": 780,
+    "h": 1040,
+    "orientation": "portrait",
+    "source": "photo_5789632446797123203_y (1).jpg"
+  },
+  {
+    "id": "shamba-43",
+    "file": "/media/shamba-43.webp",
+    "w": 780,
+    "h": 1040,
+    "orientation": "portrait",
+    "source": "photo_5789632446797123204_y.jpg"
+  },
+  {
+    "id": "shamba-44",
+    "file": "/media/shamba-44.webp",
+    "w": 960,
+    "h": 1280,
+    "orientation": "portrait",
+    "source": "photo_5789632446797123205_y (1).jpg"
+  },
+  {
+    "id": "shamba-45",
+    "file": "/media/shamba-45.webp",
+    "w": 960,
+    "h": 1280,
+    "orientation": "portrait",
+    "source": "photo_5789632446797123206_y (1).jpg"
+  },
+  {
+    "id": "shamba-46",
+    "file": "/media/shamba-46.webp",
+    "w": 1280,
+    "h": 1280,
+    "orientation": "landscape",
+    "source": "photo_5789632446797123209_y.jpg"
+  },
+  {
+    "id": "shamba-47",
+    "file": "/media/shamba-47.webp",
+    "w": 1280,
+    "h": 853,
+    "orientation": "landscape",
+    "source": "photo_5789632446797123210_y.jpg"
+  },
+  {
+    "id": "shamba-48",
+    "file": "/media/shamba-48.webp",
+    "w": 1280,
+    "h": 853,
+    "orientation": "landscape",
+    "source": "photo_5789632446797123211_y.jpg"
+  }
+]

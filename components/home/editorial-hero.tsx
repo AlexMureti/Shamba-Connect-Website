@@ -6,13 +6,16 @@ import { ArrowRight, Play } from "lucide-react"
 import { ImageSlideshow } from "@/Shamba-Connect-Website/components/ui/image-slideshow"
 
 export function EditorialHero() {
+  // Mercy's own photographs, imported from her library by scripts/import-media.mjs.
+  // These replaced six PNG screenshots -- literally "Screenshot from 2026-01-04
+  // 14-04-47.png" -- that were serving as the hero of the business.
   const slides = [
-    { src: "/slideshow/Screenshot from 2026-01-04 14-04-47.png", alt: "Urban kitchen garden installed by Shamba Connect" },
-    { src: "/slideshow/Screenshot from 2026-01-04 14-05-18.png", alt: "Vertical garden on a Nairobi balcony" },
-    { src: "/slideshow/Screenshot from 2026-01-04 14-05-52.png", alt: "Healthy rabbits in a Shamba Connect rabbitry" },
-    { src: "/slideshow/Screenshot from 2026-01-04 14-07-00.png", alt: "Hands-on farming training session" },
-    { src: "/slideshow/Screenshot from 2026-01-04 14-10-07.png", alt: "Fresh organic harvest from a kitchen garden" },
-    { src: "/slideshow/Screenshot from 2026-01-04 14-12-44.png", alt: "Family tending their home food garden" },
+    { src: "/media/shamba-48.webp", alt: "Mercy Munene, founder of Shamba Connect, carrying a fresh harvest of greens" },
+    { src: "/media/shamba-12.webp", alt: "Vertical hydroponic pipes growing spinach and chard at a Nairobi site" },
+    { src: "/media/shamba-18.webp", alt: "Mercy Munene training young farmers in Nairobi" },
+    { src: "/media/shamba-29.webp", alt: "Tiered raised beds built and planted by Shamba Connect" },
+    { src: "/media/shamba-24.webp", alt: "Swiss chard growing in a recycled-pipe vertical garden" },
+    { src: "/media/shamba-47.webp", alt: "Mercy Munene with a breeding rabbit from the Shamba Connect rabbitry" },
   ]
 
   return (
