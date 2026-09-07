@@ -120,7 +120,7 @@ export function ImageSlideshow({
                                 decoding="async"
                                 onError={(e) => {
                                     // Helps debug missing assets in dev without crashing the UI
-                                    // eslint-disable-next-line no-console
+                                     
                                     console.error("Slideshow image failed to load:", slide.src)
                                         ; (e.currentTarget as HTMLImageElement).style.visibility = "hidden"
                                 }}

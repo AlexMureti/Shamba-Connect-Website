@@ -14,7 +14,7 @@ export default function TermsPage() {
           <section className="space-y-4">
             <h2 className="text-2xl font-bold text-foreground">Acceptance of Terms</h2>
             <p className="text-muted-foreground leading-relaxed">
-              By accessing and using Shamba Connect's services, you accept and agree to be bound by the terms and
+              By accessing and using Shamba Connect&apos;s services, you accept and agree to be bound by the terms and
               conditions outlined in this agreement.
             </p>
           </section>

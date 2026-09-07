@@ -72,8 +72,8 @@ export function FounderStory() {
               </p>
               <p>
                 Established in 2018 as a social enterprise, Shamba Connect makes urban agriculture accessible, practical,
-                and sustainable for families, schools, and institutions. We've installed over 2,000 gardens and trained
-                more than 5,000 people in sustainable farming &mdash; and we're building toward a global movement for food
+                and sustainable for families, schools, and institutions. We&apos;ve installed over 2,000 gardens and trained
+                more than 5,000 people in sustainable farming &mdash; and we&apos;re building toward a global movement for food
                 security, one garden at a time.
               </p>
             </div>

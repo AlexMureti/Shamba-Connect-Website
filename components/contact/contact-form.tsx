@@ -28,7 +28,7 @@ export function ContactForm() {
           </div>
           <h3 className="text-2xl font-bold text-foreground mb-4">Message Sent Successfully!</h3>
           <p className="text-muted-foreground mb-6">
-            Thank you for contacting Shamba Connect. We'll respond to your inquiry within 24 hours.
+            Thank you for contacting Shamba Connect. We&apos;ll respond to your inquiry within 24 hours.
           </p>
           <Button onClick={() => setSubmitted(false)}>Send Another Message</Button>
         </CardContent>
@@ -40,7 +40,7 @@ export function ContactForm() {
     <Card>
       <CardHeader>
         <CardTitle>Send Us a Message</CardTitle>
-        <CardDescription>Fill out the form below and we'll get back to you as soon as possible.</CardDescription>
+        <CardDescription>Fill out the form below and we&apos;ll get back to you as soon as possible.</CardDescription>
       </CardHeader>
       <CardContent>
         <form onSubmit={handleSubmit} className="space-y-6">

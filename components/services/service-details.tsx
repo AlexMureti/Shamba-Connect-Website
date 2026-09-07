@@ -125,7 +125,7 @@ export function ServiceDetails() {
             <div className="space-y-8">
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="space-y-4">
-                  <h3 className="text-xl font-semibold text-foreground">Who It's For</h3>
+                  <h3 className="text-xl font-semibold text-foreground">Who It&apos;s For</h3>
                   <ul className="space-y-2">
                     {service.whoItsFor.map((item, i) => (
                       <li key={i} className="flex items-start gap-2">
