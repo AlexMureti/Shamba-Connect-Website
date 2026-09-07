@@ -4,6 +4,7 @@ import { Geist, Geist_Mono, Playfair_Display } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { Navbar } from "@/Shamba-Connect-Website/components/navbar"
 import { Footer } from "@/Shamba-Connect-Website/components/footer"
+import { ShambaAssistant } from "@/Shamba-Connect-Website/components/assistant/shamba-assistant"
 import "./globals.css"
 import { SITE_URL } from "@/lib/site"
 
@@ -84,6 +85,7 @@ export default function RootLayout({
         <Navbar />
         <main className="min-h-screen">{children}</main>
         <Footer />
+        <ShambaAssistant />
         <Analytics />
       </body>
     </html>

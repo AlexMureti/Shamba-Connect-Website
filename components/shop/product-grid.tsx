@@ -5,136 +5,13 @@ import { Button } from "@/Shamba-Connect-Website/components/ui/button"
 import { ShoppingCart, Phone } from "lucide-react"
 import { useState } from "react"
 import { useCartStore } from "@/Shamba-Connect-Website/lib/cart-store"
+import { PRODUCTS } from "@/Shamba-Connect-Website/lib/products"
 
 export function ProductGrid() {
   const { addItem } = useCartStore()
   const [addedMessage, setAddedMessage] = useState<number | null>(null)
 
-  const products = [
-    // Rabbit Products
-    {
-      id: 101,
-      name: "Fresh Rabbit Meat (1kg)",
-      category: "Rabbit Meat",
-      price: 800,
-      description: "Premium lean rabbit meat, healthy and delicious",
-      image: "/media/shamba-33.webp",
-    },
-    {
-      id: 102,
-      name: "Outdoor Rabbit Hutch - Standard",
-      category: "Rabbit Hutches",
-      price: 12000,
-      description: "Durable outdoor hutch for 2-4 rabbits with feeding area",
-      image: "/media/shamba-17.webp",
-    },
-    {
-      id: 103,
-      name: "Outdoor Rabbit Hutch - Premium",
-      category: "Rabbit Hutches",
-      price: 25000,
-      description: "Large commercial-grade hutch for 8-12 rabbits",
-      image: "/media/shamba-17.webp",
-    },
-    {
-      id: 104,
-      name: "California White Breeder Pair",
-      category: "Breeder Rabbits",
-      price: 8000,
-      description: "Proven breeding pair, healthy and productive",
-      image: "/media/shamba-47.webp",
-    },
-    {
-      id: 105,
-      name: "New Zealand White Breeder Pair",
-      category: "Breeder Rabbits",
-      price: 9000,
-      description: "Large breed, excellent for meat production",
-      image: "/media/shamba-47.webp",
-    },
-
-    {
-      id: 107,
-      name: "Pet Rabbit - Dwarf Breed",
-      category: "Pet Rabbits",
-      price: 2500,
-      description: "Friendly pet rabbit, perfect for families",
-      image: "/media/shamba-16.webp",
-    },
-    {
-      id: 108,
-      name: "Rabbit Farming Starter Kit",
-      category: "Rabbit Farming",
-      price: 35000,
-      description: "Complete kit: 2 hutches, breeding pair, feeds, and training",
-      image: "/media/shamba-15.webp",
-    },
-    // Garden Products
-    {
-      id: 1,
-      name: "Starter Garden Kit",
-      category: "Garden Kits",
-      price: 3500,
-      description: "Complete kit with raised bed, soil, and 20 seedlings",
-      image: "/media/shamba-08.webp",
-    },
-    {
-      id: 2,
-      name: "Tomato Seedlings (Pack of 10)",
-      category: "Seedlings",
-      price: 200,
-      description: "Organic Roma tomato seedlings ready for transplanting",
-      image: "/media/shamba-07.webp",
-    },
-    {
-      id: 3,
-      name: "Kale Seedlings (Pack of 20)",
-      category: "Seedlings",
-      price: 150,
-      description: "Sukuma wiki seedlings, organic and disease-free",
-      image: "/media/shamba-41.webp",
-    },
-    {
-      id: 4,
-      name: "Organic Compost (20kg)",
-      category: "Organic Inputs",
-      price: 800,
-      description: "Premium quality organic compost for healthy soil",
-      image: "/media/shamba-46.webp",
-    },
-    {
-      id: 5,
-      name: "Garden Tool Set",
-      category: "Garden Kits",
-      price: 2500,
-      description: "Essential tools: spade, fork, hoe, and watering can",
-      image: "/media/shamba-14.webp",
-    },
-    {
-      id: 7,
-      name: "Spinach Seedlings (Pack of 15)",
-      category: "Seedlings",
-      price: 180,
-      description: "Fresh organic spinach seedlings",
-      image: "/media/shamba-24.webp",
-    },
-    {
-      id: 8,
-      name: "Herb Garden Collection",
-      category: "Garden Kits",
-      price: 1200,
-      description: "Basil, mint, coriander, and parsley seedlings",
-      image: "/media/shamba-08.webp",
-    },
-    {
-      id: 9,
-      name: "Organic Pest Control",
-      category: "Organic Inputs",
-      price: 600,
-      description: "Natural pest control solution, safe for vegetables",
-      image: "/media/shamba-46.webp",
-    },
-  ]
+  const products = PRODUCTS
 
   const handleAddToCart = (product: (typeof products)[0]) => {
     addItem({

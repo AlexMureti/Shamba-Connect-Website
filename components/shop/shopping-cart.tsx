@@ -23,7 +23,7 @@ export function ShoppingCartButton() {
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-6 right-6 bg-primary text-primary-foreground rounded-full w-14 h-14 md:w-16 md:h-16 flex items-center justify-center shadow-2xl hover:scale-110 transition-transform cursor-pointer z-40"
+        className="fixed bottom-64 right-4 md:bottom-40 md:right-6 bg-primary text-primary-foreground rounded-full w-14 h-14 md:w-16 md:h-16 flex items-center justify-center shadow-2xl hover:scale-110 transition-transform cursor-pointer z-40"
       >
         <ShoppingCartIcon size={24} />
         <span className="absolute -top-2 -right-2 bg-destructive text-destructive-foreground rounded-full w-7 h-7 flex items-center justify-center text-sm font-bold">
