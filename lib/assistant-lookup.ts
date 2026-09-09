@@ -87,7 +87,7 @@ export function catalogueAnswer(question: string): string | null {
   // Contact. Asked often enough to be worth answering exactly.
   if (has(t, "phone", "number", "whatsapp", "call", "contact", "email", "reach", "talk", "speak")) {
     return (
-      `Call or WhatsApp Mercy on **${WHATSAPP}**, or email shambaconnect@gmail.com. ` +
+      `Call or WhatsApp us on **${WHATSAPP}**, or email shambaconnect@gmail.com. ` +
       `You can also book a visit at /book-consultation.`
     )
   }
@@ -96,17 +96,17 @@ export function catalogueAnswer(question: string): string | null {
   if (has(t, "deliver", "delivery", "shipping", "ship", "courier")) {
     return (
       `I don't have delivery details written down, so I'd rather not guess at them. ` +
-      `WhatsApp Mercy on **${WHATSAPP}** and she'll tell you what she can do for your area.`
+      `WhatsApp us on **${WHATSAPP}** and we'll tell you what we can do for your area.`
     )
   }
   if (has(t, "open", "hour", "time", "closing", "weekend", "sunday", "saturday")) {
     return (
-      `Opening hours aren't listed here. WhatsApp Mercy on **${WHATSAPP}** — she answers directly.`
+      `Opening hours aren't listed here. WhatsApp us on **${WHATSAPP}** — a person answers.`
     )
   }
   if (has(t, "stock", "available", "availability")) {
     return (
-      `I can't see stock levels. WhatsApp Mercy on **${WHATSAPP}** to check what's ready now.`
+      `I can't see stock levels. WhatsApp us on **${WHATSAPP}** to check what's ready now.`
     )
   }
 
@@ -146,7 +146,7 @@ export function catalogueAnswer(question: string): string | null {
     return (
       `We've written guides on this:\n` +
       posts.map((p) => `- **${p.title}** (${p.readTime}) → /blog/${p.slug}`).join("\n") +
-      `\n\nFor anything specific, WhatsApp Mercy on **${WHATSAPP}**.`
+      `\n\nFor anything specific, WhatsApp us on **${WHATSAPP}**.`
     )
   }
 
@@ -159,6 +159,6 @@ export function catalogueFallback(): string {
   return (
     `I couldn't match that to anything in the price list. I can help with:\n` +
     cats.map((c) => `- ${c}`).join("\n") +
-    `\n\nOr prices, services and our guides. For anything else, WhatsApp Mercy on **${WHATSAPP}**.`
+    `\n\nOr prices, services and our guides. For anything else, WhatsApp us on **${WHATSAPP}**.`
   )
 }

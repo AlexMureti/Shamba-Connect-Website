@@ -192,7 +192,7 @@ export function ShambaAssistant() {
           {
             role: "assistant",
             content:
-              "Sorry — I could not answer that just now. WhatsApp Mercy on +254 725 684 352 and she will reply herself.",
+              "Sorry — I could not answer that just now. WhatsApp us on +254 725 684 352 and a person will reply.",
           },
         ])
       } finally {
@@ -300,7 +300,7 @@ export function ShambaAssistant() {
                   href={WHATSAPP}
                   className="mt-2 inline-flex items-center gap-2 font-semibold text-secondary hover:underline"
                 >
-                  <Phone size={14} /> WhatsApp Mercy instead
+                  <Phone size={14} /> WhatsApp us instead
                 </a>
               </div>
             )}
@@ -336,7 +336,7 @@ export function ShambaAssistant() {
           <p className="border-t border-border px-4 py-2 text-center text-[11px] text-muted-foreground">
             {mode === "catalogue" ? "Answering from the price list." : "Answers are automated."}{" "}
             <a href={WHATSAPP} className="font-medium text-secondary hover:underline">
-              Talk to Mercy
+              Talk to us
             </a>
           </p>
         </div>

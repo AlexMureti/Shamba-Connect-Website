@@ -125,7 +125,7 @@ export async function POST(req: Request) {
 
   const REFUSAL =
     "I am the assistant for shambaconnect.co.ke. Ask me about gardens, rabbits, " +
-    "seedlings or prices, or WhatsApp Mercy on +254 725 684 352."
+    "seedlings or prices, or WhatsApp us on +254 725 684 352."
 
   // A verbatim dump starts at the first token: the opening marker
   // ("You are the assistant on shambaconnect.co.ke") is 44 characters, so 140
